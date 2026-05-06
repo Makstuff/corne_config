@@ -15,6 +15,61 @@
 };
 
 / {
+    macros {
+        mirror: mirror {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&to 4>,
+                <&macro_press>,
+                <&kp LCTRL>,
+                <&macro_pause_for_release>,
+                <&macro_release>,
+                <&kp LCTRL>;
+
+            label = "MIRROR";
+        };
+
+        kpb: kpb {
+            compatible = "zmk,behavior-macro-one-param";
+            #binding-cells = <1>;
+            bindings = <&macro_param_1to1 &kp MACRO_PLACEHOLDER &to 0>;
+            label = "KPB";
+        };
+    };
+
+    behaviors {
+        period: period {
+            compatible = "zmk,behavior-mod-morph";
+            label = "PERIOD";
+            bindings = <&kp DE_PERIOD>, <&kp BACKSLASH>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+            keep-mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        comma: comma {
+            compatible = "zmk,behavior-mod-morph";
+            label = "COMMA";
+            bindings = <&kp DE_COMMA>, <&kp DE_PERIOD>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+            keep-mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        minus: minus {
+            compatible = "zmk,behavior-mod-morph";
+            label = "MINUS";
+            bindings = <&kp MINUS>, <&kp NUMBER_2>;
+
+            #binding-cells = <0>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+            keep-mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -28,20 +83,20 @@
             //                    | GUI | LWR | SPC |               | ENT | RSE  | ALT |
 
             bindings = <
-&kp TAB    &kp Q    &kp U      &kp O  &kp F          &kp Y       &kp ESC    &kp DEL  &kp B  &kp M      &kp D  &kp L  &kp Q  &kp BSPC
-&kp LCTRL  &kp A    &kp I      &kp E  &kp N          &kp P       &kp ENTER  &kp TAB  &kp G  &kp C      &kp T  &kp R  &kp S  &kp SQT
-&kp LSHFT  &kp DOT  &kp COMMA  &kp C  &kp H          &kp J                           &kp V  &kp W      &kp K  &kp X  &kp Z  &kp ESC
-                               &mo 3  &kp BACKSPACE  &kp LSHIFT                      &mo 2  &kp SPACE  &mo 1
+&kp LEFT_ALT  &kp DE_A_UMLAUT  &kp U   &kp O            &kp F          &kp Y       &kp ESC    &kp DEL  &kp B  &kp M      &kp D  &kp L  &kp Q  &kp DE_O_UMLAUT
+&kp LCTRL     &kp A            &kp I   &kp E            &kp N          &kp P       &kp ENTER  &kp TAB  &kp G  &kp C      &kp T  &kp R  &kp S  &kp DE_SHARP_S
+&kp LSHFT     &period          &comma  &kp DE_U_UMLAUT  &kp H          &kp J                           &kp V  &kp W      &kp K  &kp X  &kp Z  &minus
+                                       &mo 3            &kp BACKSPACE  &kp LSHIFT                      &mo 2  &kp SPACE  &mo 1
             >;
         };
 
         sym {
             display-name = "Symbols";
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans                  &trans  &trans  &trans
+&trans        &kp DE_DQT   &kp DE_TILDE  &kp DE_BSLH  &kp DE_PIPE   &kp DE_COLON  &trans  &trans  &kp DE_UNDER  &kp DE_LBRC  &kp DE_RBRC  &kp DE_PLUS  &kp DE_CARET  &kp DE_DEG
+&trans        &kp DE_DLLR  &kp DE_SEMI   &kp DE_EXCL  &kp DE_QMARK  &kp DE_DOT    &trans  &trans  &kp DE_EQUAL  &kp DE_LPAR  &kp DE_RPAR  &kp DE_LBKT  &kp DE_RBKT   &kp DE_PRCNT
+&kp DE_GRAVE  &kp DE_SQT   &kp DE_AT     &kp DE_AMPS  &kp DE_HASH   &kp DE_COMMA                  &kp DE_MINUS  &kp DE_LT    &kp DE_GT    &kp DE_FSLH  &kp DE_STAR   &kp DE_EURO
+                                         &trans       &trans        &trans                        &trans        &trans       &trans
             >;
         };
 
@@ -65,6 +120,15 @@
             >;
         };
 
+        mir {
+            bindings = <
+&trans  &kpb Q  &kpb L  &kpb D  &kpb M  &kpb B  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kpb S  &kpb R  &kpb T  &kpb C  &kpb B  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kpb Z  &kpb X  &kpb K  &kpb W  &kpb V                  &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans  &trans                  &trans  &trans  &trans
+            >;
+        };
+
         sys {
             display-name = "System";
 
@@ -80,6 +144,15 @@
 &kp LSHFT  &bt BT_CLR    &rgb_ug RGB_TOG  &sys_reset    &bootloader   &studio_unlock                        &trans    &trans    &trans     &trans     &trans  &trans
                                           &kp LGUI      &trans        &kp SPACE                             &kp LGUI  &trans    &kp SPACE
             >;
+        };
+    };
+
+    conditional_layers {
+        compatible = "zmk,conditional-layers";
+
+        numsym {
+            if-layers = <2>;
+            then-layer = <1>;
         };
     };
 };
