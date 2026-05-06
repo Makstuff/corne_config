@@ -68,6 +68,13 @@
             mods = <(MOD_LSFT|MOD_RSFT)>;
             keep-mods = <(MOD_LSFT|MOD_RSFT)>;
         };
+
+        layer_td: layer_td {
+            compatible = "zmk,behavior-tap-dance";
+            label = "LAYER_TD";
+            #binding-cells = <0>;
+            bindings = <&mo 0>, <&to 0>;
+        };
     };
 
     keymap {
@@ -83,9 +90,9 @@
             //                    | GUI | LWR | SPC |               | ENT | RSE  | ALT |
 
             bindings = <
-&kp LEFT_ALT  &kp DE_A_UMLAUT  &kp U   &kp O            &kp F          &kp Y       &kp ESC    &kp DEL  &kp B  &kp M      &kp D  &kp L  &kp Q  &kp DE_O_UMLAUT
-&kp LCTRL     &kp A            &kp I   &kp E            &kp N          &kp P       &kp ENTER  &kp TAB  &kp G  &kp C      &kp T  &kp R  &kp S  &kp DE_SHARP_S
-&kp LSHFT     &period          &comma  &kp DE_U_UMLAUT  &kp H          &kp J                           &kp V  &kp W      &kp K  &kp X  &kp Z  &minus
+&kp LEFT_ALT  &kp DE_A_UMLAUT  &kp U   &kp O            &kp F          &kp DE_Y    &kp ESC    &kp DEL  &kp B  &kp M      &kp D  &kp L  &kp Q     &kp DE_O_UMLAUT
+&kp LCTRL     &kp A            &kp I   &kp E            &kp N          &kp P       &kp ENTER  &kp TAB  &kp G  &kp C      &kp T  &kp R  &kp S     &kp DE_SHARP_S
+&mirror       &period          &comma  &kp DE_U_UMLAUT  &kp H          &kp J                           &kp V  &kp W      &kp K  &kp X  &kp DE_Z  &minus
                                        &mo 3            &kp BACKSPACE  &kp LSHIFT                      &mo 2  &kp SPACE  &mo 1
             >;
         };
@@ -103,29 +110,29 @@
         num {
             display-name = "Numbers";
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans                  &trans  &trans  &trans
+&trans  &trans  &kp N6  &kp N5  &kp N4  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp N0  &kp N3  &kp N2  &kp N1  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &kp N9  &kp N8  &kp N7  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans  &trans                  &to 0   &trans  &trans
             >;
         };
 
         nav {
             display-name = "Navigation";
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans                  &trans  &trans  &trans
+&trans     &kp PG_UP     &kp HOME       &kp UP    &kp END    &kp LC(X)  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans     &kp PG_DN     &kp LEFT       &kp DOWN  &kp RIGHT  &kp LC(C)  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&kp LC(A)  &kp LC(DE_Z)  &kp BACKSPACE  &kp DEL   &kp SPACE  &kp LC(V)                  &trans  &trans  &trans  &trans  &trans  &trans
+                                        &to 0     &trans     &trans                     &trans  &trans  &trans
             >;
         };
 
         mir {
             bindings = <
-&trans  &kpb Q  &kpb L  &kpb D  &kpb M  &kpb B  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kpb S  &kpb R  &kpb T  &kpb C  &kpb B  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kpb Z  &kpb X  &kpb K  &kpb W  &kpb V                  &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans                  &trans  &trans  &trans
+&trans  &kpb Q     &kpb L  &kpb D  &kpb M  &kpb B  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kpb S     &kpb R  &kpb T  &kpb C  &kpb G  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kpb DE_Z  &kpb X  &kpb K  &kpb W  &kpb V                  &trans  &trans  &trans  &trans  &trans  &trans
+                           &trans  &trans  &trans                  &trans  &trans  &trans
             >;
         };
 
