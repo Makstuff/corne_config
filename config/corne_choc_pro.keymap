@@ -69,11 +69,25 @@
             keep-mods = <(MOD_LSFT|MOD_RSFT)>;
         };
 
-        layer_td: layer_td {
+        td_sym: td_sym {
             compatible = "zmk,behavior-tap-dance";
-            label = "LAYER_TD";
+            label = "TD_SYM";
             #binding-cells = <0>;
-            bindings = <&mo 0>, <&to 0>;
+            bindings = <&mo 1>, <&to 1>;
+        };
+
+        td_num: td_num {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TD_NUM";
+            #binding-cells = <0>;
+            bindings = <&mo 2>, <&to 2>;
+        };
+
+        td_nav: td_nav {
+            compatible = "zmk,behavior-tap-dance";
+            label = "TD_NAV";
+            #binding-cells = <0>;
+            bindings = <&mo 3>, <&to 3>;
         };
     };
 
