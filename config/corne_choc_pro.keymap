@@ -95,14 +95,6 @@
         compatible = "zmk,keymap";
 
         base {
-            display-name = "Base";
-
-            // --------------------------------------------------------------------------------
-            // |  TAB |  Q  |  W  |  E  |  R  |  T  |  MUTE |  PP   |  Y  |  U   |  I  |  O  |  P  | BSPC |
-            // | CTRL |  A  |  S  |  D  |  F  |  G  |  LALT |  RALT |  H  |  J   |  K  |  L  |  ;  |  '   |
-            // | SHFT |  Z  |  X  |  C  |  V  |  B  |               |  N  |  M   |  ,  |  .  |  /  | ESC  |
-            //                    | GUI | LWR | SPC |               | ENT | RSE  | ALT |
-
             bindings = <
 &kp LEFT_ALT  &kp DE_A_UMLAUT  &kp U   &kp O            &kp F          &kp DE_Y    &kp ESC    &kp DEL  &kp B  &kp M      &kp D  &kp L  &kp Q     &kp DE_O_UMLAUT
 &kp LCTRL     &kp A            &kp I   &kp E            &kp N          &kp P       &kp ENTER  &kp TAB  &kp G  &kp C      &kp T  &kp R  &kp S     &kp DE_SHARP_S
@@ -112,7 +104,6 @@
         };
 
         sym {
-            display-name = "Symbols";
             bindings = <
 &trans        &kp DE_DQT   &kp DE_TILDE  &kp DE_BSLH  &kp DE_PIPE   &kp DE_COLON  &trans  &trans  &kp DE_UNDER  &kp DE_LBRC  &kp DE_RBRC  &kp DE_PLUS  &kp DE_CARET  &kp DE_DEG
 &trans        &kp DE_DLLR  &kp DE_SEMI   &kp DE_EXCL  &kp DE_QMARK  &kp DE_DOT    &trans  &trans  &kp DE_EQUAL  &kp DE_LPAR  &kp DE_RPAR  &kp DE_LBKT  &kp DE_RBKT   &kp DE_PRCNT
@@ -122,7 +113,6 @@
         };
 
         num {
-            display-name = "Numbers";
             bindings = <
 &trans  &trans  &kp N6  &kp N5  &kp N4  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &kp N0  &kp N3  &kp N2  &kp N1  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
@@ -132,7 +122,6 @@
         };
 
         nav {
-            display-name = "Navigation";
             bindings = <
 &trans     &kp PG_UP     &kp HOME       &kp UP    &kp END    &kp LC(X)  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
 &trans     &kp PG_DN     &kp LEFT       &kp DOWN  &kp RIGHT  &kp LC(C)  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
@@ -151,14 +140,6 @@
         };
 
         sys {
-            display-name = "System";
-
-            // -----------------------------------------------------------------------------------------
-            // |  TAB |  1  |  2  |  3  |  4  |  5    |  LCTRL | RCTRL |  6  |  7  |  8  |  9  |  0  | BSPC |
-            // | CTRL | BT1 | BT2 | BT3 | BT4 | BT5   |  LALT  | RALT  | LFT | DWN |  UP | RGT |     |      |
-            // | SHFT | BTCR| RGB | RST | BOOT| Unlock|        |       |     |     |     |     |     |      |
-            //                    | GUI |     | SPC   |        | ENT   |     | ALT |
-
             bindings = <
 &kp TAB    &kp N1        &kp N2           &kp N3        &kp N4        &kp N5          &kp LCTRL  &kp RCTRL  &kp N6    &kp N7    &kp N8     &kp N9     &kp N0  &kp BSPC
 &kp LCTRL  &bt BT_SEL 0  &bt BT_SEL 1     &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &kp LALT   &kp RALT   &kp LEFT  &kp DOWN  &kp UP     &kp RIGHT  &trans  &trans
