@@ -98,10 +98,10 @@
 
         sym {
             bindings = <
-&trans        &kp DE_DQT   &kp DE_TILDE  &kp DE_BSLH  &kp DE_PIPE   &kp DE_COLON  &trans  &trans  &kp DE_UNDER  &kp DE_LBRC  &kp DE_RBRC  &kp DE_PLUS  &kp DE_CARET  &kp DE_DEG
-&trans        &kp DE_DLLR  &kp DE_SEMI   &kp DE_EXCL  &kp DE_QMARK  &kp DE_DOT    &trans  &trans  &kp DE_EQUAL  &kp DE_LPAR  &kp DE_RPAR  &kp DE_LBKT  &kp DE_RBKT   &kp DE_PRCNT
-&kp DE_GRAVE  &kp DE_SQT   &kp DE_AT     &kp DE_AMPS  &kp DE_HASH   &kp DE_COMMA                  &kp DE_MINUS  &kp DE_LT    &kp DE_GT    &kp DE_FSLH  &kp DE_STAR   &kp DE_EURO
-                                         &trans       &trans        &trans                        &trans        &trans       &to 0
+&trans      &kp DE_AT    &kp DE_LBRC   &kp DE_RBRC   &kp DE_COLON  &kp DE_AMPS   &trans  &trans  &kp DE_CARET  &kp DE_STAR   &kp DE_LT    &kp DE_GT    &kp DE_PRCNT   &kp DE_EURO
+&trans      &kp DE_HASH  &kp DE_LPAR   &kp RPAR      &kp DE_SEMI   &kp DE_EQUAL  &trans  &trans  &kp DE_PLUS   &kp DE_MINUS  &kp DE_LBKT  &kp DE_RBKT  &kp DE_DOLLAR  &kp DE_PIPE
+&kp DE_DEG  &kp DE_DOT   &kp DE_COMMA  &kp DE_TILDE  &kp DE_QMARK  &kp DE_EXCL                   &kp DE_BSLH   &kp DE_FSLH   &kp DE_DQT   &kp DE_SQT   &kp DE_GRAVE   &kp DE_UNDER
+                                       &trans        &trans        &trans                        &trans        &to 0         &trans
             >;
         };
 
