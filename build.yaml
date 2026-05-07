@@ -15,7 +15,5 @@ include:
 
   - board: corne_left
     shield: settings_reset
-    snippet: studio-rpc-usb-uart
   - board: corne_right
     shield: settings_reset
-    snippet: studio-rpc-usb-uart
