@@ -49,8 +49,6 @@
     col-offset = <7>;
 };
 
-
-
 &pinctrl {
     i2c1_default: i2c1_default {
         group1 {
