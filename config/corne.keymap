@@ -107,19 +107,19 @@
 
         num {
             bindings = <
-&trans        &kp DE_DQT  &kp N6  &kp N5  &kp N4  &kp DE_COLON  &trans  &trans  &kp DE_UNDER  &kp DE_LBRC  &kp DE_RBRC  &kp DE_PLUS  &kp DE_CARET  &kp DE_DEG
-&trans        &kp N0      &kp N3  &kp N2  &kp N1  &kp DE_DOT    &trans  &trans  &kp DE_EQUAL  &kp DE_LPAR  &kp DE_RPAR  &kp DE_LBKT  &kp DE_RBKT   &kp DE_PRCNT
-&kp DE_GRAVE  &kp DE_SQT  &kp N9  &kp N8  &kp N7  &kp DE_COMMA                  &kp DE_MINUS  &kp DE_LT    &kp DE_GT    &kp DE_FSLH  &kp DE_STAR   &kp DE_EURO
-                                  &trans  &trans  &trans                        &to 0         &trans       &trans
+&trans  &trans  &kp N6  &kp N5  &kp N4  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp N0  &kp N3  &kp N2  &kp N1  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &kp N9  &kp N8  &kp N7  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans  &trans                  &trans  &trans  &to 0
             >;
         };
 
         nav {
             bindings = <
-&trans     &kp PG_UP     &kp HOME       &kp UP    &kp END    &kp LC(X)  &trans  &trans  &kp PRINTSCREEN  &trans  &trans  &trans  &trans  &to 5
-&trans     &kp PG_DN     &kp LEFT       &kp DOWN  &kp RIGHT  &kp LC(C)  &trans  &trans  &trans           &trans  &trans  &trans  &trans  &trans
-&kp LC(A)  &kp LC(DE_Z)  &kp BACKSPACE  &kp DEL   &kp SPACE  &kp LC(V)                  &trans           &trans  &trans  &trans  &trans  &trans
-                                        &trans    &trans     &to 0                      &trans           &trans  &trans
+&trans           &kp PG_UP  &kp LC(DE_Z)   &kp UP    &kp LC(DE_Y)  &kp LC(X)  &trans  &trans  &none   &trans  &trans  &trans  &trans  &to 5
+&trans           &kp LC(A)  &kp LEFT       &kp DOWN  &kp RIGHT     &kp LC(C)  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&kp PRINTSCREEN  &kp PG_DN  &kp BACKSPACE  &kp DEL   &kp SPACE     &kp LC(V)                  &trans  &trans  &trans  &trans  &trans  &trans
+                                           &trans    &trans        &to 0                      &trans  &trans  &trans
             >;
         };
 
