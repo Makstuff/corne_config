@@ -8,11 +8,16 @@
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/rgb.h>
-#ifndef KEYMAP_DRAWER
-#include "keys_de.h"
-#endif
 
-/ {
+#ifndef KEYMAP_DRAWER
+
+#include "keys_de.h"
+
+#
+
+endif {
+    /
+
     chosen { zmk,physical-layout = &default_layout; };
 };
 
@@ -82,7 +87,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TD_NUM";
             #binding-cells = <0>;
-            bindings = <&mo 2>, <&to 2>;
+            bindings = <&mo 0>, <&to 0>;
         };
 
         td_nav: td_nav {
@@ -98,10 +103,10 @@
 
         base {
             bindings = <
-&kp LEFT_ALT  &kp DE_A_UMLAUT  &kp U   &kp O            &kp F          &kp DE_Y    &kp ESC    &kp DEL  &kp B  &kp M      &kp D  &kp L  &kp Q     &kp DE_O_UMLAUT
-&kp LCTRL     &kp A            &kp I   &kp E            &kp N          &kp P       &kp ENTER  &kp TAB  &kp G  &kp C      &kp T  &kp R  &kp S     &kp DE_SHARP_S
-&mirror       &period          &comma  &kp DE_U_UMLAUT  &kp H          &kp J                           &kp V  &kp W      &kp K  &kp X  &kp DE_Z  &minus
-                                       &mo 3            &kp BACKSPACE  &kp LSHIFT                      &mo 2  &kp SPACE  &mo 1
+&kp LEFT_ALT  &kp DE_A_UMLAUT  &kp U   &kp O            &kp F       &kp DE_Y  &kp ENTER  &kp TAB  &kp B  &kp M      &kp D  &kp L  &kp Q     &kp DE_O_UMLAUT
+&kp LCTRL     &kp A            &kp I   &kp E            &kp N       &kp P     &kp ESC    &kp DEL  &kp G  &kp C      &kp T  &kp R  &kp S     &kp DE_SHARP_S
+&mirror       &period          &comma  &kp DE_U_UMLAUT  &kp H       &kp J                         &kp V  &kp W      &kp K  &kp X  &kp DE_Z  &minus
+                                       &kp BACKSPACE    &kp LSHIFT  &mo 3                         &mo 2  &kp SPACE  &mo 1
             >;
         };
 
@@ -116,10 +121,10 @@
 
         num {
             bindings = <
-&trans  &trans  &kp N6  &kp N5  &kp N4  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp N0  &kp N3  &kp N2  &kp N1  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &kp N9  &kp N8  &kp N7  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans                  &to 0   &trans  &trans
+&trans        &kp DE_DQT  &kp N6  &kp N5  &kp N4  &kp DE_COLON  &trans  &trans  &kp DE_UNDER  &kp DE_LBRC  &kp DE_RBRC  &kp DE_PLUS  &kp DE_CARET  &kp DE_DEG
+&trans        &kp N0      &kp N3  &kp N2  &kp N1  &kp DE_DOT    &trans  &trans  &kp DE_EQUAL  &kp DE_LPAR  &kp DE_RPAR  &kp DE_LBKT  &kp DE_RBKT   &kp DE_PRCNT
+&kp DE_GRAVE  &kp DE_SQT  &kp N9  &kp N8  &kp N7  &kp DE_COMMA                  &kp DE_MINUS  &kp DE_LT    &kp DE_GT    &kp DE_FSLH  &kp DE_STAR   &kp DE_EURO
+                                  &trans  &trans  &trans                        &trans        &trans       &to 0
             >;
         };
 
@@ -151,12 +156,5 @@
         };
     };
 
-    conditional_layers {
-        compatible = "zmk,conditional-layers";
-
-        numsym {
-            if-layers = <2>;
-            then-layer = <1>;
-        };
-    };
+    conditional_layers { compatible = "zmk,conditional-layers"; };
 };
