@@ -8,13 +8,10 @@
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/rgb.h>
-
 #include "keys_de.h"
 
 / {
-    chosen {
-        zmk,physical-layout = &default_layout;
-    };
+    chosen { zmk,physical-layout = &default_layout; };
 };
 
 / {
@@ -83,7 +80,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TD_NUM";
             #binding-cells = <0>;
-            bindings = <&mo 0>, <&to 0>;
+            bindings = <&mo 2>, <&to 2>;
         };
 
         td_nav: td_nav {
