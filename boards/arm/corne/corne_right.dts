@@ -49,13 +49,7 @@
     col-offset = <7>;
 };
 
-&right_ex1_encoder {
-    status = "okay";
-};
 
-&right_ex2_encoder {
-    status = "okay";
-};
 
 &pinctrl {
     i2c1_default: i2c1_default {
