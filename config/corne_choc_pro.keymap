@@ -10,15 +10,13 @@
 #include <dt-bindings/zmk/rgb.h>
 
 #ifndef KEYMAP_DRAWER
-
 #include "keys_de.h"
+#endif
 
-#
-
-endif {
-    /
-
-    chosen { zmk,physical-layout = &default_layout; };
+/ {
+    chosen {
+        zmk,physical-layout = &default_layout;
+    };
 };
 
 / {
