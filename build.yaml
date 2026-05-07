@@ -11,7 +11,6 @@ include:
     snippet: studio-rpc-usb-uart
     cmake-args: -DCONFIG_ZMK_STUDIO=y
   - board: corne_right
-    snippet: studio-rpc-usb-uart
 
   - board: corne_left
     shield: settings_reset
