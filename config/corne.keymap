@@ -136,7 +136,7 @@
             bindings = <
 &none  &none         &none            &none         &none         &none           &none        &none        &rgb_ug RGB_COLOR_HSB(0,100,50)  &rgb_ug RGB_COLOR_HSB(126,100,50)  &rgb_ug RGB_COLOR_HSB(244,100,50)  &rgb_ug RGB_COLOR_HSB(309,100,50)  &rgb_ug RGB_COLOR_HSB(61,100,50)  &to 0
 &none  &bt BT_SEL 0  &bt BT_SEL 1     &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &bootloader  &bootloader  &rgb_ug RGB_HUI                  &rgb_ug RGB_SAI                    &rgb_ug RGB_BRI                    &rgb_ug RGB_SPI                    &rgb_ug RGB_EFF                   &none
-&none  &bt BT_CLR    &rgb_ug RGB_TOG  &none         &none         &studio_unlock                            &rgb_ug RGB_HUD                  &rgb_ug RGB_SAD                    &rgb_ug RGB_BRD                    &rgb_ug RGB_SPD                    &rgb_ug RGB_EFR                   &none
+&none  &bt BT_CLR    &rgb_ug RGB_TOG  &none         &none         &none                                     &rgb_ug RGB_HUD                  &rgb_ug RGB_SAD                    &rgb_ug RGB_BRD                    &rgb_ug RGB_SPD                    &rgb_ug RGB_EFR                   &none
                                       &none         &none         &none                                     &none                            &none                              &none
             >;
         };
