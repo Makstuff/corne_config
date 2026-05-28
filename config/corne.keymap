@@ -66,7 +66,6 @@
             compatible = "zmk,behavior-toggle-layer";
             label = "TO_LOCK";
             #binding-cells = <1>;
-            locking;
         };
     };
 
