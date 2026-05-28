@@ -62,9 +62,9 @@
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
 
-        to_lock: to_lock {
+        tog_on: tog_on {
             compatible = "zmk,behavior-toggle-layer";
-            label = "TO_LOCK";
+            label = "TOG_ON";
             #binding-cells = <1>;
         };
     };
@@ -83,7 +83,7 @@
 
         num {
             bindings = <
-&trans  &kp E   &kp N6  &kp N5  &kp N4  &kp DE_MINUS  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &to 1
+&trans  &kp E   &kp N6  &kp N5  &kp N4  &kp DE_MINUS  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &tog_on 1
 &trans  &kp N0  &kp N3  &kp N2  &kp N1  &kp DE_DOT    &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &kp N9  &kp N8  &kp N7  &kp DE_COMMA                  &trans  &trans  &trans  &trans  &trans  &trans
                         &trans  &trans  &trans                        &to 0   &trans  &trans
@@ -92,7 +92,7 @@
 
         sym {
             bindings = <
-&kp DE_SECT  &kp DE_SQT  &kp DE_DLLR   &kp DE_LBRC   &kp DE_RBRC   &kp DE_CARET  &trans  &trans  &kp DE_PIPE   &kp DE_MINUS  &kp DE_LT    &kp DE_GT    &kp DE_GRAVE  &to 2
+&kp DE_SECT  &kp DE_SQT  &kp DE_DLLR   &kp DE_LBRC   &kp DE_RBRC   &kp DE_CARET  &trans  &trans  &kp DE_PIPE   &kp DE_MINUS  &kp DE_LT    &kp DE_GT    &kp DE_GRAVE  &tog_on 2
 &kp DE_EURO  &kp DE_DQT  &kp DE_SEMI   &kp DE_LPAR   &kp DE_RPAR   &kp DE_HASH   &trans  &trans  &kp DE_AMPS   &kp DE_EQUAL  &kp DE_FSLH  &kp DE_STAR  &kp DE_EXCL   &kp DE_BSLH
 &kp DE_DEG   &kp DE_DOT  &kp DE_COMMA  &kp DE_UNDER  &kp DE_COLON  &kp DE_AT                     &kp DE_PRCNT  &kp DE_LBKT   &kp DE_RBKT  &kp DE_PLUS  &kp DE_TILDE  &kp DE_QMARK
                                        &trans        &trans        &trans                        &to 0         &trans        &trans
@@ -101,7 +101,7 @@
 
         nav {
             bindings = <
-&kp LC(D)     &kp PG_DN     &kp PG_UP      &kp DOWN   &kp UP     &kp PRINTSCREEN  &trans  &to 5   &trans  &trans  &trans  &trans  &trans  &to 3
+&kp LC(D)     &kp PG_DN     &kp PG_UP      &kp DOWN   &kp UP     &kp PRINTSCREEN  &trans  &to 5   &trans  &trans  &trans  &trans  &trans  &tog_on 3
 &to 4         &kp LC(DE_Z)  &kp BACKSPACE  &kp LEFT   &kp RIGHT  &kp SPACE        &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
 &kp LC(DE_Y)  &kp LC(A)     &kp LC(X)      &kp LC(C)  &kp LC(V)  &kp DEL                          &trans  &trans  &trans  &trans  &trans  &trans
                                            &trans     &trans     &trans                           &to 0   &trans  &trans
