@@ -9,25 +9,6 @@
 };
 
 / {
-    conditional_layers {
-        compatible = "zmk,conditional-layers";
-
-        num_lock {
-            if-layers = <6>;
-            then-layer = <1>;
-        };
-
-        sym_lock {
-            if-layers = <7>;
-            then-layer = <2>;
-        };
-
-        nav_lock {
-            if-layers = <8>;
-            then-layer = <3>;
-        };
-    };
-
     macros {
         mirror: mirror {
             compatible = "zmk,behavior-macro";
@@ -81,10 +62,25 @@
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
 
-        tog_on: tog_on {
-            compatible = "zmk,behavior-toggle-layer";
-            label = "TOG_ON";
-            #binding-cells = <1>;
+        mo_to_1: mo_to_1 {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&mo 1>, <&to 1>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        mo_to_2: mo_to_2 {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&mo 2>, <&to 2>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        mo_to_3: mo_to_3 {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&mo 3>, <&to 3>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
         };
     };
 
@@ -96,13 +92,13 @@
 &kp LEFT_ALT  &kp DE_A_UMLAUT  &kp U   &kp O            &kp F          &kp DE_Y   &kp ENTER  &kp TAB  &kp B      &kp M  &kp D  &kp L  &kp Q     &kp DE_O_UMLAUT
 &kp LCTRL     &kp A            &kp I   &kp E            &kp N          &kp P      &kp ESC    &kp DEL  &kp G      &kp C  &kp T  &kp R  &kp S     &kp DE_SHARP_S
 &kp LSHFT     &period          &comma  &kp DE_U_UMLAUT  &kp H          &kp J                          &kp V      &kp W  &kp K  &kp X  &kp DE_Z  &qmark
-                                       &mo 3            &kp BACKSPACE  &kp SPACE                      &kp LSHFT  &mo 2  &mo 1
+                                       &mo_to_3         &kp BACKSPACE  &kp SPACE                      &kp LSHFT  &mo_to_2  &mo_to_1
             >;
         };
 
         num {
             bindings = <
-&trans  &kp E   &kp N6  &kp N5  &kp N4  &kp DE_MINUS  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &tog_on 6
+&trans  &kp E   &kp N6  &kp N5  &kp N4  &kp DE_MINUS  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &kp N0  &kp N3  &kp N2  &kp N1  &kp DE_DOT    &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &kp N9  &kp N8  &kp N7  &kp DE_COMMA                  &trans  &trans  &trans  &trans  &trans  &trans
                         &trans  &trans  &trans                        &to 0   &trans  &trans
@@ -111,7 +107,7 @@
 
         sym {
             bindings = <
-&kp DE_SECT  &kp DE_SQT  &kp DE_DLLR   &kp DE_LBRC   &kp DE_RBRC   &kp DE_CARET  &trans  &trans  &kp DE_PIPE   &kp DE_MINUS  &kp DE_LT    &kp DE_GT    &kp DE_GRAVE  &tog_on 7
+&kp DE_SECT  &kp DE_SQT  &kp DE_DLLR   &kp DE_LBRC   &kp DE_RBRC   &kp DE_CARET  &trans  &trans  &kp DE_PIPE   &kp DE_MINUS  &kp DE_LT    &kp DE_GT    &kp DE_GRAVE  &trans
 &kp DE_EURO  &kp DE_DQT  &kp DE_SEMI   &kp DE_LPAR   &kp DE_RPAR   &kp DE_HASH   &trans  &trans  &kp DE_AMPS   &kp DE_EQUAL  &kp DE_FSLH  &kp DE_STAR  &kp DE_EXCL   &kp DE_BSLH
 &kp DE_DEG   &kp DE_DOT  &kp DE_COMMA  &kp DE_UNDER  &kp DE_COLON  &kp DE_AT                     &kp DE_PRCNT  &kp DE_LBKT   &kp DE_RBKT  &kp DE_PLUS  &kp DE_TILDE  &kp DE_QMARK
                                        &trans        &trans        &trans                        &to 0         &trans        &trans
@@ -120,7 +116,7 @@
 
         nav {
             bindings = <
-&kp LC(D)     &kp PG_DN     &kp PG_UP      &kp DOWN   &kp UP     &kp PRINTSCREEN  &trans  &to 5   &trans  &trans  &trans  &trans  &trans  &tog_on 8
+&kp LC(D)     &kp PG_DN     &kp PG_UP      &kp DOWN   &kp UP     &kp PRINTSCREEN  &trans  &to 5   &trans  &trans  &trans  &trans  &trans  &trans
 &to 4         &kp LC(DE_Z)  &kp BACKSPACE  &kp LEFT   &kp RIGHT  &kp SPACE        &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
 &kp LC(DE_Y)  &kp LC(A)     &kp LC(X)      &kp LC(C)  &kp LC(V)  &kp DEL                          &trans  &trans  &trans  &trans  &trans  &trans
                                            &trans     &trans     &trans                           &to 0   &trans  &trans
@@ -142,33 +138,6 @@
 &none  &bt BT_SEL 0  &bt BT_SEL 1     &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &bootloader  &bootloader  &rgb_ug RGB_HUI                  &rgb_ug RGB_SAI                    &rgb_ug RGB_BRI                    &rgb_ug RGB_SPI                    &rgb_ug RGB_EFF                   &none
 &none  &bt BT_CLR    &rgb_ug RGB_TOG  &none         &none         &none                                   &rgb_ug RGB_HUD                  &rgb_ug RGB_SAD                    &rgb_ug RGB_BRD                    &rgb_ug RGB_SPD                    &rgb_ug RGB_EFR                   &none
                                       &none         &none         &none                                   &to 0                            &none                              &none
-            >;
-        };
-
-        num_lock {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans                  &trans  &trans  &trans
-            >;
-        };
-
-        sym_lock {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans                  &trans  &trans  &trans
-            >;
-        };
-
-        nav_lock {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans                  &trans  &trans  &trans
             >;
         };
     };
