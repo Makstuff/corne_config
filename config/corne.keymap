@@ -107,7 +107,7 @@
 
         sym {
             bindings = <
-&kp DE_SECT  &kp DE_SQT  &kp DE_DLLR   &kp DE_LBRC   &kp DE_RBRC   &kp DE_CARET  &trans  &trans  &kp DE_PIPE   &kp DE_MINUS  &kp DE_LT    &kp DE_GT    &kp DE_GRAVE  &trans
+&kp DE_SECT  &kp DE_SQT  &kp DE_DLLR   &kp DE_LBRC   &kp DE_RBRC   &kp DE_CARET  &trans  &trans  &kp DE_PIPE   &kp DE_MINUS  &kp DE_LT    &kp DE_GT    &kp DE_GRAVE  &kp DE_ACUTE
 &kp DE_EURO  &kp DE_DQT  &kp DE_SEMI   &kp DE_LPAR   &kp DE_RPAR   &kp DE_HASH   &trans  &trans  &kp DE_AMPS   &kp DE_EQUAL  &kp DE_FSLH  &kp DE_STAR  &kp DE_EXCL   &kp DE_BSLH
 &kp DE_DEG   &kp DE_DOT  &kp DE_COMMA  &kp DE_UNDER  &kp DE_COLON  &kp DE_AT                     &kp DE_PRCNT  &kp DE_LBKT   &kp DE_RBKT  &kp DE_PLUS  &kp DE_TILDE  &kp DE_QMARK
                                        &trans        &trans        &trans                        &to 0         &trans        &trans
