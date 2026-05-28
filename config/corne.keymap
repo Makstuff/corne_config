@@ -61,6 +61,12 @@
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
+
+        to_lock: to_lock {
+            compatible = "zmk,behavior-toggle-layer";
+            label = "TO_LOCK";
+            #binding-cells = <1>;
+        };
     };
 
     keymap {
