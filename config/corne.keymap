@@ -78,12 +78,20 @@
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
 
-        mo_sym: mo_sym {
+        morph_sym: morph_sym {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            bindings = <&lt 1 TAB>, <&to 1>;
-
+            bindings = <&kp TAB>, <&to 1>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        mo_sym: mo_sym {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <0>;
+            flavor = "hold-preferred";
+            tapping-term-ms = <200>;
+            retro-tap;
+            bindings = <&mo 1>, <&morph_sym>;
         };
 
         mo_nav: mo_nav {
