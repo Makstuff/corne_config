@@ -17,14 +17,6 @@
 };
 
 / {
-    conditional_layers {
-        compatible = "zmk,conditional-layers";
-
-        num_sym {
-            if-layers = <2>;
-            then-layer = <1>;
-        };
-    };
 
     macros {
         mirror: mirror {
@@ -78,20 +70,12 @@
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
 
-        morph_sym: morph_sym {
+        mo_sym: mo_sym {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            bindings = <&kp TAB>, <&to 1>;
-            mods = <(MOD_LSFT|MOD_RSFT)>;
-        };
+            bindings = <&mo 1>, <&to 1>;
 
-        mo_sym: mo_sym {
-            compatible = "zmk,behavior-hold-tap";
-            #binding-cells = <0>;
-            flavor = "hold-preferred";
-            tapping-term-ms = <200>;
-            retro-tap;
-            bindings = <&mo 1>, <&morph_sym>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
         };
 
         mo_nav: mo_nav {
@@ -126,9 +110,9 @@
 
         num {
             bindings = <
-&trans  &kp E       &kp N6  &kp N5  &kp N4  &trans        &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp N0      &kp N3  &kp N2  &kp N1  &kp DE_COMMA  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp DE_DOT  &kp N9  &kp N8  &kp N7  &trans                        &trans  &trans  &trans  &trans  &trans  &trans
+&kp DE_ACUTE  &kp E       &kp N6  &kp N5  &kp N4  &kp DE_PIPE   &trans  &trans  &kp DE_TILDE  &kp DE_PLUS   &kp DE_COLON  &kp DE_DLLR  &kp DE_STAR  &kp DE_DEG
+&kp DE_GRAVE  &kp N0      &kp N3  &kp N2  &kp N1  &kp DE_COMMA  &trans  &trans  &kp DE_UNDER  &kp DE_EQUAL  &kp DE_LPAR   &kp DE_RPAR  &kp DE_SEMI  &kp DE_CARET
+&kp DE_SECT   &kp DE_DOT  &kp N9  &kp N8  &kp N7  &kp DE_AMPS                   &kp DE_PRCNT  &kp DE_MINUS  &kp DE_LT     &kp DE_GT    &kp DE_FSLH  &kp DE_EURO
                             &trans  &trans  &trans                        &to 0   &trans  &trans
             >;
         };
