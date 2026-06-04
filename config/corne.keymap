@@ -88,7 +88,7 @@
             flavor = "tap-preferred";
             tapping-term-ms = <200>;
             retro-tap;
-            bindings = <&mo_sym>, <&kp TAB>;
+            bindings = <&mo_sym &kp TAB>;
         };
     };
 
