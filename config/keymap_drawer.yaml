@@ -30,7 +30,7 @@ layers:
     - ["⌥", Ä, U, O, F, Y, "⏎", "⇥", B, M, D, L, Q, ß]
     - ["⌃", {t: "A", type: "homerow"}, {t: "I", type: "homerow"}, {t: "E", type: "homerow"}, {t: "N", type: "homerow"}, P, "⎋", "⌦", G, {t: "C", type: "homerow"}, {t: "T", type: "homerow"}, {t: "R", type: "homerow"}, {t: "S", type: "homerow"}, Ö]
     - ["⇧", {t: ".", s: "'"}, {t: ",", s: "_"}, Ü, H, J, V, W, K, X, Z, "❖"]
-    - ["✥", "⌫", "␣", {t: "⏎", s: "⇧"}, "✧", "123"]
+    - ["✥", "⌫", "␣", {t: "⏎", s: "⇧"}, {t: "⇥", h: "✧"}, "123"]
   SYM:
     - ["´", "'", '"', '\', "!", "|", {t: "▽", type: "trans"}, {t: "▽", type: "trans"}, "~", "+", ":", "$", "*", "°"]
     - ["`", {t: "@", type: "homerow"}, {t: "[", type: "homerow"}, {t: "]", type: "homerow"}, {t: "#", type: "homerow"}, ",", {t: "▽", type: "trans"}, {t: "▽", type: "trans"}, "_", {t: ";", type: "homerow"}, {t: ")", type: "homerow"}, {t: "(", type: "homerow"}, {t: "=", type: "homerow"}, "^"]
