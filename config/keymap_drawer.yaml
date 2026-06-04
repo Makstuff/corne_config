@@ -10,13 +10,13 @@ draw_config:
       font-size: 25px !important;
     }
     /* All normal keys light slate grey */
-    g rect {
+    g.key rect {
       fill: #e2e8f0 !important;
       stroke: #64748b !important;
     }
     /* Transparent keys ghosted out with dashed border */
     g.trans rect {
-      fill: transparent !important;
+      fill: none !important;
       stroke-dasharray: 4;
     }
     /* Homerow keys white (overrides transparent fill but keeps dashed border if both) */
@@ -42,9 +42,9 @@ layers:
     - [{t: "▽", type: "trans"}, ".", "9", "8", "7", {t: "▽", type: "trans"}, {t: "▽", type: "trans"}, {t: "▽", type: "trans"}, {t: "▽", type: "trans"}, {t: "▽", type: "trans"}, {t: "▽", type: "trans"}, {t: "▽", type: "trans"}]
     - [{t: "▽", type: "trans"}, {t: "▽", type: "trans"}, {t: "▽", type: "trans"}, "⌂", {t: "▽", type: "trans"}, {t: "▽", type: "trans"}]
   NAV:
-    - ["⌃D", "⇟", "⇞", "↑", "↓", "⎙", {t: "▽", type: "trans"}, "⚙", F1, F2, F3, F4, {t: "▽", type: "trans"}, {t: "▽", type: "trans"}]
-    - ["⇋", {t: "⌃Z", type: "homerow"}, {t: "⌫", type: "homerow"}, {t: "←", type: "homerow"}, {t: "→", type: "homerow"}, "␣", {t: "▽", type: "trans"}, {t: "▽", type: "trans"}, F5, {t: "F6", type: "homerow"}, {t: "F7", type: "homerow"}, {t: "F8", type: "homerow"}, {t: "▽", type: "homerow trans"}, {t: "▽", type: "trans"}]
-    - ["⌃Y", "⌃A", "⌃X", "⌃C", "⌃V", "⌦", F9, F10, F11, F12, {t: "▽", type: "trans"}, {t: "▽", type: "trans"}]
+    - ["⌃D", "⇟", "⇞", "↑", "↓", "⎙", {t: "▽", type: "trans"}, "⚙", {t: "▽", type: "trans"}, F1, F2, F3, F4, {t: "▽", type: "trans"}]
+    - ["⇋", {t: "⌃Z", type: "homerow"}, {t: "⌫", type: "homerow"}, {t: "←", type: "homerow"}, {t: "→", type: "homerow"}, "␣", {t: "▽", type: "trans"}, {t: "▽", type: "trans"}, {t: "▽", type: "trans"}, {t: "F5", type: "homerow"}, {t: "F6", type: "homerow"}, {t: "F7", type: "homerow"}, {t: "F8", type: "homerow"}, {t: "▽", type: "trans"}]
+    - ["⌃Y", "⌃A", "⌃X", "⌃C", "⌃V", "⌦", {t: "▽", type: "trans"}, F9, F10, F11, F12, {t: "▽", type: "trans"}]
     - [{t: "▽", type: "trans"}, {t: "▽", type: "trans"}, {t: "▽", type: "trans"}, "⌂", {t: "▽", type: "trans"}, {t: "▽", type: "trans"}]
   MIR:
     - [{t: "▽", type: "trans"}, Q, L, D, M, B, {t: "▽", type: "trans"}, {t: "▽", type: "trans"}, {t: "▽", type: "trans"}, {t: "▽", type: "trans"}, {t: "▽", type: "trans"}, {t: "▽", type: "trans"}, {t: "▽", type: "trans"}, {t: "▽", type: "trans"}]
