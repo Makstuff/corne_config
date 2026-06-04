@@ -4,20 +4,15 @@
 #include <dt-bindings/zmk/rgb.h>
 #include "keys_de.h"
 
-&lt {
-    retro-tap;
-};
+&lt { retro-tap; };
 
-&mt {
-    retro-tap;
-};
+&mt { retro-tap; };
 
 / {
     chosen { zmk,physical-layout = &default_layout; };
 };
 
 / {
-
     macros {
         mirror: mirror {
             compatible = "zmk,behavior-macro";
@@ -92,19 +87,19 @@
 
         base {
             bindings = <
-&kp LEFT_ALT  &kp DE_A_UMLAUT  &kp U   &kp O            &kp F          &kp DE_Y   &kp ENTER  &kp TAB  &kp B      &kp M    &kp D    &kp L  &kp Q     &kp DE_SHARP_S
-&kp LCTRL     &kp A            &kp I   &kp E            &kp N          &kp P      &kp ESC    &kp DEL  &kp G      &kp C    &kp T    &kp R  &kp S     &kp DE_O_UMLAUT
-&kp LSHFT     &period          &comma  &kp DE_U_UMLAUT  &kp H          &kp J                          &kp V      &kp W    &kp K    &kp X  &kp DE_Z  &kp LGUI
+&kp LEFT_ALT  &kp DE_A_UMLAUT  &kp U   &kp O            &kp F          &kp DE_Y   &kp ENTER  &kp TAB  &kp B            &kp M    &kp D    &kp L  &kp Q     &kp DE_SHARP_S
+&kp LCTRL     &kp A            &kp I   &kp E            &kp N          &kp P      &kp ESC    &kp DEL  &kp G            &kp C    &kp T    &kp R  &kp S     &kp DE_O_UMLAUT
+&kp LSHFT     &period          &comma  &kp DE_U_UMLAUT  &kp H          &kp J                          &kp V            &kp W    &kp K    &kp X  &kp DE_Z  &kp LGUI
                                        &mo_nav          &kp BACKSPACE  &kp SPACE                      &mt LSHFT ENTER  &mo_sym  &mo_num
             >;
         };
 
         sym {
             bindings = <
-&kp DE_ACUTE  &kp DE_SQT  &kp DE_DQT   &kp DE_BSLH  &kp DE_EXCL  &kp DE_PIPE   &trans  &trans  &kp DE_TILDE  &kp DE_PLUS   &kp DE_COLON  &kp DE_DLLR  &kp DE_STAR  &kp DE_DEG
-&kp DE_GRAVE  &kp DE_AT   &kp DE_LBKT  &kp DE_RBKT  &kp DE_HASH  &kp DE_COMMA  &trans  &trans  &kp DE_UNDER  &kp DE_EQUAL  &kp DE_LPAR   &kp DE_RPAR  &kp DE_SEMI  &kp DE_CARET
-&kp DE_SECT   &kp DE_DOT  &kp DE_LBRC  &kp DE_RBRC  &kp DE_QMARK &kp DE_AMPS                   &kp DE_PRCNT  &kp DE_MINUS  &kp DE_LT     &kp DE_GT    &kp DE_FSLH  &kp DE_EURO
-                                       &trans       &trans       &trans                        &to 0         &trans        &trans
+&kp DE_ACUTE  &kp DE_SQT  &kp DE_DQT   &kp DE_BSLH  &kp DE_EXCL   &kp DE_PIPE   &trans  &trans  &kp DE_TILDE  &kp DE_PLUS   &kp DE_COLON  &kp DE_DLLR  &kp DE_STAR   &kp DE_DEG
+&kp DE_GRAVE  &kp DE_AT   &kp DE_LBKT  &kp DE_RBKT  &kp DE_HASH   &kp DE_COMMA  &trans  &trans  &kp DE_UNDER  &kp DE_SEMI   &kp DE_RPAR   &kp DE_LPAR  &kp DE_EQUAL  &kp DE_CARET
+&kp DE_SECT   &kp DE_DOT  &kp DE_LBRC  &kp DE_RBRC  &kp DE_QMARK  &kp DE_AMPS                   &kp DE_PRCNT  &kp DE_MINUS  &kp DE_GT     &kp DE_LT    &kp DE_FSLH   &kp DE_EURO
+                                       &trans       &trans        &trans                        &to 0         &trans        &trans
             >;
         };
 
@@ -113,15 +108,15 @@
 &kp DE_ACUTE  &kp E       &kp N6  &kp N5  &kp N4  &kp DE_PIPE   &trans  &trans  &kp DE_TILDE  &kp DE_PLUS   &kp DE_COLON  &kp DE_DLLR  &kp DE_STAR  &kp DE_DEG
 &kp DE_GRAVE  &kp N0      &kp N3  &kp N2  &kp N1  &kp DE_COMMA  &trans  &trans  &kp DE_UNDER  &kp DE_EQUAL  &kp DE_LPAR   &kp DE_RPAR  &kp DE_SEMI  &kp DE_CARET
 &kp DE_SECT   &kp DE_DOT  &kp N9  &kp N8  &kp N7  &kp DE_AMPS                   &kp DE_PRCNT  &kp DE_MINUS  &kp DE_LT     &kp DE_GT    &kp DE_FSLH  &kp DE_EURO
-                            &trans  &trans  &trans                        &to 0   &trans  &trans
+                                  &trans  &trans  &trans                        &to 0         &trans        &trans
             >;
         };
 
         nav {
             bindings = <
-&kp LC(D)     &kp PG_DN     &kp PG_UP      &kp UP     &kp DOWN   &kp PRINTSCREEN  &trans  &to 5   &trans   &kp F1   &kp F2   &kp F3   &kp F4   &trans
-&to 4         &kp LC(DE_Z)  &kp BACKSPACE  &kp LEFT   &kp RIGHT  &kp SPACE        &trans  &trans  &trans   &kp F5   &kp F6   &kp F7   &kp F8   &trans
-&kp LC(DE_Y)  &kp LC(A)     &kp LC(X)      &kp LC(C)  &kp LC(V)  &kp DEL                          &trans   &kp F9   &kp F10  &kp F11  &kp F12  &trans
+&kp LC(D)     &kp PG_DN     &kp PG_UP      &kp UP     &kp DOWN   &kp PRINTSCREEN  &trans  &to 5   &trans  &kp F1  &kp F2   &kp F3   &kp F4   &trans
+&to 4         &kp LC(DE_Z)  &kp BACKSPACE  &kp LEFT   &kp RIGHT  &kp SPACE        &trans  &trans  &trans  &kp F5  &kp F6   &kp F7   &kp F8   &trans
+&kp LC(DE_Y)  &kp LC(A)     &kp LC(X)      &kp LC(C)  &kp LC(V)  &kp DEL                          &trans  &kp F9  &kp F10  &kp F11  &kp F12  &trans
                                            &trans     &trans     &trans                           &to 0   &trans  &trans
             >;
         };
