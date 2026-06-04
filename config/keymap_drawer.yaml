@@ -33,13 +33,13 @@ layers:
     - ["✥", "⌫", "␣", {t: "⏎", s: "⇧"}, "✧", "123"]
   SYM:
     - ["´", "'", '"', '\', "!", "|", {t: "▽", type: "trans"}, {t: "▽", type: "trans"}, "~", "+", ":", "$", "*", "°"]
-    - ["`", {t: "@", type: "homerow"}, {t: "[", type: "homerow"}, {t: "]", type: "homerow"}, {t: "#", type: "homerow"}, ",", {t: "▽", type: "trans"}, {t: "▽", type: "trans"}, "_", {t: "=", type: "homerow"}, {t: "(", type: "homerow"}, {t: ")", type: "homerow"}, {t: ";", type: "homerow"}, "^"]
-    - ["§", ".", "{", "}", "?", "&", "%", "-", "<", ">", "/", "€"]
+    - ["`", {t: "@", type: "homerow"}, {t: "[", type: "homerow"}, {t: "]", type: "homerow"}, {t: "#", type: "homerow"}, ",", {t: "▽", type: "trans"}, {t: "▽", type: "trans"}, "_", {t: ";", type: "homerow"}, {t: ")", type: "homerow"}, {t: "(", type: "homerow"}, {t: "=", type: "homerow"}, "^"]
+    - ["§", ".", "{", "}", "?", "&", "%", "-", ">", "<", "/", "€"]
     - [{t: "▽", type: "trans"}, {t: "▽", type: "trans"}, {t: "▽", type: "trans"}, "⌂", {t: "▽", type: "trans"}, {t: "▽", type: "trans"}]
   NUM:
     - ["´", E, "6", "5", "4", "|", {t: "▽", type: "trans"}, {t: "▽", type: "trans"}, "~", "+", ":", "$", "*", "°"]
-    - ["`", {t: "0", type: "homerow"}, {t: "3", type: "homerow"}, {t: "2", type: "homerow"}, {t: "1", type: "homerow"}, ",", {t: "▽", type: "trans"}, {t: "▽", type: "trans"}, "_", {t: "=", type: "homerow"}, {t: "(", type: "homerow"}, {t: ")", type: "homerow"}, {t: ";", type: "homerow"}, "^"]
-    - ["§", ".", "9", "8", "7", "&", "%", "-", "<", ">", "/", "€"]
+    - ["`", {t: "0", type: "homerow"}, {t: "3", type: "homerow"}, {t: "2", type: "homerow"}, {t: "1", type: "homerow"}, ",", {t: "▽", type: "trans"}, {t: "▽", type: "trans"}, "_", {t: ";", type: "homerow"}, {t: ")", type: "homerow"}, {t: "(", type: "homerow"}, {t: "=", type: "homerow"}, "^"]
+    - ["§", ".", "9", "8", "7", "&", "%", "-", ">", "<", "/", "€"]
     - [{t: "▽", type: "trans"}, {t: "▽", type: "trans"}, {t: "▽", type: "trans"}, "⌂", {t: "▽", type: "trans"}, {t: "▽", type: "trans"}]
   NAV:
     - ["⌃D", "⇟", "⇞", "↑", "↓", "⎙", {t: "▽", type: "trans"}, "⚙", {t: "▽", type: "trans"}, F1, F2, F3, F4, {t: "▽", type: "trans"}]
