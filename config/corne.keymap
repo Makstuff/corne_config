@@ -7,7 +7,7 @@
 
 
 &mt {
-    tapping-term-ms = <1000>;
+    tapping-term-ms = <500>;
 };
 
 / {
@@ -72,7 +72,7 @@
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             flavor = "hold-preferred";
-            tapping-term-ms = <1000>;
+            tapping-term-ms = <500>;
             bindings = <&mo>, <&tab_to>;
         };
     };
