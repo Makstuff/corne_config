@@ -4,13 +4,11 @@
 #include <dt-bindings/zmk/rgb.h>
 #include "keys_de.h"
 
-&lt {
-    retro-tap;
-    flavor = "balanced";
-    tapping-term-ms = <200>;
-};
 
-&mt { retro-tap; };
+
+&mt {
+    tapping-term-ms = <1000>;
+};
 
 / {
     chosen { zmk,physical-layout = &default_layout; };
@@ -18,20 +16,6 @@
 
 / {
     macros {
-        mirror: mirror {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings =
-                <&to 4>,
-                <&macro_press>,
-                <&kp LCTRL>,
-                <&macro_pause_for_release>,
-                <&macro_release>,
-                <&kp LCTRL>;
-
-            label = "MIRROR";
-        };
-
         kpb: kpb {
             compatible = "zmk,behavior-macro-one-param";
             #binding-cells = <1>;
@@ -87,9 +71,8 @@
         mo_sym: mo_sym {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
-            flavor = "balanced";
-            tapping-term-ms = <200>;
-            retro-tap;
+            flavor = "hold-preferred";
+            tapping-term-ms = <1000>;
             bindings = <&mo>, <&tab_to>;
         };
     };
