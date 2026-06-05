@@ -4,7 +4,11 @@
 #include <dt-bindings/zmk/rgb.h>
 #include "keys_de.h"
 
-&lt { retro-tap; };
+&lt {
+    retro-tap;
+    flavor = "balanced";
+    tapping-term-ms = <200>;
+};
 
 &mt { retro-tap; };
 
@@ -73,11 +77,20 @@
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
 
-        mo_sym: mo_sym {
+        tab_to: tab_to {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            bindings = <&lt 1 TAB>, <&to 1>;
+            bindings = <&kp TAB>, <&to 1>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        mo_sym: mo_sym {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            flavor = "balanced";
+            tapping-term-ms = <200>;
+            retro-tap;
+            bindings = <&mo>, <&tab_to>;
         };
     };
 
@@ -89,7 +102,7 @@
 &kp LEFT_ALT  &kp DE_A_UMLAUT  &kp U   &kp O            &kp F          &kp DE_Y   &kp ENTER  &kp TAB  &kp B            &kp M    &kp D    &kp L  &kp Q     &kp DE_SHARP_S
 &kp LCTRL     &kp A            &kp I   &kp E            &kp N          &kp P      &kp ESC    &kp DEL  &kp G            &kp C    &kp T    &kp R  &kp S     &kp DE_O_UMLAUT
 &kp LSHFT     &period          &comma  &kp DE_U_UMLAUT  &kp H          &kp J                          &kp V            &kp W    &kp K    &kp X  &kp DE_Z  &kp LGUI
-                                       &mo_nav          &kp BACKSPACE  &kp SPACE                      &mt LSHFT ENTER  &mo_sym  &mo_num
+                                       &mo_nav          &kp BACKSPACE  &kp SPACE                      &mt LSHFT ENTER  &mo_sym 1 0  &mo_num
             >;
         };
 
