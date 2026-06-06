@@ -78,9 +78,9 @@
 
         sym {
             bindings = <
-&trans  &trans        &kp DE_AT     &kp DE_HASH   &kp DE_PRCNT  &trans        &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp DE_MINUS  &kp DE_UNDER  &kp DE_QMARK  &kp DE_COLON  &trans        &trans    &trans  &trans  &mo 2   &mo 3   &mo 4   &trans  &trans
-&trans  &kp DE_EURO   &kp DE_DLLR   &kp DE_EXCL   &kp DE_SEMI   &trans                          &to 1   &to 2   &to 3   &to 4   &trans  &trans
+&trans  &kp DE_DQT    &kp DE_SQT    &kp DE_AT     &kp DE_PRCNT  &trans        &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp DE_MINUS  &kp DE_COLON  &kp DE_LPAR   &kp DE_RPAR   &trans        &trans    &trans  &trans  &mo 2   &mo 3   &mo 4   &trans  &trans
+&trans  &kp DE_FSLH   &kp DE_SEMI   &kp DE_QMARK  &kp DE_EXCL   &trans                          &to 1   &to 2   &to 3   &to 4   &trans  &trans
                                     &trans        &trans        &trans                          &to 0   &trans  &trans
             >;
         };
@@ -96,18 +96,18 @@
 
         sym2 {
             bindings = <
-&trans  &trans        &kp DE_TILDE  &kp DE_PIPE   &kp DE_AMPS   &trans        &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp DE_PLUS   &kp DE_STAR   &kp DE_FSLH   &kp DE_EQUAL  &trans        &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp DE_SECT   &kp DE_DEG    &kp DE_BSLH   &kp DE_CARET  &trans                          &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp DE_DLLR   &kp DE_CARET  &kp DE_PIPE   &kp DE_STAR   &trans        &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp DE_UNDER  &kp DE_EQUAL  &kp DE_LBRC   &kp DE_RBRC   &trans        &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp DE_BSLH   &kp DE_PLUS   &kp DE_LT     &kp DE_GT     &trans                          &trans  &trans  &trans  &trans  &trans  &trans
                                     &trans        &trans        &trans                          &to 0   &trans  &trans
             >;
         };
 
         sym3 {
             bindings = <
-&trans  &kp DE_GRAVE  &kp DE_ACUTE  &kp DE_LBRC   &kp DE_RBRC   &trans        &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp DE_DQT    &kp DE_SQT    &kp DE_LPAR   &kp DE_RPAR   &trans        &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp DE_LT     &kp DE_GT     &kp DE_LBKT   &kp DE_RBKT   &trans                          &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp DE_GRAVE  &kp DE_AMPS   &kp DE_DEG    &trans        &trans        &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp DE_TILDE  &kp DE_HASH   &kp DE_LBKT   &kp DE_RBKT   &trans        &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp DE_ACUTE  &kp DE_EURO   &kp DE_SECT   &trans        &trans                          &trans  &trans  &trans  &trans  &trans  &trans
                                     &trans        &trans        &trans                          &to 0   &trans  &trans
             >;
         };
