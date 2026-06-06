@@ -38,7 +38,7 @@
         comma: comma {
             compatible = "zmk,behavior-mod-morph";
             label = "COMMA";
-            bindings = <&kp DE_COMMA>, <&kp DE_MINUS>;
+            bindings = <&kp DE_COMMA>, <&kp DE_N2>;
 
             #binding-cells = <0>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
@@ -91,9 +91,9 @@
 
         sym {
             bindings = <
-&kp DE_DQT    &kp DE_STAR   &kp DE_MINUS  &kp DE_LBKT   &kp DE_RBKT   &kp DE_SEMI   &trans  &trans  &kp DE_PRCNT  &kp DE_AT     &kp DE_BSLH   &kp DE_AMPS   &kp DE_GRAVE  &kp DE_TILDE
-&kp DE_SQT    &kp DE_UNDER  &kp DE_EQUAL  &kp DE_LPAR   &kp DE_RPAR   &kp DE_COLON  &trans  &trans  &kp DE_PIPE   &kp DE_GT     &kp DE_LT     &kp DE_EXCL   &kp DE_QMARK  &kp DE_DLLR
-&kp DE_CARET  &kp DE_FSLH   &kp DE_PLUS   &kp DE_LBRC   &kp DE_RBRC   &kp DE_HASH                   &kp DE_DOT    &kp DE_COMMA  &kp DE_EURO   &kp DE_SECT   &kp DE_DEG    &kp DE_ACUTE
+&trans        &kp DE_STAR   &kp DE_MINUS  &kp DE_LBKT   &kp DE_RBKT   &kp DE_SEMI   &trans  &trans  &kp DE_PRCNT  &kp DE_AT     &kp DE_BSLH   &kp DE_AMPS   &kp DE_GRAVE  &kp DE_TILDE
+&trans        &kp DE_UNDER  &kp DE_EQUAL  &kp DE_LPAR   &kp DE_RPAR   &kp DE_COLON  &trans  &trans  &kp DE_PIPE   &kp DE_GT     &kp DE_LT     &kp DE_EXCL   &kp DE_QMARK  &kp DE_DLLR
+&trans        &kp DE_FSLH   &kp DE_PLUS   &kp DE_LBRC   &kp DE_RBRC   &kp DE_CARET                  &kp DE_HASH   &trans        &kp DE_EURO   &trans        &kp DE_DEG    &trans
                                           &trans        &trans        &trans                        &to 0         &trans        &trans
             >;
         };
