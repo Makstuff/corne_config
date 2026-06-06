@@ -27,19 +27,19 @@ draw_config:
 
 layers:
   BASE:
-    - ["⌥", Ä, U, O, F, Y, "⏎", "⇥", B, M, D, L, Q, ß]
+    - ["⌥", Ä, U, O, F, Y, "⏎", "⇥", B, M, D, L, Q, {t: "ß", s: "ẞ"}]
     - ["⌃", {t: "A", type: "homerow"}, {t: "I", type: "homerow"}, {t: "E", type: "homerow"}, {t: "N", type: "homerow"}, P, "⎋", "⌦", G, {t: "C", type: "homerow"}, {t: "T", type: "homerow"}, {t: "R", type: "homerow"}, {t: "S", type: "homerow"}, Ö]
-    - ["⇧", {t: ".", s: "'"}, {t: ",", s: "_"}, Ü, H, J, V, W, K, X, Z, "❖"]
+    - ["⇧", {t: ".", s: "'"}, {t: ",", s: '"'}, Ü, H, J, V, W, K, X, Z, "❖"]
     - ["✥", "⌫", "␣", {t: "⏎", s: "⇧"}, {t: "⇥", h: "✧"}, "123"]
   SYM:
-    - ["´", "'", '"', '\', "!", "|", {t: "▽", type: "trans"}, {t: "▽", type: "trans"}, "~", "+", ":", "$", "*", "°"]
-    - ["`", {t: "@", type: "homerow"}, {t: "[", type: "homerow"}, {t: "]", type: "homerow"}, {t: "#", type: "homerow"}, ",", {t: "▽", type: "trans"}, {t: "▽", type: "trans"}, "_", {t: ";", type: "homerow"}, {t: ")", type: "homerow"}, {t: "(", type: "homerow"}, {t: "=", type: "homerow"}, "^"]
-    - ["§", ".", "{", "}", "?", "&", "%", "-", ">", "<", "/", "€"]
+    - [{t: "▽", type: "trans"}, "*", "-", "[", "]", "^", {t: "▽", type: "trans"}, {t: "▽", type: "trans"}, "°", "&", "|", "@", "`", "´"]
+    - [{t: "▽", type: "trans"}, {t: "_", type: "homerow"}, {t: ";", type: "homerow"}, {t: "(", type: "homerow"}, {t: ")", type: "homerow"}, "=", {t: "▽", type: "trans"}, {t: "▽", type: "trans"}, "~", {t: "?", type: "homerow"}, {t: ":", type: "homerow"}, {t: "#", type: "homerow"}, {t: "!", type: "homerow"}, "§"]
+    - [{t: "▽", type: "trans"}, "/", "+", "{", "}", "$", "€", "<", ">", "%", '\', "µ"]
     - [{t: "▽", type: "trans"}, {t: "▽", type: "trans"}, {t: "▽", type: "trans"}, "⌂", {t: "▽", type: "trans"}, {t: "▽", type: "trans"}]
   NUM:
-    - ["´", E, "6", "5", "4", "|", {t: "▽", type: "trans"}, {t: "▽", type: "trans"}, "~", "+", ":", "$", "*", "°"]
-    - ["`", {t: "0", type: "homerow"}, {t: "3", type: "homerow"}, {t: "2", type: "homerow"}, {t: "1", type: "homerow"}, ",", {t: "▽", type: "trans"}, {t: "▽", type: "trans"}, "_", {t: ";", type: "homerow"}, {t: ")", type: "homerow"}, {t: "(", type: "homerow"}, {t: "=", type: "homerow"}, "^"]
-    - ["§", ".", "9", "8", "7", "&", "%", "-", ">", "<", "/", "€"]
+    - [{t: "▽", type: "trans"}, E, "6", "5", "4", {t: "▽", type: "trans"}, {t: "▽", type: "trans"}, {t: "▽", type: "trans"}, {t: "▽", type: "trans"}, {t: "▽", type: "trans"}, {t: "▽", type: "trans"}, {t: "▽", type: "trans"}, {t: "▽", type: "trans"}, {t: "▽", type: "trans"}]
+    - [{t: "▽", type: "trans"}, {t: "0", type: "homerow"}, {t: "3", type: "homerow"}, {t: "2", type: "homerow"}, {t: "1", type: "homerow"}, ",", {t: "▽", type: "trans"}, {t: "▽", type: "trans"}, {t: "▽", type: "trans"}, {t: "▽", type: "homerow trans"}, {t: "▽", type: "homerow trans"}, {t: "▽", type: "homerow trans"}, {t: "▽", type: "homerow trans"}, {t: "▽", type: "trans"}]
+    - [{t: "▽", type: "trans"}, ".", "9", "8", "7", {t: "▽", type: "trans"}, {t: "▽", type: "trans"}, {t: "▽", type: "trans"}, {t: "▽", type: "trans"}, {t: "▽", type: "trans"}, {t: "▽", type: "trans"}, {t: "▽", type: "trans"}]
     - [{t: "▽", type: "trans"}, {t: "▽", type: "trans"}, {t: "▽", type: "trans"}, "⌂", {t: "▽", type: "trans"}, {t: "▽", type: "trans"}]
   NAV:
     - ["⌃D", "⇟", "⇞", "↑", "↓", "⎙", {t: "▽", type: "trans"}, "⚙", {t: "▽", type: "trans"}, F1, F2, F3, F4, {t: "▽", type: "trans"}]
