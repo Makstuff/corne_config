@@ -10,6 +10,10 @@
     tapping-term-ms = <500>;
 };
 
+&lt {
+    tapping-term-ms = <500>;
+};
+
 / {
     chosen { zmk,physical-layout = &default_layout; };
 };
@@ -54,37 +58,6 @@
             mods = <(MOD_LSFT|MOD_RSFT)>;
             keep-mods = <(MOD_LSFT|MOD_RSFT)>;
         };
-
-        mo_num: mo_num {
-            compatible = "zmk,behavior-mod-morph";
-            #binding-cells = <0>;
-            bindings = <&mo 2>, <&to 2>;
-
-            mods = <(MOD_LSFT|MOD_RSFT)>;
-        };
-
-        mo_nav: mo_nav {
-            compatible = "zmk,behavior-mod-morph";
-            #binding-cells = <0>;
-            bindings = <&mo 3>, <&to 3>;
-
-            mods = <(MOD_LSFT|MOD_RSFT)>;
-        };
-
-        tab_to: tab_to {
-            compatible = "zmk,behavior-mod-morph";
-            #binding-cells = <0>;
-            bindings = <&kp TAB>, <&to 1>;
-            mods = <(MOD_LSFT|MOD_RSFT)>;
-        };
-
-        mo_sym: mo_sym {
-            compatible = "zmk,behavior-hold-tap";
-            #binding-cells = <2>;
-            flavor = "hold-preferred";
-            tapping-term-ms = <500>;
-            bindings = <&mo>, <&tab_to>;
-        };
     };
 
     keymap {
@@ -92,10 +65,10 @@
 
         base {
             bindings = <
-&kp LEFT_ALT  &kp DE_A_UMLAUT  &kp U   &kp O            &kp F          &kp DE_Y   &kp ENTER  &kp TAB  &kp B            &kp M    &kp D    &kp L  &kp Q     &sz
-&kp LCTRL     &kp A            &kp I   &kp E            &kp N          &kp P      &kp ESC    &kp DEL  &kp G            &kp C    &kp T    &kp R  &kp S     &kp DE_O_UMLAUT
+&kp LEFT_ALT  &kp DE_A_UMLAUT  &kp U   &kp O            &kp F          &kp DE_Y   &kp ESC    &none    &kp B            &kp M    &kp D    &kp L  &kp Q     &sz
+&kp LCTRL     &kp A            &kp I   &kp E            &kp N          &kp P      &kp DEL    &none    &kp G            &kp C    &kp T    &kp R  &kp S     &kp DE_O_UMLAUT
 &kp LSHFT     &period          &comma  &kp DE_U_UMLAUT  &kp H          &kp J                          &kp V            &kp W    &kp K    &kp X  &kp DE_Z  &kp LGUI
-                                       &mo_nav          &kp BACKSPACE  &kp SPACE                      &mt LSHFT ENTER  &mo_sym 1 0  &mo_num
+                                       &lt 4 ENTER      &kp BACKSPACE  &lt 3 SPACE                    &mt LSHFT TAB    &mo 1      &mo 2
             >;
         };
 
@@ -119,10 +92,19 @@
 
         nav {
             bindings = <
-&kp LC(D)     &kp PG_DN     &kp PG_UP      &kp UP     &kp DOWN   &kp PRINTSCREEN  &trans  &to 5   &trans  &kp F1  &kp F2   &kp F3   &kp F4   &trans
-&to 4         &kp LC(DE_Z)  &kp BACKSPACE  &kp LEFT   &kp RIGHT  &kp SPACE        &trans  &trans  &trans  &kp F5  &kp F6   &kp F7   &kp F8   &trans
-&kp LC(DE_Y)  &kp LC(A)     &kp LC(X)      &kp LC(C)  &kp LC(V)  &kp DEL                          &trans  &kp F9  &kp F10  &kp F11  &kp F12  &trans
-                                           &trans     &trans     &trans                           &to 0   &trans  &trans
+&trans     &kp PG_UP  &kp HOME      &kp UP    &kp END        &kp PRINTSCREEN  &trans  &to 6   &trans  &kp F1  &kp F2   &kp F3   &kp F4   &trans
+&trans     &kp PG_DN  &kp LEFT      &kp DOWN  &kp RIGHT      &trans           &trans  &trans  &trans  &kp F5  &kp F6   &kp F7   &kp F8   &trans
+&trans     &trans     &kp LC(LEFT)  &trans    &kp LC(RIGHT)  &kp DEL                          &trans  &kp F9  &kp F10  &kp F11  &kp F12  &trans
+                                    &trans    &trans         &trans                           &to 0   &trans  &trans
+            >;
+        };
+
+        com {
+            bindings = <
+&trans  &trans     &trans     &trans        &trans        &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&to 5   &kp LC(A)  &kp LC(X)  &kp LC(C)     &kp LC(V)     &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans     &trans     &kp LC(DE_Y)  &kp LC(DE_Z)  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
+                              &trans        &trans        &trans                  &trans  &trans  &trans
             >;
         };
 
