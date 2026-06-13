@@ -21,14 +21,6 @@
     };
 
     behaviors {
-        num_dance: num_dance {
-            compatible = "zmk,behavior-hold-tap";
-            #binding-cells = <2>;
-            flavor = "hold-preferred";
-            tapping-term-ms = <200>;
-            bindings = <&mo>, <&to>;
-        };
-
         shft_caps: shft_caps {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
@@ -73,10 +65,10 @@
 
         base {
             bindings = <
-&kp LEFT_ALT  &kp DE_A_UMLAUT  &kp U   &kp O            &kp F          &kp DE_Y   &kp ESC    &none    &kp B            &kp M    &kp D    &kp L  &kp Q     &sz
-&kp LCTRL     &kp A            &kp I   &kp E            &kp N          &kp P      &kp DEL    &none    &kp G            &kp C    &kp T    &kp R  &kp S     &kp DE_O_UMLAUT
+&kp LEFT_ALT  &kp DE_A_UMLAUT  &kp U   &kp O            &kp F          &kp DE_Y   &kp ESC    &to 2    &kp B            &kp M    &kp D    &kp L  &kp Q     &sz
+&kp LCTRL     &kp A            &kp I   &kp E            &kp N          &kp P      &kp DEL    &to 3    &kp G            &kp C    &kp T    &kp R  &kp S     &kp DE_O_UMLAUT
 &kp LSHFT     &period          &comma  &kp DE_U_UMLAUT  &kp H          &kp J                          &kp V            &kp W    &kp K    &kp X  &kp DE_Z  &kp LGUI
-                                       &kp BACKSPACE    &lt 3 ENTER    &kp SPACE                      &shft_caps LSHFT 0 &lt 1 TAB  &num_dance 2 2
+                                       &lt 3 ENTER    &kp BACKSPACE    &kp SPACE                      &shft_caps LSHFT 0 &lt 1 TAB  &lt 2 DE_MINUS
             >;
         };
 
@@ -91,27 +83,27 @@
 
         num {
             bindings = <
-&trans  &kp E       &kp N6  &kp N5  &kp N4  &trans        &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp N0      &kp N3  &kp N2  &kp N1  &kp DE_COMMA  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kp DE_DOT  &kp N9  &kp N8  &kp N7  &trans                        &trans  &trans  &trans  &trans  &trans  &trans
-                            &trans  &trans  &trans                        &to 0   &trans  &trans
+&trans  &kp E       &kp N6  &kp N5  &kp N4  &none         &trans  &trans  &none   &none     &none     &none   &none   &none
+&trans  &kp N0      &kp N3  &kp N2  &kp N1  &kp DE_COMMA  &trans  &trans  &none   &none     &none     &none   &none   &none
+&trans  &kp DE_DOT  &kp N9  &kp N8  &kp N7  &trans                        &none   &kp PG_UP &kp PG_DN &none     &none   &trans
+                            &trans  &trans  &trans                        &to 0   &trans    &trans
             >;
         };
 
         nav {
             bindings = <
-&trans        &kp LC(DE_Y)  &kp LC(LEFT)  &kp UP    &kp LC(RIGHT)  &kp PG_UP        &trans  &to 5   &trans  &kp F1  &kp F2   &kp F3   &kp F4   &trans
-&to 4         &kp LC(DE_Z)  &kp LEFT      &kp DOWN  &kp RIGHT      &kp PG_DN        &trans  &trans  &trans  &kp F5  &kp F6   &kp F7   &kp F8   &trans
-&trans        &kp LC(A)     &kp LC(X)     &kp LC(C) &kp LC(V)      &kp PRINTSCREEN                &trans  &kp F9  &kp F10  &kp F11  &kp F12  &trans
+&to 4         &kp LC(S)     &kp LC(DE_Z)  &kp UP    &kp LC(DE_Y)   &kp LC(LA(LG(C))) &trans  &to 5   &none   &kp F1  &kp F2   &kp F3   &kp F4   &none
+&to 4         &kp LC(F)     &kp LEFT      &kp DOWN  &kp RIGHT      &kp LG(DE_DOT)   &trans  &trans  &none   &kp F5  &kp F6   &kp F7   &kp F8   &none
+&to 4         &kp LC(A)     &kp LC(X)     &kp LC(C) &kp LC(V)      &kp PRINTSCREEN                &none   &kp F9  &kp F10  &kp F11  &kp F12  &trans
                                           &trans    &trans         &trans                         &to 0   &trans  &trans
             >;
         };
 
         mir {
             bindings = <
-&trans  &kpb Q     &kpb L  &kpb D  &kpb M  &kpb B  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kpb S     &kpb R  &kpb T  &kpb C  &kpb G  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &kpb DE_Z  &kpb X  &kpb K  &kpb W  &kpb V                  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kpb Q     &kpb L  &kpb D  &kpb M  &kpb B  &trans  &trans  &none   &none   &none   &none   &none   &none
+&trans  &kpb S     &kpb R  &kpb T  &kpb C  &kpb G  &trans  &trans  &none   &none   &none   &none   &none   &none
+&trans  &kpb DE_Z  &kpb X  &kpb K  &kpb W  &kpb V                  &none   &none   &none   &none   &none   &none
                            &trans  &trans  &trans                  &trans  &trans  &trans
             >;
         };
