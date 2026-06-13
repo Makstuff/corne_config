@@ -30,7 +30,7 @@ layers:
     - ["⌥", Ä, U, O, F, Y, "⎋", "", B, M, D, L, Q, {t: "ß", s: "ẞ"}]
     - ["⌃", {t: "A", type: "homerow"}, {t: "I", type: "homerow"}, {t: "E", type: "homerow"}, {t: "N", type: "homerow"}, P, "⌦", "", G, {t: "C", type: "homerow"}, {t: "T", type: "homerow"}, {t: "R", type: "homerow"}, {t: "S", type: "homerow"}, Ö]
     - ["⇧", {t: ".", s: "'"}, {t: ",", s: '"'}, Ü, H, J, V, W, K, X, Z, "❖"]
-    - ["✥", "⌫", "␣", {t: "⏎", s: "⇧"}, {t: "⇥", h: "✧"}, "123"]
+    - ["⌫", {t: "⏎", h: "NAV"}, "␣", {t: "CapsW", h: "⇧"}, {t: "⇥", h: "SYM"}, {t: "TO NUM", h: "NUM"}]
   SYM:
     - [{t: "▽", type: "trans"}, "*", "-", "[", "]", "^", {t: "▽", type: "trans"}, {t: "▽", type: "trans"}, "°", "&", "|", "@", "`", "´"]
     - [{t: "▽", type: "trans"}, {t: "_", type: "homerow"}, {t: ";", type: "homerow"}, {t: "(", type: "homerow"}, {t: ")", type: "homerow"}, "=", {t: "▽", type: "trans"}, {t: "▽", type: "trans"}, "~", {t: "?", type: "homerow"}, {t: ":", type: "homerow"}, {t: "#", type: "homerow"}, {t: "!", type: "homerow"}, "§"]
@@ -42,9 +42,9 @@ layers:
     - [{t: "▽", type: "trans"}, ".", "9", "8", "7", {t: "▽", type: "trans"}, {t: "▽", type: "trans"}, {t: "▽", type: "trans"}, {t: "▽", type: "trans"}, {t: "▽", type: "trans"}, {t: "▽", type: "trans"}, {t: "▽", type: "trans"}]
     - [{t: "▽", type: "trans"}, {t: "▽", type: "trans"}, {t: "▽", type: "trans"}, "⌂", {t: "▽", type: "trans"}, {t: "▽", type: "trans"}]
   NAV:
-    - ["⌃D", "⇟", "⇞", "↑", "↓", "⎙", {t: "▽", type: "trans"}, "⚙", {t: "▽", type: "trans"}, F1, F2, F3, F4, {t: "▽", type: "trans"}]
-    - ["⇋", {t: "⌃Z", type: "homerow"}, {t: "⌫", type: "homerow"}, {t: "←", type: "homerow"}, {t: "→", type: "homerow"}, "␣", {t: "▽", type: "trans"}, {t: "▽", type: "trans"}, {t: "▽", type: "trans"}, {t: "F5", type: "homerow"}, {t: "F6", type: "homerow"}, {t: "F7", type: "homerow"}, {t: "F8", type: "homerow"}, {t: "▽", type: "trans"}]
-    - ["⌃Y", "⌃A", "⌃X", "⌃C", "⌃V", "⌦", {t: "▽", type: "trans"}, F9, F10, F11, F12, {t: "▽", type: "trans"}]
+    - [{t: "▽", type: "trans"}, "⌃Y", "⌃←", "↑", "⌃→", "⇞", {t: "▽", type: "trans"}, "⚙", {t: "▽", type: "trans"}, F1, F2, F3, F4, {t: "▽", type: "trans"}]
+    - ["⇋", {t: "⌃Z", type: "homerow"}, {t: "←", type: "homerow"}, {t: "↓", type: "homerow"}, {t: "→", type: "homerow"}, "⇟", {t: "▽", type: "trans"}, {t: "▽", type: "trans"}, {t: "▽", type: "trans"}, {t: "F5", type: "homerow"}, {t: "F6", type: "homerow"}, {t: "F7", type: "homerow"}, {t: "F8", type: "homerow"}, {t: "▽", type: "trans"}]
+    - [{t: "▽", type: "trans"}, "⌃A", "⌃X", "⌃C", "⌃V", "⎙", {t: "▽", type: "trans"}, F9, F10, F11, F12, {t: "▽", type: "trans"}]
     - [{t: "▽", type: "trans"}, {t: "▽", type: "trans"}, {t: "▽", type: "trans"}, "⌂", {t: "▽", type: "trans"}, {t: "▽", type: "trans"}]
   MIR:
     - [{t: "▽", type: "trans"}, Q, L, D, M, B, {t: "▽", type: "trans"}, {t: "▽", type: "trans"}, {t: "▽", type: "trans"}, {t: "▽", type: "trans"}, {t: "▽", type: "trans"}, {t: "▽", type: "trans"}, {t: "▽", type: "trans"}, {t: "▽", type: "trans"}]
