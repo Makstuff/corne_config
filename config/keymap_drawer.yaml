@@ -6,7 +6,7 @@ draw_config:
   svg_extra_style: |
     @import url('https://fonts.googleapis.com/css2?family=Inter:wght@700');
     text {
-      font-family: 'Inter', sans-serif !important;
+      font-family: 'Inter', 'Segoe UI Symbol', 'Apple Symbols', sans-serif !important;
       font-size: 25px !important;
     }
     /* All normal keys light slate grey */
@@ -27,32 +27,32 @@ draw_config:
 
 layers:
   BASE:
-    - ["⌥", Ä, U, O, F, Y, "⎋", "", B, M, D, L, Q, {t: "ß", s: "ẞ"}]
-    - ["⌃", {t: "A", type: "homerow"}, {t: "I", type: "homerow"}, {t: "E", type: "homerow"}, {t: "N", type: "homerow"}, P, "⌦", "", G, {t: "C", type: "homerow"}, {t: "T", type: "homerow"}, {t: "R", type: "homerow"}, {t: "S", type: "homerow"}, Ö]
+    - ["⌥", Ä, U, O, F, Y, "⎋", "TO NUM", B, M, D, L, Q, {t: "ß", s: "ẞ"}]
+    - ["⌃", {t: "A", type: "homerow"}, {t: "I", type: "homerow"}, {t: "E", type: "homerow"}, {t: "N", type: "homerow"}, P, "⌦", "TO NAV", G, {t: "C", type: "homerow"}, {t: "T", type: "homerow"}, {t: "R", type: "homerow"}, {t: "S", type: "homerow"}, Ö]
     - ["⇧", {t: ".", s: "'"}, {t: ",", s: '"'}, Ü, H, J, V, W, K, X, Z, "❖"]
-    - ["⌫", {t: "⏎", h: "NAV"}, "␣", {t: "CapsW", h: "⇧"}, {t: "⇥", h: "SYM"}, {t: "TO NUM", h: "NUM"}]
+    - [{t: "⏎", h: "NAV"}, "⌫", "␣", {t: "CapsW", h: "⇧"}, {t: "⇥", h: "SYM"}, {t: "-", h: "NUM"}]
   SYM:
     - [{t: "▽", type: "trans"}, "*", "-", "[", "]", "^", {t: "▽", type: "trans"}, {t: "▽", type: "trans"}, "°", "&", "|", "@", "`", "´"]
     - [{t: "▽", type: "trans"}, {t: "_", type: "homerow"}, {t: ";", type: "homerow"}, {t: "(", type: "homerow"}, {t: ")", type: "homerow"}, "=", {t: "▽", type: "trans"}, {t: "▽", type: "trans"}, "~", {t: "?", type: "homerow"}, {t: ":", type: "homerow"}, {t: "#", type: "homerow"}, {t: "!", type: "homerow"}, "§"]
     - [{t: "▽", type: "trans"}, "/", "+", "{", "}", "$", "€", "<", ">", "%", '\', "µ"]
     - [{t: "▽", type: "trans"}, {t: "▽", type: "trans"}, {t: "▽", type: "trans"}, "⌂", {t: "▽", type: "trans"}, {t: "▽", type: "trans"}]
   NUM:
-    - [{t: "▽", type: "trans"}, E, "6", "5", "4", {t: "▽", type: "trans"}, {t: "▽", type: "trans"}, {t: "▽", type: "trans"}, {t: "▽", type: "trans"}, {t: "▽", type: "trans"}, {t: "▽", type: "trans"}, {t: "▽", type: "trans"}, {t: "▽", type: "trans"}, {t: "▽", type: "trans"}]
-    - [{t: "▽", type: "trans"}, {t: "0", type: "homerow"}, {t: "3", type: "homerow"}, {t: "2", type: "homerow"}, {t: "1", type: "homerow"}, ",", {t: "▽", type: "trans"}, {t: "▽", type: "trans"}, {t: "▽", type: "trans"}, {t: "▽", type: "homerow trans"}, {t: "▽", type: "homerow trans"}, {t: "▽", type: "homerow trans"}, {t: "▽", type: "homerow trans"}, {t: "▽", type: "trans"}]
-    - [{t: "▽", type: "trans"}, ".", "9", "8", "7", {t: "▽", type: "trans"}, {t: "▽", type: "trans"}, {t: "▽", type: "trans"}, {t: "▽", type: "trans"}, {t: "▽", type: "trans"}, {t: "▽", type: "trans"}, {t: "▽", type: "trans"}]
+    - [{t: "▽", type: "trans"}, E, "6", "5", "4", "", {t: "▽", type: "trans"}, {t: "▽", type: "trans"}, "", "", "", "", "", ""]
+    - [{t: "▽", type: "trans"}, {t: "0", type: "homerow"}, {t: "3", type: "homerow"}, {t: "2", type: "homerow"}, {t: "1", type: "homerow"}, ",", {t: "▽", type: "trans"}, {t: "▽", type: "trans"}, "", "", "", "", "", ""]
+    - [{t: "▽", type: "trans"}, ".", "9", "8", "7", {t: "▽", type: "trans"}, "", "PgUp", "PgDn", "", "", {t: "▽", type: "trans"}]
     - [{t: "▽", type: "trans"}, {t: "▽", type: "trans"}, {t: "▽", type: "trans"}, "⌂", {t: "▽", type: "trans"}, {t: "▽", type: "trans"}]
   NAV:
-    - [{t: "▽", type: "trans"}, "⌃Y", "⌃←", "↑", "⌃→", "⇞", {t: "▽", type: "trans"}, "⚙", {t: "▽", type: "trans"}, F1, F2, F3, F4, {t: "▽", type: "trans"}]
-    - ["⇋", {t: "⌃Z", type: "homerow"}, {t: "←", type: "homerow"}, {t: "↓", type: "homerow"}, {t: "→", type: "homerow"}, "⇟", {t: "▽", type: "trans"}, {t: "▽", type: "trans"}, {t: "▽", type: "trans"}, {t: "F5", type: "homerow"}, {t: "F6", type: "homerow"}, {t: "F7", type: "homerow"}, {t: "F8", type: "homerow"}, {t: "▽", type: "trans"}]
-    - [{t: "▽", type: "trans"}, "⌃A", "⌃X", "⌃C", "⌃V", "⎙", {t: "▽", type: "trans"}, F9, F10, F11, F12, {t: "▽", type: "trans"}]
+    - ["⇋", "⌃S", "⌃Z", "↑", "⌃Y", "Crop", {t: "▽", type: "trans"}, "⚙", "", F1, F2, F3, F4, ""]
+    - ["⇋", "⌃F", {t: "←", type: "homerow"}, {t: "↓", type: "homerow"}, {t: "→", type: "homerow"}, "Emoji", {t: "▽", type: "trans"}, {t: "▽", type: "trans"}, "", {t: "F5", type: "homerow"}, {t: "F6", type: "homerow"}, {t: "F7", type: "homerow"}, {t: "F8", type: "homerow"}, ""]
+    - ["⇋", "⌃A", "⌃X", "⌃C", "⌃V", "⎙", "", F9, F10, F11, F12, {t: "▽", type: "trans"}]
     - [{t: "▽", type: "trans"}, {t: "▽", type: "trans"}, {t: "▽", type: "trans"}, "⌂", {t: "▽", type: "trans"}, {t: "▽", type: "trans"}]
   MIR:
-    - [{t: "▽", type: "trans"}, Q, L, D, M, B, {t: "▽", type: "trans"}, {t: "▽", type: "trans"}, {t: "▽", type: "trans"}, {t: "▽", type: "trans"}, {t: "▽", type: "trans"}, {t: "▽", type: "trans"}, {t: "▽", type: "trans"}, {t: "▽", type: "trans"}]
-    - [{t: "▽", type: "trans"}, {t: "S", type: "homerow"}, {t: "R", type: "homerow"}, {t: "T", type: "homerow"}, {t: "C", type: "homerow"}, G, {t: "▽", type: "trans"}, {t: "▽", type: "trans"}, {t: "▽", type: "trans"}, {t: "▽", type: "homerow trans"}, {t: "▽", type: "homerow trans"}, {t: "▽", type: "homerow trans"}, {t: "▽", type: "homerow trans"}, {t: "▽", type: "trans"}]
-    - [{t: "▽", type: "trans"}, Z, X, K, W, V, {t: "▽", type: "trans"}, {t: "▽", type: "trans"}, {t: "▽", type: "trans"}, {t: "▽", type: "trans"}, {t: "▽", type: "trans"}, {t: "▽", type: "trans"}]
+    - [{t: "▽", type: "trans"}, Q, L, D, M, B, {t: "▽", type: "trans"}, {t: "▽", type: "trans"}, "", "", "", "", "", ""]
+    - [{t: "▽", type: "trans"}, {t: "S", type: "homerow"}, {t: "R", type: "homerow"}, {t: "T", type: "homerow"}, {t: "C", type: "homerow"}, G, {t: "▽", type: "trans"}, {t: "▽", type: "trans"}, "", "", "", "", "", ""]
+    - [{t: "▽", type: "trans"}, Z, X, K, W, V, "", "", "", "", "", ""]
     - [{t: "▽", type: "trans"}, {t: "▽", type: "trans"}, {t: "▽", type: "trans"}, {t: "▽", type: "trans"}, {t: "▽", type: "trans"}, {t: "▽", type: "trans"}]
   SYS:
     - ["", "", "", "", "", "", "", "", RED, GRN, BLU, PUR, YEL, ""]
     - ["", {t: "BT 0", type: "homerow"}, {t: "BT 1", type: "homerow"}, {t: "BT 2", type: "homerow"}, {t: "BT 3", type: "homerow"}, BT 4, BOOT, BOOT, HUI, {t: "SAI", type: "homerow"}, {t: "BRI", type: "homerow"}, {t: "SPI", type: "homerow"}, {t: "EFF", type: "homerow"}, ""]
     - ["", BT CLR, RGB TG, "", "", "", HUD, SAD, BRD, SPD, EFR, ""]
-    - ["", "", "", "⌂", "", ""]
+    - ["", "", "", "", "", ""]
