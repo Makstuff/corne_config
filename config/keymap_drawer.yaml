@@ -30,7 +30,7 @@ layers:
     - ["⌥", Ä, U, O, F, Y, "⎋", "TO NUM", B, M, D, L, Q, {t: "ß", s: "ẞ"}]
     - ["⌃", {t: "A", type: "homerow"}, {t: "I", type: "homerow"}, {t: "E", type: "homerow"}, {t: "N", type: "homerow"}, P, "⌦", "TO NAV", G, {t: "C", type: "homerow"}, {t: "T", type: "homerow"}, {t: "R", type: "homerow"}, {t: "S", type: "homerow"}, Ö]
     - ["⇧", {t: ".", s: "'"}, {t: ",", s: '"'}, Ü, H, J, V, W, K, X, Z, "❖"]
-    - [{t: "⏎", h: "NAV"}, "⌫", "␣", {t: "CapsW", h: "⇧"}, {t: "⇥", h: "SYM"}, {t: "Caps", h: "NUM"}]
+    - [{t: "⏎", h: "NAV"}, "⌫", "␣", "⇧", {t: "⇥", h: "SYM"}, "NUM"]
   SYM:
     - [{t: "▽", type: "trans"}, "*", "-", "[", "]", "^", {t: "▽", type: "trans"}, {t: "▽", type: "trans"}, "°", "&", "|", "@", "`", "´"]
     - [{t: "▽", type: "trans"}, {t: "_", type: "homerow"}, {t: ";", type: "homerow"}, {t: "(", type: "homerow"}, {t: ")", type: "homerow"}, "=", {t: "▽", type: "trans"}, {t: "▽", type: "trans"}, "~", {t: "?", type: "homerow"}, {t: ":", type: "homerow"}, {t: "#", type: "homerow"}, {t: "!", type: "homerow"}, "§"]

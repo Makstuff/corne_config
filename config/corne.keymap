@@ -4,6 +4,13 @@
 #include <dt-bindings/zmk/rgb.h>
 #include "keys_de.h"
 
+&lt {
+    flavor = "hold-preferred";
+};
+&mt {
+    flavor = "hold-preferred";
+};
+
 / {
     chosen { zmk,physical-layout = &default_layout; };
 };
@@ -19,14 +26,6 @@
     };
 
     behaviors {
-        shft_caps: shft_caps {
-            compatible = "zmk,behavior-hold-tap";
-            #binding-cells = <2>;
-            flavor = "hold-preferred";
-            tapping-term-ms = <200>;
-            bindings = <&kp>, <&caps_word>;
-        };
-
         comma: comma {
             compatible = "zmk,behavior-mod-morph";
             label = "COMMA";
@@ -66,7 +65,7 @@
 &kp LEFT_ALT  &kp DE_A_UMLAUT  &kp U   &kp O            &kp F          &kp DE_Y   &kp ESC  &to 2  &kp B               &kp M      &kp D       &kp L  &kp Q     &sz
 &kp LCTRL     &kp A            &kp I   &kp E            &kp N          &kp P      &kp DEL  &to 3  &kp G               &kp C      &kp T       &kp R  &kp S     &kp DE_O_UMLAUT
 &kp LSHFT     &period          &comma  &kp DE_U_UMLAUT  &kp H          &kp J                      &kp V               &kp W      &kp K       &kp X  &kp DE_Z  &kp LGUI
-                                       &lt 3 ENTER      &kp BACKSPACE  &kp SPACE                  &shft_caps LSHFT 0  &lt 1 TAB  &lt 2 CAPS
+                                       &lt 3 ENTER      &kp BACKSPACE  &kp SPACE                  &kp LSHFT           &lt 1 TAB  &mo 2
             >;
         };
 
