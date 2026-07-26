@@ -4,12 +4,9 @@
 #include <dt-bindings/zmk/rgb.h>
 #include "keys_de.h"
 
-&lt {
-    flavor = "hold-preferred";
-};
-&mt {
-    flavor = "hold-preferred";
-};
+&lt { flavor = "hold-preferred"; };
+
+&mt { flavor = "hold-preferred"; };
 
 / {
     chosen { zmk,physical-layout = &default_layout; };
@@ -52,19 +49,19 @@
 
         base {
             bindings = <
-&kp LEFT_ALT  &kp DE_A_UMLAUT  &kp U   &kp O            &kp F          &kp DE_Y   &kp ESC  &to 2  &kp B               &kp M      &kp D       &kp L  &kp Q     &kp DE_SHARP_S
-&kp LCTRL     &kp A            &kp I   &kp E            &kp N          &kp P      &kp DEL  &to 3  &kp G               &kp C      &kp T       &kp R  &kp S     &kp J
-&kp LSHFT     &period          &comma  &kp DE_U_UMLAUT  &kp H          &kp DE_O_UMLAUT            &kp V               &kp W      &kp K       &kp X  &kp DE_Z  &kp LGUI
-                                       &lt 3 ENTER      &kp BACKSPACE  &kp SPACE                  &kp LSHFT           &lt 1 TAB  &mo 2
+&kp LEFT_ALT  &kp DE_A_UMLAUT  &kp U   &kp O            &kp F          &kp DE_Y         &kp ESC  &to 2  &kp B      &kp M      &kp D  &kp L  &kp Q     &kp DE_SHARP_S
+&kp LCTRL     &kp A            &kp I   &kp E            &kp N          &kp P            &kp DEL  &to 3  &kp G      &kp C      &kp T  &kp R  &kp S     &kp J
+&kp LSHFT     &period          &comma  &kp DE_U_UMLAUT  &kp H          &kp DE_O_UMLAUT                  &kp V      &kp W      &kp K  &kp X  &kp DE_Z  &kp LGUI
+                                       &lt 3 ENTER      &kp BACKSPACE  &kp SPACE                        &kp LSHFT  &lt 1 TAB  &mo 2
             >;
         };
 
         sym {
             bindings = <
-&trans  &kp DE_LBKT   &kp DE_RBKT   &kp DE_STAR   &kp DE_PLUS   &kp DE_CARET  &trans  &trans  &kp DE_DEG    &kp DE_AMPS   &kp DE_PIPE   &kp DE_AT     &kp DE_GRAVE  &kp DE_ACUTE
-&trans  &kp DE_LPAR   &kp DE_RPAR   &kp DE_SEMI   &kp DE_UNDER  &kp DE_EQUAL  &trans  &trans  &kp DE_BSLH   &kp DE_QMARK  &kp DE_COLON  &kp DE_HASH   &kp DE_EXCL   &kp DE_EURO
-&trans  &kp DE_LBRC   &kp DE_RBRC   &kp DE_FSLH   &kp DE_MINUS  &kp DE_DLLR                   &kp DE_SECT   &kp DE_LT     &kp DE_GT     &kp DE_PRCNT  &kp DE_TILDE  &trans
-                                    &trans       &trans       &trans                        &to 0         &trans        &trans
+&trans  &kp DE_LBKT  &kp DE_RBKT  &kp DE_STAR  &kp DE_PLUS   &kp DE_CARET  &trans  &trans  &kp DE_DEG   &kp DE_EXCL   &kp DE_AMPS   &kp DE_PIPE   &kp DE_GRAVE  &kp DE_ACUTE
+&trans  &kp DE_LPAR  &kp DE_RPAR  &kp DE_SEMI  &kp DE_UNDER  &kp DE_EQUAL  &trans  &trans  &kp DE_BSLH  &kp DE_QMARK  &kp DE_COLON  &kp DE_HASH   &kp DE_DLLR   &kp DE_EURO
+&trans  &kp DE_LBRC  &kp DE_RBRC  &kp DE_FSLH  &kp DE_MINUS  &kp DE_AT                     &kp DE_SECT  &kp DE_LT     &kp DE_GT     &kp DE_PRCNT  &kp DE_TILDE  &trans
+                                  &trans       &trans        &trans                        &to 0        &trans        &trans
             >;
         };
 
@@ -79,19 +76,19 @@
 
         nav {
             bindings = <
-&to 4  &kp LC(S)  &kp LC(DE_Z)  &kp UP     &kp LC(DE_Y)  &kp LC(LA(LG(C)))  &trans  &trans &none  &kp F1  &kp F2   &kp F3   &kp F4   &none
-&to 4  &kp LC(F)  &kp LEFT      &kp DOWN   &kp RIGHT     &kp LG(DE_DOT)     &trans  &to 0  &none  &kp F5  &kp F6   &kp F7   &kp F8   &none
-&to 4  &kp LC(A)  &kp LC(X)     &kp LC(C)  &kp LC(V)     &kp PRINTSCREEN                   &none  &kp F9  &kp F10  &kp F11  &kp F12  &to 5
-                                &trans     &trans        &trans                            &to 0  &trans  &trans
+&to 4  &kp LC(S)  &kp LC(DE_Z)  &kp UP     &kp LC(DE_Y)  &kp LC(LA(LG(C)))  &trans  &trans  &none  &kp F1  &kp F2   &kp F3   &kp F4   &none
+&to 4  &kp LC(F)  &kp LEFT      &kp DOWN   &kp RIGHT     &kp LG(DE_DOT)     &trans  &to 0   &none  &kp F5  &kp F6   &kp F7   &kp F8   &none
+&to 4  &kp LC(A)  &kp LC(X)     &kp LC(C)  &kp LC(V)     &kp PRINTSCREEN                    &none  &kp F9  &kp F10  &kp F11  &kp F12  &to 5
+                                &trans     &trans        &trans                             &to 0  &trans  &trans
             >;
         };
 
         mir {
             bindings = <
-&trans  &kpb Q     &kpb L  &kpb D  &kpb M  &kpb B  &kpb ESC     &to 2       &kpb B      &kpb M      &kpb D      &kpb L      &kpb Q      &kpb DE_SHARP_S
-&trans  &kpb S     &kpb R  &kpb T  &kpb C  &kpb G  &kpb J       &to 3       &kpb G      &kpb C      &kpb T      &kpb R      &kpb S      &kpb J
-&trans  &kpb DE_Z  &kpb X  &kpb K  &kpb W  &kpb V                           &kpb V      &kpb W      &kpb K      &kpb X      &kpb DE_Z   &kpb LGUI
-                           &kpb ENTER      &kpb BACKSPACE       &kpb SPACE              &kpb LSHFT  &kpb TAB    &to 2
+&trans  &kpb Q     &kpb L  &kpb D      &kpb M          &kpb B      &kpb ESC  &to 2  &kpb B      &kpb M    &kpb D  &kpb L  &kpb Q     &kpb DE_SHARP_S
+&trans  &kpb S     &kpb R  &kpb T      &kpb C          &kpb G      &kpb J    &to 3  &kpb G      &kpb C    &kpb T  &kpb R  &kpb S     &kpb J
+&trans  &kpb DE_Z  &kpb X  &kpb K      &kpb W          &kpb V                       &kpb V      &kpb W    &kpb K  &kpb X  &kpb DE_Z  &kpb LGUI
+                           &kpb ENTER  &kpb BACKSPACE  &kpb SPACE                   &kpb LSHFT  &kpb TAB  &to 2
             >;
         };
 
