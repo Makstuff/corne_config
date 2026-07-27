@@ -146,12 +146,18 @@ parse_config:
 draw_config:
   n_columns: 3
   outer_pad_w: 15.0
-  outer_pad_h: -19.0
+  outer_pad_h: 35.0
   split_gap: 20.0
   svg_extra_style: |
-    /* Move layer titles down by 0.4 key width (24px) to sit in the split gap */
+    /* Move layer titles down by 0.2 key width (12px) to sit in the split gap */
     g[class*="layer-" i] > text {
-      transform: translateY(24px);
+      transform: translateY(12px);
+    }
+    /* Move the bottom row of layers 54px (0.9 key width) closer to the top row without cropping the viewBox */
+    g[class*="layer-nav" i],
+    g[class*="layer-mir" i],
+    g[class*="layer-sys" i] {
+      translate: 0 -54px;
     }
     text {
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !important;
