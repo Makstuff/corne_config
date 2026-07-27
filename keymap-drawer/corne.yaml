@@ -8,7 +8,9 @@ layers:
   - F
   - Y
   - ⎋
-  - '&kp F15'
+  - 'TO
+
+    NUM'
   - B
   - M
   - D
@@ -22,7 +24,9 @@ layers:
   - N
   - P
   - ⌦
-  - '&kp F16'
+  - 'TO
+
+    NAV'
   - G
   - C
   - T
@@ -91,7 +95,9 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - '&kp F13'
+  - 'TO
+
+    BASE'
   - {type: held}
   - {t: ▽, type: trans}
   num:
@@ -102,7 +108,9 @@ layers:
   - '4'
   - ''
   - {t: ▽, type: trans}
-  - '&kp F13'
+  - 'TO
+
+    BASE'
   - ''
   - ''
   - ''
@@ -138,11 +146,15 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - '&kp F13'
+  - 'TO
+
+    BASE'
   - {t: ▽, type: trans}
   - {type: held}
   nav:
-  - '&kp F17'
+  - 'TO
+
+    MIR'
   - ⌃S
   - ⌃Z
   - ↑
@@ -155,22 +167,30 @@ layers:
   - F2
   - F3
   - F4
-  - '&kp F18'
-  - '&kp F17'
+  - 'TO
+
+    SYS'
+  - 'TO
+
+    MIR'
   - ⌃F
   - ←
   - ↓
   - →
   - {t: Emoji, type: small}
   - {t: ▽, type: trans}
-  - '&kp F13'
+  - 'TO
+
+    BASE'
   - ''
   - F5
   - F6
   - F7
   - F8
   - ''
-  - '&kp F17'
+  - 'TO
+
+    MIR'
   - ⌃A
   - ⌃X
   - ⌃C
@@ -185,7 +205,9 @@ layers:
   - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - '&kp F13'
+  - 'TO
+
+    BASE'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   mir:
@@ -196,7 +218,9 @@ layers:
   - M
   - B
   - ⎋
-  - '&kp F15'
+  - 'TO
+
+    NUM'
   - B
   - M
   - D
@@ -210,7 +234,9 @@ layers:
   - C
   - G
   - J
-  - '&kp F16'
+  - 'TO
+
+    NAV'
   - G
   - C
   - T
@@ -234,7 +260,9 @@ layers:
   - ␣
   - ⇧
   - ⇥
-  - '&kp F15'
+  - 'TO
+
+    NUM'
   sys:
   - ''
   - ''
@@ -244,20 +272,22 @@ layers:
   - ''
   - ''
   - ''
-  - '&kp F19'
-  - '&kp F20'
-  - '&kp F21'
-  - '&kp F22'
-  - '&kp F23'
-  - '&kp F13'
+  - Red
+  - Green
+  - Blue
+  - Purple
+  - Yellow
+  - 'TO
+
+    BASE'
   - ''
   - {t: BT, h: '0'}
   - {t: BT, h: '1'}
   - {t: BT, h: '2'}
   - {t: BT, h: '3'}
   - {t: BT, h: '4'}
-  - '&kp F24'
-  - '&kp F24'
+  - '&bootloader'
+  - '&bootloader'
   - RGB HUI
   - RGB SAI
   - RGB BRI
@@ -279,6 +309,8 @@ layers:
   - ''
   - ''
   - ''
-  - '&kp F13'
+  - 'TO
+
+    BASE'
   - ''
   - ''
