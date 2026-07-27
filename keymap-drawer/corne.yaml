@@ -8,7 +8,7 @@ layers:
   - F
   - Y
   - ⎋
-  - '&kp MY_TO_NUM'
+  - TO\nNUM
   - B
   - M
   - D
@@ -22,7 +22,7 @@ layers:
   - N
   - P
   - ⌦
-  - '&kp MY_TO_NAV'
+  - TO\nNAV
   - G
   - C
   - T
@@ -30,8 +30,8 @@ layers:
   - S
   - J
   - ⇧
-  - {t: DE PERIOD, s: BACKSLASH}
-  - {t: ',', s: DE 2}
+  - {t: ., s: ''''}
+  - {t: ',', s: '"'}
   - Ü
   - H
   - Ö
@@ -91,7 +91,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - '&kp MY_TO_BASE'
+  - TO\nBASE
   - {type: held}
   - {t: ▽, type: trans}
   num:
@@ -102,7 +102,7 @@ layers:
   - '4'
   - ''
   - {t: ▽, type: trans}
-  - '&kp MY_TO_BASE'
+  - TO\nBASE
   - ''
   - ''
   - ''
@@ -138,11 +138,11 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - '&kp MY_TO_BASE'
+  - TO\nBASE
   - {t: ▽, type: trans}
   - {type: held}
   nav:
-  - '&kp MY_TO_MIR'
+  - TO\nMIR
   - ⌃S
   - ⌃Z
   - ↑
@@ -155,22 +155,22 @@ layers:
   - F2
   - F3
   - F4
-  - '&kp MY_TO_SYS'
-  - '&kp MY_TO_MIR'
+  - TO\nSYS
+  - TO\nMIR
   - ⌃F
   - ←
   - ↓
   - →
   - Emoji
   - {t: ▽, type: trans}
-  - '&kp MY_TO_BASE'
+  - TO\nBASE
   - ''
   - F5
   - F6
   - F7
   - F8
   - ''
-  - '&kp MY_TO_MIR'
+  - TO\nMIR
   - ⌃A
   - ⌃X
   - ⌃C
@@ -185,56 +185,56 @@ layers:
   - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - '&kp MY_TO_BASE'
+  - TO\nBASE
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   mir:
   - {t: ▽, type: trans}
-  - '&kp '
-  - '&kp '
-  - '&kp '
-  - '&kp '
-  - '&kp '
-  - '&kp '
-  - '&kp MY_TO_NUM'
-  - '&kp '
-  - '&kp '
-  - '&kp '
-  - '&kp '
-  - '&kp '
-  - '&kp '
+  - '&kpb Q'
+  - '&kpb L'
+  - '&kpb D'
+  - '&kpb M'
+  - '&kpb B'
+  - '&kpb ESC'
+  - TO\nNUM
+  - '&kpb B'
+  - '&kpb M'
+  - '&kpb D'
+  - '&kpb L'
+  - '&kpb Q'
+  - '&kpb DE_SHARP_S'
   - {t: ▽, type: trans}
-  - '&kp '
-  - '&kp '
-  - '&kp '
-  - '&kp '
-  - '&kp '
-  - '&kp '
-  - '&kp MY_TO_NAV'
-  - '&kp '
-  - '&kp '
-  - '&kp '
-  - '&kp '
-  - '&kp '
-  - '&kp '
+  - '&kpb S'
+  - '&kpb R'
+  - '&kpb T'
+  - '&kpb C'
+  - '&kpb G'
+  - '&kpb J'
+  - TO\nNAV
+  - '&kpb G'
+  - '&kpb C'
+  - '&kpb T'
+  - '&kpb R'
+  - '&kpb S'
+  - '&kpb J'
   - {t: ▽, type: trans}
-  - '&kp '
-  - '&kp '
-  - '&kp '
-  - '&kp '
-  - '&kp '
-  - '&kp '
-  - '&kp '
-  - '&kp '
-  - '&kp '
-  - '&kp '
-  - '&kp '
-  - '&kp '
-  - '&kp '
-  - '&kp '
-  - '&kp '
-  - '&kp '
-  - '&kp MY_TO_NUM'
+  - '&kpb DE_Z'
+  - '&kpb X'
+  - '&kpb K'
+  - '&kpb W'
+  - '&kpb V'
+  - '&kpb V'
+  - '&kpb W'
+  - '&kpb K'
+  - '&kpb X'
+  - '&kpb DE_Z'
+  - '&kpb LGUI'
+  - '&kpb ENTER'
+  - '&kpb BACKSPACE'
+  - '&kpb SPACE'
+  - '&kpb LSHFT'
+  - '&kpb TAB'
+  - TO\nNUM
   sys:
   - ''
   - ''
@@ -244,20 +244,20 @@ layers:
   - ''
   - ''
   - ''
-  - '&kp MY_RGB_RED'
-  - '&kp MY_RGB_GRN'
-  - '&kp MY_RGB_BLU'
-  - '&kp MY_RGB_PUR'
-  - '&kp MY_RGB_YEL'
-  - '&kp MY_TO_BASE'
+  - RGB COLOR HSB(0,100,50)
+  - RGB COLOR HSB(126,100,50)
+  - RGB COLOR HSB(244,100,50)
+  - RGB COLOR HSB(309,100,50)
+  - RGB COLOR HSB(61,100,50)
+  - TO\nBASE
   - ''
   - {t: BT, h: '0'}
   - {t: BT, h: '1'}
   - {t: BT, h: '2'}
   - {t: BT, h: '3'}
   - {t: BT, h: '4'}
-  - '&kp MY_BOOT'
-  - '&kp MY_BOOT'
+  - BOOT
+  - BOOT
   - RGB HUI
   - RGB SAI
   - RGB BRI
@@ -279,6 +279,6 @@ layers:
   - ''
   - ''
   - ''
-  - '&kp MY_TO_BASE'
+  - TO\nBASE
   - ''
   - ''
