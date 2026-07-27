@@ -144,6 +144,7 @@ parse_config:
   mark_alternate_layer_activators: true
 
 draw_config:
+  n_columns: 3
   svg_extra_style: |
     text {
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !important;
