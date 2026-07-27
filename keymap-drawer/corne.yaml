@@ -286,8 +286,8 @@ layers:
   - {t: BT, h: '2'}
   - {t: BT, h: '3'}
   - {t: BT, h: '4'}
-  - '&bootloader'
-  - '&bootloader'
+  - BOOT
+  - BOOT
   - RGB HUI
   - RGB SAI
   - RGB BRI
@@ -295,7 +295,7 @@ layers:
   - RGB EFF
   - ''
   - ''
-  - {t: BT CLR, type: small}
+  - BT CLR
   - RGB TOG
   - ''
   - ''
