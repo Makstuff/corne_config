@@ -34,8 +34,8 @@ layers:
   - S
   - J
   - ⇧
-  - '&kp MY_PERIOD'
-  - '&kp MY_COMMA'
+  - {t: ., s: ''''}
+  - {t: ',', s: '"'}
   - Ü
   - H
   - Ö
@@ -122,7 +122,7 @@ layers:
   - '3'
   - '2'
   - '1'
-  - DE COMMA
+  - ','
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - ''

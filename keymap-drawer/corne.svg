@@ -274,15 +274,13 @@ g.key:nth-of-type(27) rect {
 </g>
 <g transform="translate(84, 161)" class="key keypos-29">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<text x="0" y="0" class="key tap">
-<tspan x="0" dy="-0.6em" style="font-size: 78%">&amp;kp</tspan><tspan x="0" dy="1.2em" style="font-size: 78%">MY_PERIOD</tspan>
-</text>
+<text x="0" y="0" class="key tap">.</text>
+<text x="0" y="-24" class="key shifted">&#x27;</text>
 </g>
 <g transform="translate(140, 147)" class="key keypos-30">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<text x="0" y="0" class="key tap">
-<tspan x="0" dy="-0.6em" style="font-size: 88%">&amp;kp</tspan><tspan x="0" dy="1.2em" style="font-size: 88%">MY_COMMA</tspan>
-</text>
+<text x="0" y="0" class="key tap">,</text>
+<text x="0" y="-24" class="key shifted">&quot;</text>
 </g>
 <g transform="translate(196, 140)" class="key keypos-31">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
@@ -617,9 +615,7 @@ g.key:nth-of-type(27) rect {
 </g>
 <g transform="translate(308, 97)" class="key keypos-19">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<text x="0" y="0" class="key tap">
-<tspan x="0" dy="-0.6em">DE</tspan><tspan x="0" dy="1.2em">COMMA</tspan>
-</text>
+<text x="0" y="0" class="key tap">,</text>
 </g>
 <g transform="translate(364, 125)" class="key trans keypos-20">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
