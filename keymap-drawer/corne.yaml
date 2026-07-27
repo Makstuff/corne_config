@@ -2,11 +2,11 @@ layout: {zmk_keyboard: corne, layout_name: default_layout}
 layers:
   base:
   - ⌥
-  - (ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD APOSTROPHE AND QUOTE))
+  - Ä
   - U
   - O
   - F
-  - (ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD Z))
+  - Y
   - ⎋
   - {t: num, h: toggle}
   - B
@@ -14,7 +14,7 @@ layers:
   - D
   - L
   - Q
-  - (ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD MINUS AND UNDERSCORE))
+  - ß
   - ⌃
   - {t: A, type: homerow}
   - {t: I, type: homerow}
@@ -30,16 +30,16 @@ layers:
   - {t: S, type: homerow}
   - J
   - ⇧
-  - {t: '(ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD PERIOD AND GREATER THAN))', s: BACKSLASH}
-  - {t: '(ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD COMMA AND LESS THAN))', s: '(ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD 2 AND AT))'}
-  - (ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD LEFT BRACKET AND LEFT BRACE))
+  - {t: DE PERIOD, s: BACKSLASH}
+  - {t: ',', s: DE 2}
+  - Ü
   - H
-  - (ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD SEMICOLON AND COLON))
+  - Ö
   - V
   - W
   - K
   - X
-  - (ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD Y))
+  - Z
   - ❖
   - {t: ⏎, h: nav}
   - ⌫
@@ -49,44 +49,44 @@ layers:
   - num
   sym:
   - {t: ▽, type: trans}
-  - (RA(ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD E)))
-  - (ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD BACKSLASH AND PIPE))
-  - ((LS(ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD RIGHT BRACKET AND RIGHT BRACE))))
-  - (ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD RIGHT BRACKET AND RIGHT BRACE))
-  - ((LS(ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD GRAVE ACCENT AND TILDE))))
+  - €
+  - '#'
+  - '*'
+  - +
+  - °
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - ((LS(ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD 6 AND CARET))))
-  - ((RA(ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD 7 AND AMPERSAND))))
-  - ((RA(ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD 0 AND RIGHT PARENTHESIS))))
-  - ((LS(ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD 5 AND PERCENT))))
-  - (LS(ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD EQUAL AND PLUS)))
-  - (ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD EQUAL AND PLUS))
+  - '&'
+  - '{'
+  - '}'
+  - '%'
+  - '`'
+  - ´
   - {t: ▽, type: trans}
-  - (LS(ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD 0 AND RIGHT PARENTHESIS)))
-  - ((LS(ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD COMMA AND LESS THAN))))
-  - ((LS(ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD 8 AND ASTERISK))))
-  - ((LS(ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD 9 AND LEFT PARENTHESIS))))
-  - (ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD GRAVE ACCENT AND TILDE))
+  - {t: '=', type: homerow}
+  - {t: ;, type: homerow}
+  - {t: (, type: homerow}
+  - {t: ), type: homerow}
+  - ^
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - ((LS(ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD 1 AND EXCLAMATION))))
-  - ((LS(ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD MINUS AND UNDERSCORE))))
-  - ((LS(ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD SLASH AND QUESTION MARK))))
-  - (LS(ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD PERIOD AND GREATER THAN)))
-  - ((RA(ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD Q))))
-  - (RA(ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD RIGHT BRACKET AND RIGHT BRACE)))
+  - '!'
+  - {t: '?', type: homerow}
+  - {t: _, type: homerow}
+  - {t: ':', type: homerow}
+  - {t: '@', type: homerow}
+  - '~'
   - {t: ▽, type: trans}
-  - ((LS(ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD 4 AND DOLLAR))))
-  - ((RA(ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD MINUS AND UNDERSCORE))))
-  - ((LS(ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD 7 AND AMPERSAND))))
-  - (ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD SLASH AND QUESTION MARK))
-  - ((LS(ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD 3 AND HASH))))
-  - (RA(ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD NON US BACKSLASH AND PIPE)))
-  - ((RA(ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD 8 AND ASTERISK))))
-  - ((RA(ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD 9 AND LEFT PARENTHESIS))))
-  - ((LS(ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD NON US BACKSLASH AND PIPE))))
-  - ((ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD NON US BACKSLASH AND PIPE)))
+  - $
+  - \
+  - /
+  - '-'
+  - §
+  - '|'
+  - '['
+  - ']'
+  - '>'
+  - <
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -114,7 +114,7 @@ layers:
   - {t: '3', type: homerow}
   - {t: '2', type: homerow}
   - {t: '1', type: homerow}
-  - (ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD COMMA AND LESS THAN))
+  - ','
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - ''
@@ -124,7 +124,7 @@ layers:
   - ''
   - ''
   - {t: ▽, type: trans}
-  - ((ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD PERIOD AND GREATER THAN)))
+  - .
   - '9'
   - '8'
   - '7'
@@ -144,9 +144,9 @@ layers:
   nav:
   - {t: mir, h: toggle}
   - ⌃S
-  - Ctl+(ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD Y))
+  - ⌃Z
   - ↑
-  - Ctl+(ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD Z))
+  - ⌃Y
   - Crop
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -161,7 +161,7 @@ layers:
   - {t: ←, type: homerow}
   - {t: ↓, type: homerow}
   - {t: →, type: homerow}
-  - Gui+((ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD PERIOD AND GREATER THAN)))
+  - Emoji
   - {t: ▽, type: trans}
   - {t: base, h: toggle}
   - ''
@@ -202,7 +202,7 @@ layers:
   - '&kpb D'
   - '&kpb L'
   - '&kpb Q'
-  - '&kpb (ZMK_HID_USAGE(HID_USAGE_KEY, HID_USAGE_KEY_KEYBOARD_MINUS_AND_UNDERSCORE))'
+  - '&kpb DE_SHARP_S'
   - {t: ▽, type: trans}
   - '&kpb S'
   - '&kpb R'
@@ -218,7 +218,7 @@ layers:
   - '&kpb S'
   - '&kpb J'
   - {t: ▽, type: trans}
-  - '&kpb (ZMK_HID_USAGE(HID_USAGE_KEY, HID_USAGE_KEY_KEYBOARD_Y))'
+  - '&kpb DE_Z'
   - '&kpb X'
   - '&kpb K'
   - '&kpb W'
@@ -227,7 +227,7 @@ layers:
   - '&kpb W'
   - '&kpb K'
   - '&kpb X'
-  - '&kpb (ZMK_HID_USAGE(HID_USAGE_KEY, HID_USAGE_KEY_KEYBOARD_Y))'
+  - '&kpb DE_Z'
   - '&kpb LGUI'
   - '&kpb ENTER'
   - '&kpb BACKSPACE'
