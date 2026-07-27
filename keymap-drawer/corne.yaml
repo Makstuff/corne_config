@@ -8,9 +8,7 @@ layers:
   - F
   - Y
   - ⎋
-  - 'TO
-
-    NUM'
+  - '&kp F15'
   - B
   - M
   - D
@@ -24,9 +22,7 @@ layers:
   - N
   - P
   - ⌦
-  - 'TO
-
-    NAV'
+  - '&kp F16'
   - G
   - C
   - T
@@ -95,9 +91,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - 'TO
-
-    BASE'
+  - '&kp F13'
   - {type: held}
   - {t: ▽, type: trans}
   num:
@@ -108,9 +102,7 @@ layers:
   - '4'
   - ''
   - {t: ▽, type: trans}
-  - 'TO
-
-    BASE'
+  - '&kp F13'
   - ''
   - ''
   - ''
@@ -138,28 +130,24 @@ layers:
   - '7'
   - ''
   - ''
-  - PG UP
-  - PG DN
+  - {t: PgUp, type: small}
+  - {t: PgDn, type: small}
   - ''
   - ''
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - 'TO
-
-    BASE'
+  - '&kp F13'
   - {t: ▽, type: trans}
   - {type: held}
   nav:
-  - 'TO
-
-    MIR'
+  - '&kp F17'
   - ⌃S
   - ⌃Z
   - ↑
   - ⌃Y
-  - Crop
+  - {t: Crop, type: small}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - ''
@@ -167,30 +155,22 @@ layers:
   - F2
   - F3
   - F4
-  - 'TO
-
-    SYS'
-  - 'TO
-
-    MIR'
+  - '&kp F18'
+  - '&kp F17'
   - ⌃F
   - ←
   - ↓
   - →
-  - Emoji
+  - {t: Emoji, type: small}
   - {t: ▽, type: trans}
-  - 'TO
-
-    BASE'
+  - '&kp F13'
   - ''
   - F5
   - F6
   - F7
   - F8
   - ''
-  - 'TO
-
-    MIR'
+  - '&kp F17'
   - ⌃A
   - ⌃X
   - ⌃C
@@ -205,9 +185,7 @@ layers:
   - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - 'TO
-
-    BASE'
+  - '&kp F13'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   mir:
@@ -218,9 +196,7 @@ layers:
   - M
   - B
   - ⎋
-  - 'TO
-
-    NUM'
+  - '&kp F15'
   - B
   - M
   - D
@@ -234,9 +210,7 @@ layers:
   - C
   - G
   - J
-  - 'TO
-
-    NAV'
+  - '&kp F16'
   - G
   - C
   - T
@@ -260,9 +234,7 @@ layers:
   - ␣
   - ⇧
   - ⇥
-  - 'TO
-
-    NUM'
+  - '&kp F15'
   sys:
   - ''
   - ''
@@ -272,22 +244,20 @@ layers:
   - ''
   - ''
   - ''
-  - Red
-  - Green
-  - Blue
-  - Purple
-  - Yellow
-  - 'TO
-
-    BASE'
+  - '&kp F19'
+  - '&kp F20'
+  - '&kp F21'
+  - '&kp F22'
+  - '&kp F23'
+  - '&kp F13'
   - ''
   - {t: BT, h: '0'}
   - {t: BT, h: '1'}
   - {t: BT, h: '2'}
   - {t: BT, h: '3'}
   - {t: BT, h: '4'}
-  - BOOT
-  - BOOT
+  - '&kp F24'
+  - '&kp F24'
   - RGB HUI
   - RGB SAI
   - RGB BRI
@@ -295,7 +265,7 @@ layers:
   - RGB EFF
   - ''
   - ''
-  - BT CLR
+  - {t: BT CLR, type: small}
   - RGB TOG
   - ''
   - ''
@@ -309,8 +279,6 @@ layers:
   - ''
   - ''
   - ''
-  - 'TO
-
-    BASE'
+  - '&kp F13'
   - ''
   - ''
