@@ -1,31 +1,56 @@
 parse_config:
   zmk_preamble: "#define KEYMAP_DRAWER 1"
   raw_binding_map:
-    # Rename layer toggle behaviors so they are parsed directly as the final text
-    '&to 0': 'TO\nBASE'
-    '&to 1': 'TO\nSYM'
-    '&to 2': 'TO\nNUM'
-    '&to 3': 'TO\nNAV'
-    '&to 4': 'TO\nMIR'
-    '&to 5': 'TO\nSYS'
+    # Rename layer toggle behaviors (using double quotes so \n becomes a real newline)
+    '&to 0': "TO\nBASE"
+    '&to 1': "TO\nSYM"
+    '&to 2': "TO\nNUM"
+    '&to 3': "TO\nNAV"
+    '&to 4': "TO\nMIR"
+    '&to 5': "TO\nSYS"
     
-    # Map SYS layer colors (remembering to escape regex parentheses) and bootloader
-    '&rgb_ug RGB_COLOR_HSB\\(0,100,50\\)': 'Red'
-    '&rgb_ug RGB_COLOR_HSB\\(126,100,50\\)': 'Green'
-    '&rgb_ug RGB_COLOR_HSB\\(244,100,50\\)': 'Blue'
-    '&rgb_ug RGB_COLOR_HSB\\(309,100,50\\)': 'Purple'
-    '&rgb_ug RGB_COLOR_HSB\\(61,100,50\\)': 'Yellow'
+    # Map SYS layer colors using literal matching (no escaping needed for literals)
+    '&rgb_ug RGB_COLOR_HSB(0,100,50)': 'Red'
+    '&rgb_ug RGB_COLOR_HSB(126,100,50)': 'Green'
+    '&rgb_ug RGB_COLOR_HSB(244,100,50)': 'Blue'
+    '&rgb_ug RGB_COLOR_HSB(309,100,50)': 'Purple'
+    '&rgb_ug RGB_COLOR_HSB(61,100,50)': 'Yellow'
     '&bootloader': 'BOOT'
     
-    # Strip kpb macro on MIR layer so it parses as the pure parameter
-    '&kpb (.*)': '\1'
+    # Intercept Base Layer Mod-Morphs so we can style them cleanly in zmk_keycode_map
+    '&period': '&kp MY_PERIOD'
+    '&comma': '&kp MY_COMMA'
+
+    # Map all kpb macros on MIR layer directly to their final display text
+    '&kpb Q': 'Q'
+    '&kpb L': 'L'
+    '&kpb D': 'D'
+    '&kpb M': 'M'
+    '&kpb B': 'B'
+    '&kpb ESC': '⎋'
+    '&kpb S': 'S'
+    '&kpb R': 'R'
+    '&kpb T': 'T'
+    '&kpb C': 'C'
+    '&kpb G': 'G'
+    '&kpb J': 'J'
+    '&kpb DE_Z': 'Z'
+    '&kpb X': 'X'
+    '&kpb K': 'K'
+    '&kpb W': 'W'
+    '&kpb V': 'V'
+    '&kpb ENTER': '⏎'
+    '&kpb BACKSPACE': '⌫'
+    '&kpb SPACE': '␣'
+    '&kpb LSHFT': '⇧'
+    '&kpb TAB': '⇥'
+    '&kpb DE_SHARP_S': 'ß'
+    '&kpb LGUI': '❖'
 
   zmk_keycode_map:
-    # Base Layer Mod-Morphs (these are automatically resolved by keymap-drawer)
-    DE_PERIOD: "."
-    BACKSLASH: "'"
-    DE_COMMA: ","
-    DE_N2: '"'
+    # Base Layer Mod-Morph exact representations
+    MY_PERIOD: {t: ".", s: "'"}
+    MY_COMMA: {t: ",", s: '"'}
 
     # SYM homerow keys 
     DE_EQUAL: "="
