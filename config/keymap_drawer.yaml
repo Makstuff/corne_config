@@ -32,9 +32,9 @@ layers:
     - ["⇧", {t: ".", s: "'"}, {t: ",", s: '"'}, Ü, H, Ö, V, W, K, X, Z, "❖"]
     - [{t: "⏎", h: "NAV"}, "⌫", "␣", "⇧", {t: "⇥", h: "SYM"}, "NUM"]
   SYM:
-    - [{t: "▽", type: "trans"}, "[", "]", "*", "+", "^", {t: "▽", type: "trans"}, {t: "▽", type: "trans"}, "°", "!", "&", "|", "`", "´"]
-    - [{t: "▽", type: "trans"}, {t: "(", type: "homerow"}, {t: ")", type: "homerow"}, {t: ";", type: "homerow"}, {t: "_", type: "homerow"}, "=", {t: "▽", type: "trans"}, {t: "▽", type: "trans"}, '\', {t: "?", type: "homerow"}, {t: ":", type: "homerow"}, {t: "#", type: "homerow"}, {t: "$", type: "homerow"}, "€"]
-    - [{t: "▽", type: "trans"}, "{", "}", "/", "-", "@", "§", "<", ">", "%", "~", {t: "▽", type: "trans"}]
+    - [{t: "▽", type: "trans"}, "€", "#", "*", "+", "°", {t: "▽", type: "trans"}, {t: "▽", type: "trans"}, "&", "{", "}", "%", "`", "´"]
+    - [{t: "▽", type: "trans"}, {t: "=", type: "homerow"}, {t: ";", type: "homerow"}, {t: "(", type: "homerow"}, {t: ")", type: "homerow"}, "^", {t: "▽", type: "trans"}, {t: "▽", type: "trans"}, "!", {t: "?", type: "homerow"}, {t: "_", type: "homerow"}, {t: ":", type: "homerow"}, {t: "@", type: "homerow"}, "~"]
+    - [{t: "▽", type: "trans"}, "$", "\\", "/", "-", "§", "|", "[", "]", ">", "<", {t: "▽", type: "trans"}]
     - [{t: "▽", type: "trans"}, {t: "▽", type: "trans"}, {t: "▽", type: "trans"}, "⌂", {t: "▽", type: "trans"}, {t: "▽", type: "trans"}]
   NUM:
     - [{t: "▽", type: "trans"}, E, "6", "5", "4", "", {t: "▽", type: "trans"}, "⌂", "", "", "", "", "", ""]
