@@ -136,7 +136,15 @@ g.trans rect {
   fill: none !important;
   stroke-dasharray: 4;
 }
-g.homerow rect {
+/* Style homerow keys purely by physical position in the SVG (indices 16-19 and 24-27) */
+g.key:nth-of-type(16) rect,
+g.key:nth-of-type(17) rect,
+g.key:nth-of-type(18) rect,
+g.key:nth-of-type(19) rect,
+g.key:nth-of-type(24) rect,
+g.key:nth-of-type(25) rect,
+g.key:nth-of-type(26) rect,
+g.key:nth-of-type(27) rect {
   fill: #ffffff !important;
   stroke: #475569 !important;
 }
@@ -174,9 +182,9 @@ g.homerow rect {
 </g>
 <g transform="translate(476, 69)" class="key keypos-7">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<a href="#num">
-<text x="0" y="0" class="key tap layer-activator">num</text>
-</a><text x="0" y="24" class="key hold">toggle</text>
+<text x="0" y="0" class="key tap">
+<tspan x="0" dy="-0.6em">&amp;kp</tspan><tspan x="0" dy="1.2em">TO_NUM</tspan>
+</text>
 </g>
 <g transform="translate(532, 41)" class="key keypos-8">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
@@ -206,21 +214,21 @@ g.homerow rect {
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 <text x="0" y="0" class="key tap">⌃</text>
 </g>
-<g transform="translate(84, 105)" class="key homerow keypos-15">
-<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key homerow"/>
-<text x="0" y="0" class="key homerow tap">A</text>
+<g transform="translate(84, 105)" class="key keypos-15">
+<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
+<text x="0" y="0" class="key tap">A</text>
 </g>
-<g transform="translate(140, 91)" class="key homerow keypos-16">
-<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key homerow"/>
-<text x="0" y="0" class="key homerow tap">I</text>
+<g transform="translate(140, 91)" class="key keypos-16">
+<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
+<text x="0" y="0" class="key tap">I</text>
 </g>
-<g transform="translate(196, 84)" class="key homerow keypos-17">
-<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key homerow"/>
-<text x="0" y="0" class="key homerow tap">E</text>
+<g transform="translate(196, 84)" class="key keypos-17">
+<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
+<text x="0" y="0" class="key tap">E</text>
 </g>
-<g transform="translate(252, 91)" class="key homerow keypos-18">
-<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key homerow"/>
-<text x="0" y="0" class="key homerow tap">N</text>
+<g transform="translate(252, 91)" class="key keypos-18">
+<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
+<text x="0" y="0" class="key tap">N</text>
 </g>
 <g transform="translate(308, 97)" class="key keypos-19">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
@@ -232,29 +240,29 @@ g.homerow rect {
 </g>
 <g transform="translate(476, 125)" class="key keypos-21">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<a href="#nav">
-<text x="0" y="0" class="key tap layer-activator">nav</text>
-</a><text x="0" y="24" class="key hold">toggle</text>
+<text x="0" y="0" class="key tap">
+<tspan x="0" dy="-0.6em">&amp;kp</tspan><tspan x="0" dy="1.2em">TO_NAV</tspan>
+</text>
 </g>
 <g transform="translate(532, 97)" class="key keypos-22">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 <text x="0" y="0" class="key tap">G</text>
 </g>
-<g transform="translate(588, 91)" class="key homerow keypos-23">
-<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key homerow"/>
-<text x="0" y="0" class="key homerow tap">C</text>
+<g transform="translate(588, 91)" class="key keypos-23">
+<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
+<text x="0" y="0" class="key tap">C</text>
 </g>
-<g transform="translate(644, 84)" class="key homerow keypos-24">
-<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key homerow"/>
-<text x="0" y="0" class="key homerow tap">T</text>
+<g transform="translate(644, 84)" class="key keypos-24">
+<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
+<text x="0" y="0" class="key tap">T</text>
 </g>
-<g transform="translate(700, 91)" class="key homerow keypos-25">
-<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key homerow"/>
-<text x="0" y="0" class="key homerow tap">R</text>
+<g transform="translate(700, 91)" class="key keypos-25">
+<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
+<text x="0" y="0" class="key tap">R</text>
 </g>
-<g transform="translate(756, 105)" class="key homerow keypos-26">
-<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key homerow"/>
-<text x="0" y="0" class="key homerow tap">S</text>
+<g transform="translate(756, 105)" class="key keypos-26">
+<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
+<text x="0" y="0" class="key tap">S</text>
 </g>
 <g transform="translate(812, 105)" class="key keypos-27">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
@@ -406,21 +414,29 @@ g.homerow rect {
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
 <text x="0" y="0" class="key trans tap">▽</text>
 </g>
-<g transform="translate(84, 105)" class="key homerow keypos-15">
-<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key homerow"/>
-<text x="0" y="0" class="key homerow tap">=</text>
+<g transform="translate(84, 105)" class="key keypos-15">
+<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
+<text x="0" y="0" class="key tap">
+<tspan x="0" dy="-0.6em">DE</tspan><tspan x="0" dy="1.2em">EQUAL</tspan>
+</text>
 </g>
-<g transform="translate(140, 91)" class="key homerow keypos-16">
-<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key homerow"/>
-<text x="0" y="0" class="key homerow tap">;</text>
+<g transform="translate(140, 91)" class="key keypos-16">
+<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
+<text x="0" y="0" class="key tap">
+<tspan x="0" dy="-0.6em">DE</tspan><tspan x="0" dy="1.2em">SEMI</tspan>
+</text>
 </g>
-<g transform="translate(196, 84)" class="key homerow keypos-17">
-<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key homerow"/>
-<text x="0" y="0" class="key homerow tap">(</text>
+<g transform="translate(196, 84)" class="key keypos-17">
+<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
+<text x="0" y="0" class="key tap">
+<tspan x="0" dy="-0.6em">DE</tspan><tspan x="0" dy="1.2em">LPAR</tspan>
+</text>
 </g>
-<g transform="translate(252, 91)" class="key homerow keypos-18">
-<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key homerow"/>
-<text x="0" y="0" class="key homerow tap">)</text>
+<g transform="translate(252, 91)" class="key keypos-18">
+<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
+<text x="0" y="0" class="key tap">
+<tspan x="0" dy="-0.6em">DE</tspan><tspan x="0" dy="1.2em">RPAR</tspan>
+</text>
 </g>
 <g transform="translate(308, 97)" class="key keypos-19">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
@@ -438,21 +454,29 @@ g.homerow rect {
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 <text x="0" y="0" class="key tap">!</text>
 </g>
-<g transform="translate(588, 91)" class="key homerow keypos-23">
-<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key homerow"/>
-<text x="0" y="0" class="key homerow tap">?</text>
+<g transform="translate(588, 91)" class="key keypos-23">
+<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
+<text x="0" y="0" class="key tap">
+<tspan x="0" dy="-0.6em">DE</tspan><tspan x="0" dy="1.2em">QMARK</tspan>
+</text>
 </g>
-<g transform="translate(644, 84)" class="key homerow keypos-24">
-<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key homerow"/>
-<text x="0" y="0" class="key homerow tap">_</text>
+<g transform="translate(644, 84)" class="key keypos-24">
+<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
+<text x="0" y="0" class="key tap">
+<tspan x="0" dy="-0.6em">DE</tspan><tspan x="0" dy="1.2em">UNDER</tspan>
+</text>
 </g>
-<g transform="translate(700, 91)" class="key homerow keypos-25">
-<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key homerow"/>
-<text x="0" y="0" class="key homerow tap">:</text>
+<g transform="translate(700, 91)" class="key keypos-25">
+<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
+<text x="0" y="0" class="key tap">
+<tspan x="0" dy="-0.6em">DE</tspan><tspan x="0" dy="1.2em">COLON</tspan>
+</text>
 </g>
-<g transform="translate(756, 105)" class="key homerow keypos-26">
-<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key homerow"/>
-<text x="0" y="0" class="key homerow tap">@</text>
+<g transform="translate(756, 105)" class="key keypos-26">
+<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
+<text x="0" y="0" class="key tap">
+<tspan x="0" dy="-0.6em">DE</tspan><tspan x="0" dy="1.2em">AT</tspan>
+</text>
 </g>
 <g transform="translate(812, 105)" class="key keypos-27">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
@@ -520,9 +544,9 @@ g.homerow rect {
 </g>
 <g transform="translate(490, 215) rotate(-24.0)" class="key keypos-43">
 <rect rx="6" ry="6" x="-26" y="-40" width="52" height="80" class="key"/>
-<a href="#base">
-<text x="0" y="0" class="key tap layer-activator">base</text>
-</a><text x="0" y="38" class="key hold">toggle</text>
+<text x="0" y="0" class="key tap">
+<tspan x="0" dy="-0.6em">&amp;kp</tspan><tspan x="0" dy="1.2em">TO_BASE</tspan>
+</text>
 </g>
 <g transform="translate(555, 209) rotate(-12.0)" class="key held keypos-44">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key held"/>
@@ -540,9 +564,9 @@ g.homerow rect {
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
 <text x="0" y="0" class="key trans tap">▽</text>
 </g>
-<g transform="translate(84, 49)" class="key homerow keypos-1">
-<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key homerow"/>
-<text x="0" y="0" class="key homerow tap">E</text>
+<g transform="translate(84, 49)" class="key keypos-1">
+<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
+<text x="0" y="0" class="key tap">E</text>
 </g>
 <g transform="translate(140, 35)" class="key keypos-2">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
@@ -565,9 +589,9 @@ g.homerow rect {
 </g>
 <g transform="translate(476, 69)" class="key keypos-7">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<a href="#base">
-<text x="0" y="0" class="key tap layer-activator">base</text>
-</a><text x="0" y="24" class="key hold">toggle</text>
+<text x="0" y="0" class="key tap">
+<tspan x="0" dy="-0.6em">&amp;kp</tspan><tspan x="0" dy="1.2em">TO_BASE</tspan>
+</text>
 </g>
 <g transform="translate(532, 41)" class="key keypos-8">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
@@ -591,21 +615,21 @@ g.homerow rect {
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
 <text x="0" y="0" class="key trans tap">▽</text>
 </g>
-<g transform="translate(84, 105)" class="key homerow keypos-15">
-<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key homerow"/>
-<text x="0" y="0" class="key homerow tap">0</text>
+<g transform="translate(84, 105)" class="key keypos-15">
+<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
+<text x="0" y="0" class="key tap">0</text>
 </g>
-<g transform="translate(140, 91)" class="key homerow keypos-16">
-<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key homerow"/>
-<text x="0" y="0" class="key homerow tap">3</text>
+<g transform="translate(140, 91)" class="key keypos-16">
+<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
+<text x="0" y="0" class="key tap">3</text>
 </g>
-<g transform="translate(196, 84)" class="key homerow keypos-17">
-<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key homerow"/>
-<text x="0" y="0" class="key homerow tap">2</text>
+<g transform="translate(196, 84)" class="key keypos-17">
+<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
+<text x="0" y="0" class="key tap">2</text>
 </g>
-<g transform="translate(252, 91)" class="key homerow keypos-18">
-<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key homerow"/>
-<text x="0" y="0" class="key homerow tap">1</text>
+<g transform="translate(252, 91)" class="key keypos-18">
+<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
+<text x="0" y="0" class="key tap">1</text>
 </g>
 <g transform="translate(308, 97)" class="key keypos-19">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
@@ -699,9 +723,9 @@ g.homerow rect {
 </g>
 <g transform="translate(490, 215) rotate(-24.0)" class="key keypos-43">
 <rect rx="6" ry="6" x="-26" y="-40" width="52" height="80" class="key"/>
-<a href="#base">
-<text x="0" y="0" class="key tap layer-activator">base</text>
-</a><text x="0" y="38" class="key hold">toggle</text>
+<text x="0" y="0" class="key tap">
+<tspan x="0" dy="-0.6em">&amp;kp</tspan><tspan x="0" dy="1.2em">TO_BASE</tspan>
+</text>
 </g>
 <g transform="translate(555, 209) rotate(-12.0)" class="key trans keypos-44">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
@@ -717,9 +741,9 @@ g.homerow rect {
 <g transform="translate(0, 56)">
 <g transform="translate(28, 49)" class="key keypos-0">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<a href="#mir">
-<text x="0" y="0" class="key tap layer-activator">mir</text>
-</a><text x="0" y="24" class="key hold">toggle</text>
+<text x="0" y="0" class="key tap">
+<tspan x="0" dy="-0.6em">&amp;kp</tspan><tspan x="0" dy="1.2em">TO_MIR</tspan>
+</text>
 </g>
 <g transform="translate(84, 49)" class="key keypos-1">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
@@ -770,31 +794,31 @@ g.homerow rect {
 </g>
 <g transform="translate(812, 49)" class="key keypos-13">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<a href="#sys">
-<text x="0" y="0" class="key tap layer-activator">sys</text>
-</a><text x="0" y="24" class="key hold">toggle</text>
+<text x="0" y="0" class="key tap">
+<tspan x="0" dy="-0.6em">&amp;kp</tspan><tspan x="0" dy="1.2em">TO_SYS</tspan>
+</text>
 </g>
 <g transform="translate(28, 105)" class="key keypos-14">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<a href="#mir">
-<text x="0" y="0" class="key tap layer-activator">mir</text>
-</a><text x="0" y="24" class="key hold">toggle</text>
+<text x="0" y="0" class="key tap">
+<tspan x="0" dy="-0.6em">&amp;kp</tspan><tspan x="0" dy="1.2em">TO_MIR</tspan>
+</text>
 </g>
 <g transform="translate(84, 105)" class="key keypos-15">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 <text x="0" y="0" class="key tap">⌃F</text>
 </g>
-<g transform="translate(140, 91)" class="key homerow keypos-16">
-<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key homerow"/>
-<text x="0" y="0" class="key homerow tap">←</text>
+<g transform="translate(140, 91)" class="key keypos-16">
+<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
+<text x="0" y="0" class="key tap">←</text>
 </g>
-<g transform="translate(196, 84)" class="key homerow keypos-17">
-<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key homerow"/>
-<text x="0" y="0" class="key homerow tap">↓</text>
+<g transform="translate(196, 84)" class="key keypos-17">
+<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
+<text x="0" y="0" class="key tap">↓</text>
 </g>
-<g transform="translate(252, 91)" class="key homerow keypos-18">
-<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key homerow"/>
-<text x="0" y="0" class="key homerow tap">→</text>
+<g transform="translate(252, 91)" class="key keypos-18">
+<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
+<text x="0" y="0" class="key tap">→</text>
 </g>
 <g transform="translate(308, 97)" class="key keypos-19">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
@@ -806,37 +830,37 @@ g.homerow rect {
 </g>
 <g transform="translate(476, 125)" class="key keypos-21">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<a href="#base">
-<text x="0" y="0" class="key tap layer-activator">base</text>
-</a><text x="0" y="24" class="key hold">toggle</text>
+<text x="0" y="0" class="key tap">
+<tspan x="0" dy="-0.6em">&amp;kp</tspan><tspan x="0" dy="1.2em">TO_BASE</tspan>
+</text>
 </g>
 <g transform="translate(532, 97)" class="key keypos-22">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 </g>
-<g transform="translate(588, 91)" class="key homerow keypos-23">
-<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key homerow"/>
-<text x="0" y="0" class="key homerow tap">F5</text>
+<g transform="translate(588, 91)" class="key keypos-23">
+<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
+<text x="0" y="0" class="key tap">F5</text>
 </g>
-<g transform="translate(644, 84)" class="key homerow keypos-24">
-<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key homerow"/>
-<text x="0" y="0" class="key homerow tap">F6</text>
+<g transform="translate(644, 84)" class="key keypos-24">
+<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
+<text x="0" y="0" class="key tap">F6</text>
 </g>
-<g transform="translate(700, 91)" class="key homerow keypos-25">
-<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key homerow"/>
-<text x="0" y="0" class="key homerow tap">F7</text>
+<g transform="translate(700, 91)" class="key keypos-25">
+<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
+<text x="0" y="0" class="key tap">F7</text>
 </g>
-<g transform="translate(756, 105)" class="key homerow keypos-26">
-<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key homerow"/>
-<text x="0" y="0" class="key homerow tap">F8</text>
+<g transform="translate(756, 105)" class="key keypos-26">
+<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
+<text x="0" y="0" class="key tap">F8</text>
 </g>
 <g transform="translate(812, 105)" class="key keypos-27">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 </g>
 <g transform="translate(28, 161)" class="key keypos-28">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<a href="#mir">
-<text x="0" y="0" class="key tap layer-activator">mir</text>
-</a><text x="0" y="24" class="key hold">toggle</text>
+<text x="0" y="0" class="key tap">
+<tspan x="0" dy="-0.6em">&amp;kp</tspan><tspan x="0" dy="1.2em">TO_MIR</tspan>
+</text>
 </g>
 <g transform="translate(84, 161)" class="key keypos-29">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
@@ -894,9 +918,9 @@ g.homerow rect {
 </g>
 <g transform="translate(490, 215) rotate(-24.0)" class="key keypos-43">
 <rect rx="6" ry="6" x="-26" y="-40" width="52" height="80" class="key"/>
-<a href="#base">
-<text x="0" y="0" class="key tap layer-activator">base</text>
-</a><text x="0" y="38" class="key hold">toggle</text>
+<text x="0" y="0" class="key tap">
+<tspan x="0" dy="-0.6em">&amp;kp</tspan><tspan x="0" dy="1.2em">TO_BASE</tspan>
+</text>
 </g>
 <g transform="translate(555, 209) rotate(-12.0)" class="key trans keypos-44">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
@@ -953,9 +977,9 @@ g.homerow rect {
 </g>
 <g transform="translate(476, 69)" class="key keypos-7">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<a href="#num">
-<text x="0" y="0" class="key tap layer-activator">num</text>
-</a><text x="0" y="24" class="key hold">toggle</text>
+<text x="0" y="0" class="key tap">
+<tspan x="0" dy="-0.6em">&amp;kp</tspan><tspan x="0" dy="1.2em">TO_NUM</tspan>
+</text>
 </g>
 <g transform="translate(532, 41)" class="key keypos-8">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
@@ -1035,9 +1059,9 @@ g.homerow rect {
 </g>
 <g transform="translate(476, 125)" class="key keypos-21">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<a href="#nav">
-<text x="0" y="0" class="key tap layer-activator">nav</text>
-</a><text x="0" y="24" class="key hold">toggle</text>
+<text x="0" y="0" class="key tap">
+<tspan x="0" dy="-0.6em">&amp;kp</tspan><tspan x="0" dy="1.2em">TO_NAV</tspan>
+</text>
 </g>
 <g transform="translate(532, 97)" class="key keypos-22">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
@@ -1177,9 +1201,9 @@ g.homerow rect {
 </g>
 <g transform="translate(616, 203)" class="key keypos-45">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<a href="#num">
-<text x="0" y="0" class="key tap layer-activator">num</text>
-</a><text x="0" y="24" class="key hold">toggle</text>
+<text x="0" y="0" class="key tap">
+<tspan x="0" dy="-0.6em">&amp;kp</tspan><tspan x="0" dy="1.2em">TO_NUM</tspan>
+</text>
 </g>
 </g>
 </g>
@@ -1242,9 +1266,9 @@ g.homerow rect {
 </g>
 <g transform="translate(812, 49)" class="key keypos-13">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<a href="#base">
-<text x="0" y="0" class="key tap layer-activator">base</text>
-</a><text x="0" y="24" class="key hold">toggle</text>
+<text x="0" y="0" class="key tap">
+<tspan x="0" dy="-0.6em">&amp;kp</tspan><tspan x="0" dy="1.2em">TO_BASE</tspan>
+</text>
 </g>
 <g transform="translate(28, 105)" class="key keypos-14">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
@@ -1383,9 +1407,9 @@ g.homerow rect {
 </g>
 <g transform="translate(490, 215) rotate(-24.0)" class="key keypos-43">
 <rect rx="6" ry="6" x="-26" y="-40" width="52" height="80" class="key"/>
-<a href="#base">
-<text x="0" y="0" class="key tap layer-activator">base</text>
-</a><text x="0" y="38" class="key hold">toggle</text>
+<text x="0" y="0" class="key tap">
+<tspan x="0" dy="-0.6em">&amp;kp</tspan><tspan x="0" dy="1.2em">TO_BASE</tspan>
+</text>
 </g>
 <g transform="translate(555, 209) rotate(-12.0)" class="key keypos-44">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
