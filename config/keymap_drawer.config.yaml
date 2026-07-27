@@ -16,10 +16,6 @@ parse_config:
     '&rgb_ug RGB_COLOR_HSB(309,100,50)': 'Purple'
     '&rgb_ug RGB_COLOR_HSB(61,100,50)': 'Yellow'
     '&bootloader': 'BOOT'
-    
-    # Intercept Base Layer Mod-Morphs so we can style them cleanly in zmk_keycode_map
-    '&period': '&kp MY_PERIOD'
-    '&comma': '&kp MY_COMMA'
 
     # Map all kpb macros on MIR layer directly to their final display text
     '&kpb Q': 'Q'
@@ -48,10 +44,6 @@ parse_config:
     '&kpb LGUI': '❖'
 
   zmk_keycode_map:
-    # Base Layer Mod-Morph exact representations
-    MY_PERIOD: {t: ".", s: "'"}
-    MY_COMMA: {t: ",", s: '"'}
-
     # SYM homerow keys 
     DE_EQUAL: "="
     DE_SEMI: ";"
@@ -62,7 +54,7 @@ parse_config:
     DE_COLON: ":"
     DE_AT: "@"
 
-    # Standard mappings for DE_ macros
+    # Standard mappings for DE_ macros and mod-morph parameters
     DE_A_UMLAUT: Ä
     DE_U_UMLAUT: Ü
     DE_O_UMLAUT: Ö
@@ -95,6 +87,10 @@ parse_config:
     DE_LT: "<"
     DE_SQT: "'"
     DE_DOT: "."
+    DE_COMMA: ","
+    DE_PERIOD: "."
+    DE_N2: '"'
+    BACKSLASH: "'"
     
     # Base Modifiers and Keys
     LEFT_ALT: "⌥"
