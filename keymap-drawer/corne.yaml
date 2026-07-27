@@ -8,7 +8,7 @@ layers:
   - F
   - Y
   - ⎋
-  - {t: num, h: toggle}
+  - '&kp TO_NUM'
   - B
   - M
   - D
@@ -16,18 +16,18 @@ layers:
   - Q
   - ß
   - ⌃
-  - {t: A, type: homerow}
-  - {t: I, type: homerow}
-  - {t: E, type: homerow}
-  - {t: N, type: homerow}
+  - A
+  - I
+  - E
+  - N
   - P
   - ⌦
-  - {t: nav, h: toggle}
+  - '&kp TO_NAV'
   - G
-  - {t: C, type: homerow}
-  - {t: T, type: homerow}
-  - {t: R, type: homerow}
-  - {t: S, type: homerow}
+  - C
+  - T
+  - R
+  - S
   - J
   - ⇧
   - {t: DE PERIOD, s: BACKSLASH}
@@ -63,18 +63,18 @@ layers:
   - '`'
   - ´
   - {t: ▽, type: trans}
-  - {t: '=', type: homerow}
-  - {t: ;, type: homerow}
-  - {t: (, type: homerow}
-  - {t: ), type: homerow}
+  - DE EQUAL
+  - DE SEMI
+  - DE LPAR
+  - DE RPAR
   - ^
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - '!'
-  - {t: '?', type: homerow}
-  - {t: _, type: homerow}
-  - {t: ':', type: homerow}
-  - {t: '@', type: homerow}
+  - DE QMARK
+  - DE UNDER
+  - DE COLON
+  - DE AT
   - '~'
   - {t: ▽, type: trans}
   - $
@@ -91,18 +91,18 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: base, h: toggle}
+  - '&kp TO_BASE'
   - {type: held}
   - {t: ▽, type: trans}
   num:
   - {t: ▽, type: trans}
-  - {t: E, type: homerow}
+  - E
   - '6'
   - '5'
   - '4'
   - ''
   - {t: ▽, type: trans}
-  - {t: base, h: toggle}
+  - '&kp TO_BASE'
   - ''
   - ''
   - ''
@@ -110,10 +110,10 @@ layers:
   - ''
   - ''
   - {t: ▽, type: trans}
-  - {t: '0', type: homerow}
-  - {t: '3', type: homerow}
-  - {t: '2', type: homerow}
-  - {t: '1', type: homerow}
+  - '0'
+  - '3'
+  - '2'
+  - '1'
   - ','
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -138,11 +138,11 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: base, h: toggle}
+  - '&kp TO_BASE'
   - {t: ▽, type: trans}
   - {type: held}
   nav:
-  - {t: mir, h: toggle}
+  - '&kp TO_MIR'
   - ⌃S
   - ⌃Z
   - ↑
@@ -155,22 +155,22 @@ layers:
   - F2
   - F3
   - F4
-  - {t: sys, h: toggle}
-  - {t: mir, h: toggle}
+  - '&kp TO_SYS'
+  - '&kp TO_MIR'
   - ⌃F
-  - {t: ←, type: homerow}
-  - {t: ↓, type: homerow}
-  - {t: →, type: homerow}
+  - ←
+  - ↓
+  - →
   - Emoji
   - {t: ▽, type: trans}
-  - {t: base, h: toggle}
+  - '&kp TO_BASE'
   - ''
-  - {t: F5, type: homerow}
-  - {t: F6, type: homerow}
-  - {t: F7, type: homerow}
-  - {t: F8, type: homerow}
+  - F5
+  - F6
+  - F7
+  - F8
   - ''
-  - {t: mir, h: toggle}
+  - '&kp TO_MIR'
   - ⌃A
   - ⌃X
   - ⌃C
@@ -185,7 +185,7 @@ layers:
   - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - {t: base, h: toggle}
+  - '&kp TO_BASE'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   mir:
@@ -196,7 +196,7 @@ layers:
   - '&kpb M'
   - '&kpb B'
   - '&kpb ESC'
-  - {t: num, h: toggle}
+  - '&kp TO_NUM'
   - '&kpb B'
   - '&kpb M'
   - '&kpb D'
@@ -210,7 +210,7 @@ layers:
   - '&kpb C'
   - '&kpb G'
   - '&kpb J'
-  - {t: nav, h: toggle}
+  - '&kp TO_NAV'
   - '&kpb G'
   - '&kpb C'
   - '&kpb T'
@@ -234,7 +234,7 @@ layers:
   - '&kpb SPACE'
   - '&kpb LSHFT'
   - '&kpb TAB'
-  - {t: num, h: toggle}
+  - '&kp TO_NUM'
   sys:
   - ''
   - ''
@@ -249,7 +249,7 @@ layers:
   - RGB COLOR HSB(244,100,50)
   - RGB COLOR HSB(309,100,50)
   - RGB COLOR HSB(61,100,50)
-  - {t: base, h: toggle}
+  - '&kp TO_BASE'
   - ''
   - {t: BT, h: '0'}
   - {t: BT, h: '1'}
@@ -279,6 +279,6 @@ layers:
   - ''
   - ''
   - ''
-  - {t: base, h: toggle}
+  - '&kp TO_BASE'
   - ''
   - ''
