@@ -155,9 +155,15 @@ g.small text {
   font-size: 17.5px !important;
 }
 
-/* Shrink the font size of raw_binding_map strings by explicitly targeting their physical layer positions */
+/* Shrink the font size of EVERY key on the SYS layer since they are all >2 characters */
+g[class*="layer-sys" i] g.key text {
+  font-size: 17.5px !important;
+}
+
+/* Shrink the font size of raw_binding_map layer toggles by explicitly targeting their physical positions */
 g[class*="layer-base" i] g.key:nth-of-type(8) text,
 g[class*="layer-base" i] g.key:nth-of-type(22) text,
+g[class*="layer-sym" i] g.key:nth-of-type(44) text,
 g[class*="layer-num" i] g.key:nth-of-type(8) text,
 g[class*="layer-num" i] g.key:nth-of-type(44) text,
 g[class*="layer-nav" i] g.key:nth-of-type(1) text,
@@ -168,14 +174,7 @@ g[class*="layer-nav" i] g.key:nth-of-type(29) text,
 g[class*="layer-nav" i] g.key:nth-of-type(44) text,
 g[class*="layer-mir" i] g.key:nth-of-type(8) text,
 g[class*="layer-mir" i] g.key:nth-of-type(22) text,
-g[class*="layer-mir" i] g.key:nth-of-type(46) text,
-g[class*="layer-sys" i] g.key:nth-of-type(9) text,
-g[class*="layer-sys" i] g.key:nth-of-type(10) text,
-g[class*="layer-sys" i] g.key:nth-of-type(11) text,
-g[class*="layer-sys" i] g.key:nth-of-type(12) text,
-g[class*="layer-sys" i] g.key:nth-of-type(13) text,
-g[class*="layer-sys" i] g.key:nth-of-type(14) text,
-g[class*="layer-sys" i] g.key:nth-of-type(44) text {
+g[class*="layer-mir" i] g.key:nth-of-type(46) text {
   font-size: 17.5px !important;
 }
 </style>
@@ -1218,11 +1217,11 @@ g[class*="layer-sys" i] g.key:nth-of-type(44) text {
 </g>
 <g transform="translate(364, 125)" class="key keypos-20">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<text x="0" y="0" class="key tap"><tspan style="font-size: 64%">&amp;bootloader</tspan></text>
+<text x="0" y="0" class="key tap">BOOT</text>
 </g>
 <g transform="translate(476, 125)" class="key keypos-21">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
-<text x="0" y="0" class="key tap"><tspan style="font-size: 64%">&amp;bootloader</tspan></text>
+<text x="0" y="0" class="key tap">BOOT</text>
 </g>
 <g transform="translate(532, 97)" class="key keypos-22">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
@@ -1260,9 +1259,9 @@ g[class*="layer-sys" i] g.key:nth-of-type(44) text {
 <g transform="translate(28, 161)" class="key keypos-28">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
 </g>
-<g transform="translate(84, 161)" class="key small keypos-29">
-<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key small"/>
-<text x="0" y="0" class="key small tap">
+<g transform="translate(84, 161)" class="key keypos-29">
+<rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key"/>
+<text x="0" y="0" class="key tap">
 <tspan x="0" dy="-0.6em">BT</tspan><tspan x="0" dy="1.2em">CLR</tspan>
 </text>
 </g>
