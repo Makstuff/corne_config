@@ -201,3 +201,9 @@ draw_config:
     g[class*="layer-mir" i] g.key:nth-of-type(46) text {
       font-size: 17.5px !important;
     }
+
+    /* Shift text content up on NAV and SYM thumb keys to prevent bottom border overlap */
+    g[class*="layer-base" i] g.key:nth-of-type(41) text,
+    g[class*="layer-base" i] g.key:nth-of-type(45) text {
+      transform: translateY(-5px);
+    }
