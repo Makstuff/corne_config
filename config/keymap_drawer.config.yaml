@@ -184,6 +184,9 @@ draw_config:
     /* Shrink the font size of raw_binding_map layer toggles by explicitly targeting their physical positions */
     g[class*="layer-base" i] g.key:nth-of-type(8) text,
     g[class*="layer-base" i] g.key:nth-of-type(22) text,
+    g[class*="layer-base" i] g.key:nth-of-type(41) text.hold,
+    g[class*="layer-base" i] g.key:nth-of-type(45) text.hold,
+    g[class*="layer-base" i] g.key:nth-of-type(46) text,
     g[class*="layer-sym" i] g.key:nth-of-type(44) text,
     g[class*="layer-num" i] g.key:nth-of-type(8) text,
     g[class*="layer-num" i] g.key:nth-of-type(44) text,
