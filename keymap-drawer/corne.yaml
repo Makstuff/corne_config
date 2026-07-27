@@ -16,18 +16,18 @@ layers:
   - Q
   - (ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD MINUS AND UNDERSCORE))
   - ⌃
-  - A
-  - I
-  - E
-  - N
+  - {t: A, type: homerow}
+  - {t: I, type: homerow}
+  - {t: E, type: homerow}
+  - {t: N, type: homerow}
   - P
   - ⌦
   - {t: nav, h: toggle}
   - G
-  - C
-  - T
-  - R
-  - S
+  - {t: C, type: homerow}
+  - {t: T, type: homerow}
+  - {t: R, type: homerow}
+  - {t: S, type: homerow}
   - J
   - ⇧
   - {t: '(ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD PERIOD AND GREATER THAN))', s: BACKSLASH}
@@ -96,7 +96,7 @@ layers:
   - {t: ▽, type: trans}
   num:
   - {t: ▽, type: trans}
-  - E
+  - {t: E, type: homerow}
   - '6'
   - '5'
   - '4'
@@ -110,10 +110,10 @@ layers:
   - ''
   - ''
   - {t: ▽, type: trans}
-  - '0'
-  - '3'
-  - '2'
-  - '1'
+  - {t: '0', type: homerow}
+  - {t: '3', type: homerow}
+  - {t: '2', type: homerow}
+  - {t: '1', type: homerow}
   - (ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD COMMA AND LESS THAN))
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -158,17 +158,17 @@ layers:
   - {t: sys, h: toggle}
   - {t: mir, h: toggle}
   - ⌃F
-  - ←
-  - ↓
-  - →
+  - {t: ←, type: homerow}
+  - {t: ↓, type: homerow}
+  - {t: →, type: homerow}
   - Gui+((ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD PERIOD AND GREATER THAN)))
   - {t: ▽, type: trans}
   - {t: base, h: toggle}
   - ''
-  - F5
-  - F6
-  - F7
-  - F8
+  - {t: F5, type: homerow}
+  - {t: F6, type: homerow}
+  - {t: F7, type: homerow}
+  - {t: F8, type: homerow}
   - ''
   - {t: mir, h: toggle}
   - ⌃A
