@@ -9,14 +9,15 @@ parse_config:
     '&to 4': "TO\nMIR"
     '&to 5': "TO\nSYS"
     
-    # Map SYS layer colors
+    # Map SYS layer colors and bootloader
     '&rgb_ug RGB_COLOR_HSB(0,100,50)': 'Red'
     '&rgb_ug RGB_COLOR_HSB(126,100,50)': 'Green'
     '&rgb_ug RGB_COLOR_HSB(244,100,50)': 'Blue'
     '&rgb_ug RGB_COLOR_HSB(309,100,50)': 'Purple'
     '&rgb_ug RGB_COLOR_HSB(61,100,50)': 'Yellow'
+    '&bootloader': 'BOOT'
 
-    # Map all kpb macros on MIR layer directly to their final display text (1 char, no shrinking needed)
+    # Map all kpb macros on MIR layer directly to their final display text
     '&kpb Q': 'Q'
     '&kpb L': 'L'
     '&kpb D': 'D'
@@ -43,26 +44,25 @@ parse_config:
     '&kpb LGUI': '❖'
 
   zmk_keycode_map:
-    # Long strings (> 2 chars) receive the 'small' class to shrink their font by 30%
-    bootloader: {t: "BOOT", type: "small"}
+    # Long strings (> 2 chars) on standard layers receive the 'small' class
     LC(LA(LG(C))): {t: "Crop", type: "small"}
     LG(DE_DOT): {t: "Emoji", type: "small"}
-    BT_CLR: {t: "BT CLR", type: "small"}
-    RGB_TOG: {t: "RGB TG", type: "small"}
     PG_UP: {t: "PgUp", type: "small"}
     PG_DN: {t: "PgDn", type: "small"}
 
-    # SYS layer RGB toggles (> 2 chars)
-    RGB_HUD: {t: "HUD", type: "small"}
-    RGB_SAD: {t: "SAD", type: "small"}
-    RGB_BRD: {t: "BRD", type: "small"}
-    RGB_SPD: {t: "SPD", type: "small"}
-    RGB_EFR: {t: "EFR", type: "small"}
-    RGB_HUI: {t: "HUI", type: "small"}
-    RGB_SAI: {t: "SAI", type: "small"}
-    RGB_BRI: {t: "BRI", type: "small"}
-    RGB_SPI: {t: "SPI", type: "small"}
-    RGB_EFF: {t: "EFF", type: "small"}
+    # SYS layer toggles (these will be shrunk automatically by the CSS layer rule below)
+    BT_CLR: "BT CLR"
+    RGB_TOG: "RGB TG"
+    RGB_HUD: "HUD"
+    RGB_SAD: "SAD"
+    RGB_BRD: "BRD"
+    RGB_SPD: "SPD"
+    RGB_EFR: "EFR"
+    RGB_HUI: "HUI"
+    RGB_SAI: "SAI"
+    RGB_BRI: "BRI"
+    RGB_SPI: "SPI"
+    RGB_EFF: "EFF"
 
     # SYM homerow keys 
     DE_EQUAL: "="
@@ -176,9 +176,15 @@ draw_config:
       font-size: 17.5px !important;
     }
     
-    /* Shrink the font size of raw_binding_map strings by explicitly targeting their physical layer positions */
+    /* Shrink the font size of EVERY key on the SYS layer since they are all >2 characters */
+    g[class*="layer-sys" i] g.key text {
+      font-size: 17.5px !important;
+    }
+
+    /* Shrink the font size of raw_binding_map layer toggles by explicitly targeting their physical positions */
     g[class*="layer-base" i] g.key:nth-of-type(8) text,
     g[class*="layer-base" i] g.key:nth-of-type(22) text,
+    g[class*="layer-sym" i] g.key:nth-of-type(44) text,
     g[class*="layer-num" i] g.key:nth-of-type(8) text,
     g[class*="layer-num" i] g.key:nth-of-type(44) text,
     g[class*="layer-nav" i] g.key:nth-of-type(1) text,
@@ -189,13 +195,6 @@ draw_config:
     g[class*="layer-nav" i] g.key:nth-of-type(44) text,
     g[class*="layer-mir" i] g.key:nth-of-type(8) text,
     g[class*="layer-mir" i] g.key:nth-of-type(22) text,
-    g[class*="layer-mir" i] g.key:nth-of-type(46) text,
-    g[class*="layer-sys" i] g.key:nth-of-type(9) text,
-    g[class*="layer-sys" i] g.key:nth-of-type(10) text,
-    g[class*="layer-sys" i] g.key:nth-of-type(11) text,
-    g[class*="layer-sys" i] g.key:nth-of-type(12) text,
-    g[class*="layer-sys" i] g.key:nth-of-type(13) text,
-    g[class*="layer-sys" i] g.key:nth-of-type(14) text,
-    g[class*="layer-sys" i] g.key:nth-of-type(44) text {
+    g[class*="layer-mir" i] g.key:nth-of-type(46) text {
       font-size: 17.5px !important;
     }
