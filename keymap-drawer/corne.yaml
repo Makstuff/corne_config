@@ -1,0 +1,284 @@
+layout: {zmk_keyboard: corne, layout_name: default_layout}
+layers:
+  base:
+  - ⌥
+  - (ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD APOSTROPHE AND QUOTE))
+  - U
+  - O
+  - F
+  - (ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD Z))
+  - ⎋
+  - {t: num, h: toggle}
+  - B
+  - M
+  - D
+  - L
+  - Q
+  - (ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD MINUS AND UNDERSCORE))
+  - ⌃
+  - A
+  - I
+  - E
+  - N
+  - P
+  - ⌦
+  - {t: nav, h: toggle}
+  - G
+  - C
+  - T
+  - R
+  - S
+  - J
+  - ⇧
+  - {t: '(ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD PERIOD AND GREATER THAN))', s: BACKSLASH}
+  - {t: '(ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD COMMA AND LESS THAN))', s: '(ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD 2 AND AT))'}
+  - (ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD LEFT BRACKET AND LEFT BRACE))
+  - H
+  - (ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD SEMICOLON AND COLON))
+  - V
+  - W
+  - K
+  - X
+  - (ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD Y))
+  - ❖
+  - {t: ⏎, h: nav}
+  - ⌫
+  - ␣
+  - ⇧
+  - {t: ⇥, h: sym}
+  - num
+  sym:
+  - {t: ▽, type: trans}
+  - (RA(ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD E)))
+  - (ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD BACKSLASH AND PIPE))
+  - ((LS(ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD RIGHT BRACKET AND RIGHT BRACE))))
+  - (ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD RIGHT BRACKET AND RIGHT BRACE))
+  - ((LS(ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD GRAVE ACCENT AND TILDE))))
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - ((LS(ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD 6 AND CARET))))
+  - ((RA(ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD 7 AND AMPERSAND))))
+  - ((RA(ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD 0 AND RIGHT PARENTHESIS))))
+  - ((LS(ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD 5 AND PERCENT))))
+  - (LS(ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD EQUAL AND PLUS)))
+  - (ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD EQUAL AND PLUS))
+  - {t: ▽, type: trans}
+  - (LS(ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD 0 AND RIGHT PARENTHESIS)))
+  - ((LS(ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD COMMA AND LESS THAN))))
+  - ((LS(ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD 8 AND ASTERISK))))
+  - ((LS(ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD 9 AND LEFT PARENTHESIS))))
+  - (ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD GRAVE ACCENT AND TILDE))
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - ((LS(ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD 1 AND EXCLAMATION))))
+  - ((LS(ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD MINUS AND UNDERSCORE))))
+  - ((LS(ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD SLASH AND QUESTION MARK))))
+  - (LS(ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD PERIOD AND GREATER THAN)))
+  - ((RA(ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD Q))))
+  - (RA(ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD RIGHT BRACKET AND RIGHT BRACE)))
+  - {t: ▽, type: trans}
+  - ((LS(ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD 4 AND DOLLAR))))
+  - ((RA(ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD MINUS AND UNDERSCORE))))
+  - ((LS(ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD 7 AND AMPERSAND))))
+  - (ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD SLASH AND QUESTION MARK))
+  - ((LS(ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD 3 AND HASH))))
+  - (RA(ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD NON US BACKSLASH AND PIPE)))
+  - ((RA(ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD 8 AND ASTERISK))))
+  - ((RA(ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD 9 AND LEFT PARENTHESIS))))
+  - ((LS(ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD NON US BACKSLASH AND PIPE))))
+  - ((ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD NON US BACKSLASH AND PIPE)))
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: base, h: toggle}
+  - {type: held}
+  - {t: ▽, type: trans}
+  num:
+  - {t: ▽, type: trans}
+  - E
+  - '6'
+  - '5'
+  - '4'
+  - ''
+  - {t: ▽, type: trans}
+  - {t: base, h: toggle}
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - {t: ▽, type: trans}
+  - '0'
+  - '3'
+  - '2'
+  - '1'
+  - (ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD COMMA AND LESS THAN))
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - {t: ▽, type: trans}
+  - ((ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD PERIOD AND GREATER THAN)))
+  - '9'
+  - '8'
+  - '7'
+  - ''
+  - ''
+  - PG UP
+  - PG DN
+  - ''
+  - ''
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: base, h: toggle}
+  - {t: ▽, type: trans}
+  - {type: held}
+  nav:
+  - {t: mir, h: toggle}
+  - ⌃S
+  - Ctl+(ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD Y))
+  - ↑
+  - Ctl+(ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD Z))
+  - Crop
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - ''
+  - F1
+  - F2
+  - F3
+  - F4
+  - {t: sys, h: toggle}
+  - {t: mir, h: toggle}
+  - ⌃F
+  - ←
+  - ↓
+  - →
+  - Gui+((ZMK HID USAGE(HID USAGE KEY, HID USAGE KEY KEYBOARD PERIOD AND GREATER THAN)))
+  - {t: ▽, type: trans}
+  - {t: base, h: toggle}
+  - ''
+  - F5
+  - F6
+  - F7
+  - F8
+  - ''
+  - {t: mir, h: toggle}
+  - ⌃A
+  - ⌃X
+  - ⌃C
+  - ⌃V
+  - ⎙
+  - ''
+  - F9
+  - F10
+  - F11
+  - F12
+  - {t: ▽, type: trans}
+  - {type: held}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: base, h: toggle}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  mir:
+  - {t: ▽, type: trans}
+  - '&kpb Q'
+  - '&kpb L'
+  - '&kpb D'
+  - '&kpb M'
+  - '&kpb B'
+  - '&kpb ESC'
+  - {t: num, h: toggle}
+  - '&kpb B'
+  - '&kpb M'
+  - '&kpb D'
+  - '&kpb L'
+  - '&kpb Q'
+  - '&kpb (ZMK_HID_USAGE(HID_USAGE_KEY, HID_USAGE_KEY_KEYBOARD_MINUS_AND_UNDERSCORE))'
+  - {t: ▽, type: trans}
+  - '&kpb S'
+  - '&kpb R'
+  - '&kpb T'
+  - '&kpb C'
+  - '&kpb G'
+  - '&kpb J'
+  - {t: nav, h: toggle}
+  - '&kpb G'
+  - '&kpb C'
+  - '&kpb T'
+  - '&kpb R'
+  - '&kpb S'
+  - '&kpb J'
+  - {t: ▽, type: trans}
+  - '&kpb (ZMK_HID_USAGE(HID_USAGE_KEY, HID_USAGE_KEY_KEYBOARD_Y))'
+  - '&kpb X'
+  - '&kpb K'
+  - '&kpb W'
+  - '&kpb V'
+  - '&kpb V'
+  - '&kpb W'
+  - '&kpb K'
+  - '&kpb X'
+  - '&kpb (ZMK_HID_USAGE(HID_USAGE_KEY, HID_USAGE_KEY_KEYBOARD_Y))'
+  - '&kpb LGUI'
+  - '&kpb ENTER'
+  - '&kpb BACKSPACE'
+  - '&kpb SPACE'
+  - '&kpb LSHFT'
+  - '&kpb TAB'
+  - {t: num, h: toggle}
+  sys:
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - ''
+  - RGB COLOR HSB(0,100,50)
+  - RGB COLOR HSB(126,100,50)
+  - RGB COLOR HSB(244,100,50)
+  - RGB COLOR HSB(309,100,50)
+  - RGB COLOR HSB(61,100,50)
+  - {t: base, h: toggle}
+  - ''
+  - {t: BT, h: '0'}
+  - {t: BT, h: '1'}
+  - {t: BT, h: '2'}
+  - {t: BT, h: '3'}
+  - {t: BT, h: '4'}
+  - '&bootloader'
+  - '&bootloader'
+  - RGB HUI
+  - RGB SAI
+  - RGB BRI
+  - RGB SPI
+  - RGB EFF
+  - ''
+  - ''
+  - BT CLR
+  - RGB TOG
+  - ''
+  - ''
+  - ''
+  - RGB HUD
+  - RGB SAD
+  - RGB BRD
+  - RGB SPD
+  - RGB EFR
+  - ''
+  - ''
+  - ''
+  - ''
+  - {t: base, h: toggle}
+  - ''
+  - ''
