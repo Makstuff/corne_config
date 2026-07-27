@@ -1,4 +1,47 @@
 parse_config:
+  raw_binding_map:
+    'DE_A_UMLAUT': 'MY_A_UMLAUT'
+    'DE_U_UMLAUT': 'MY_U_UMLAUT'
+    'DE_O_UMLAUT': 'MY_O_UMLAUT'
+    'DE_SHARP_S': 'MY_SHARP_S'
+    'DE_Y': 'MY_Y'
+    'DE_Z': 'MY_Z'
+    'DE_EURO': 'MY_EURO'
+    'DE_HASH': 'MY_HASH'
+    'DE_STAR': 'MY_STAR'
+    'DE_PLUS': 'MY_PLUS'
+    'DE_DEG': 'MY_DEG'
+    'DE_EQUAL': 'MY_EQUAL'
+    'DE_SEMI': 'MY_SEMI'
+    'DE_LPAR': 'MY_LPAR'
+    'DE_RPAR': 'MY_RPAR'
+    'DE_CARET': 'MY_CARET'
+    'DE_DLLR': 'MY_DLLR'
+    'DE_BSLH': 'MY_BSLH'
+    'DE_FSLH': 'MY_FSLH'
+    'DE_MINUS': 'MY_MINUS'
+    'DE_SECT': 'MY_SECT'
+    'DE_AMPS': 'MY_AMPS'
+    'DE_LBRC': 'MY_LBRC'
+    'DE_RBRC': 'MY_RBRC'
+    'DE_PRCNT': 'MY_PRCNT'
+    'DE_GRAVE': 'MY_GRAVE'
+    'DE_ACUTE': 'MY_ACUTE'
+    'DE_EXCL': 'MY_EXCL'
+    'DE_QMARK': 'MY_QMARK'
+    'DE_UNDER': 'MY_UNDER'
+    'DE_COLON': 'MY_COLON'
+    'DE_AT': 'MY_AT'
+    'DE_TILDE': 'MY_TILDE'
+    'DE_PIPE': 'MY_PIPE'
+    'DE_LBKT': 'MY_LBKT'
+    'DE_RBKT': 'MY_RBKT'
+    'DE_GT': 'MY_GT'
+    'DE_LT': 'MY_LT'
+    'DE_COMMA': 'MY_COMMA'
+    'DE_SQT': 'MY_SQT'
+    'DE_DOT': 'MY_DOT'
+
   zmk_keycode_map:
     # Home row mappings (Base/MIR)
     A: {t: "A", type: "homerow"}
@@ -10,15 +53,15 @@ parse_config:
     R: {t: "R", type: "homerow"}
     S: {t: "S", type: "homerow"}
     
-    # Home row mappings (SYM)
-    DE_EQUAL: {t: "=", type: "homerow"}
-    DE_SEMI: {t: ";", type: "homerow"}
-    DE_LPAR: {t: "(", type: "homerow"}
-    DE_RPAR: {t: ")", type: "homerow"}
-    DE_QMARK: {t: "?", type: "homerow"}
-    DE_UNDER: {t: "_", type: "homerow"}
-    DE_COLON: {t: ":", type: "homerow"}
-    DE_AT: {t: "@", type: "homerow"}
+    # Home row mappings (SYM) using the bypassed MACRO names
+    MY_EQUAL: {t: "=", type: "homerow"}
+    MY_SEMI: {t: ";", type: "homerow"}
+    MY_LPAR: {t: "(", type: "homerow"}
+    MY_RPAR: {t: ")", type: "homerow"}
+    MY_QMARK: {t: "?", type: "homerow"}
+    MY_UNDER: {t: "_", type: "homerow"}
+    MY_COLON: {t: ":", type: "homerow"}
+    MY_AT: {t: "@", type: "homerow"}
 
     # Home row mappings (NUM)
     N0: {t: "0", type: "homerow"}
@@ -45,40 +88,42 @@ parse_config:
     RGB_SPI: {t: "SPI", type: "homerow"}
     RGB_EFF: {t: "EFF", type: "homerow"}
 
-    # Standard mappings
-    DE_A_UMLAUT: Ä
-    DE_U_UMLAUT: Ü
-    DE_O_UMLAUT: Ö
-    DE_SHARP_S: ß
-    DE_Y: Y
-    DE_Z: Z
-    DE_EURO: "€"
-    DE_HASH: "#"
-    DE_STAR: "*"
-    DE_PLUS: "+"
-    DE_DEG: "°"
-    DE_CARET: "^"
-    DE_DLLR: "$"
-    DE_BSLH: "\\"
-    DE_FSLH: "/"
-    DE_MINUS: "-"
-    DE_SECT: "§"
-    DE_AMPS: "&"
-    DE_LBRC: "{"
-    DE_RBRC: "}"
-    DE_PRCNT: "%"
-    DE_GRAVE: "`"
-    DE_ACUTE: "´"
-    DE_EXCL: "!"
-    DE_TILDE: "~"
-    DE_PIPE: "|"
-    DE_LBKT: "["
-    DE_RBKT: "]"
-    DE_GT: ">"
-    DE_LT: "<"
-    DE_COMMA: ","
-    DE_SQT: "'"
-    DE_DOT: "."
+    # Standard mappings bypassing the DE_ macros
+    MY_A_UMLAUT: Ä
+    MY_U_UMLAUT: Ü
+    MY_O_UMLAUT: Ö
+    MY_SHARP_S: ß
+    MY_Y: Y
+    MY_Z: Z
+    MY_EURO: "€"
+    MY_HASH: "#"
+    MY_STAR: "*"
+    MY_PLUS: "+"
+    MY_DEG: "°"
+    MY_CARET: "^"
+    MY_DLLR: "$"
+    MY_BSLH: "\\"
+    MY_FSLH: "/"
+    MY_MINUS: "-"
+    MY_SECT: "§"
+    MY_AMPS: "&"
+    MY_LBRC: "{"
+    MY_RBRC: "}"
+    MY_PRCNT: "%"
+    MY_GRAVE: "`"
+    MY_ACUTE: "´"
+    MY_EXCL: "!"
+    MY_TILDE: "~"
+    MY_PIPE: "|"
+    MY_LBKT: "["
+    MY_RBKT: "]"
+    MY_GT: ">"
+    MY_LT: "<"
+    MY_COMMA: ","
+    MY_SQT: "'"
+    MY_DOT: "."
+    
+    # Base Modifiers and Keys
     LEFT_ALT: "⌥"
     LCTRL: "⌃"
     LSHFT: "⇧"
@@ -111,6 +156,7 @@ parse_config:
     RGB_COLOR_HSB(244,100,50): "BLU"
     RGB_COLOR_HSB(309,100,50): "PUR"
     RGB_COLOR_HSB(61,100,50): "YEL"
+  
   zmk_combos: {}
   mark_alternate_layer_activators: true
 
