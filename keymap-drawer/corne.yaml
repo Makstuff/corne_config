@@ -8,7 +8,9 @@ layers:
   - F
   - Y
   - ⎋
-  - TO\nNUM
+  - 'TO
+
+    NUM'
   - B
   - M
   - D
@@ -22,7 +24,9 @@ layers:
   - N
   - P
   - ⌦
-  - TO\nNAV
+  - 'TO
+
+    NAV'
   - G
   - C
   - T
@@ -30,8 +34,8 @@ layers:
   - S
   - J
   - ⇧
-  - {t: ., s: ''''}
-  - {t: ',', s: '"'}
+  - '&kp MY_PERIOD'
+  - '&kp MY_COMMA'
   - Ü
   - H
   - Ö
@@ -91,7 +95,9 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - TO\nBASE
+  - 'TO
+
+    BASE'
   - {type: held}
   - {t: ▽, type: trans}
   num:
@@ -102,7 +108,9 @@ layers:
   - '4'
   - ''
   - {t: ▽, type: trans}
-  - TO\nBASE
+  - 'TO
+
+    BASE'
   - ''
   - ''
   - ''
@@ -114,7 +122,7 @@ layers:
   - '3'
   - '2'
   - '1'
-  - ','
+  - DE COMMA
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - ''
@@ -138,11 +146,15 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - TO\nBASE
+  - 'TO
+
+    BASE'
   - {t: ▽, type: trans}
   - {type: held}
   nav:
-  - TO\nMIR
+  - 'TO
+
+    MIR'
   - ⌃S
   - ⌃Z
   - ↑
@@ -155,22 +167,30 @@ layers:
   - F2
   - F3
   - F4
-  - TO\nSYS
-  - TO\nMIR
+  - 'TO
+
+    SYS'
+  - 'TO
+
+    MIR'
   - ⌃F
   - ←
   - ↓
   - →
   - Emoji
   - {t: ▽, type: trans}
-  - TO\nBASE
+  - 'TO
+
+    BASE'
   - ''
   - F5
   - F6
   - F7
   - F8
   - ''
-  - TO\nMIR
+  - 'TO
+
+    MIR'
   - ⌃A
   - ⌃X
   - ⌃C
@@ -185,56 +205,64 @@ layers:
   - {type: held}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - TO\nBASE
+  - 'TO
+
+    BASE'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   mir:
   - {t: ▽, type: trans}
-  - '&kpb Q'
-  - '&kpb L'
-  - '&kpb D'
-  - '&kpb M'
-  - '&kpb B'
-  - '&kpb ESC'
-  - TO\nNUM
-  - '&kpb B'
-  - '&kpb M'
-  - '&kpb D'
-  - '&kpb L'
-  - '&kpb Q'
-  - '&kpb DE_SHARP_S'
+  - Q
+  - L
+  - D
+  - M
+  - B
+  - ⎋
+  - 'TO
+
+    NUM'
+  - B
+  - M
+  - D
+  - L
+  - Q
+  - ß
   - {t: ▽, type: trans}
-  - '&kpb S'
-  - '&kpb R'
-  - '&kpb T'
-  - '&kpb C'
-  - '&kpb G'
-  - '&kpb J'
-  - TO\nNAV
-  - '&kpb G'
-  - '&kpb C'
-  - '&kpb T'
-  - '&kpb R'
-  - '&kpb S'
-  - '&kpb J'
+  - S
+  - R
+  - T
+  - C
+  - G
+  - J
+  - 'TO
+
+    NAV'
+  - G
+  - C
+  - T
+  - R
+  - S
+  - J
   - {t: ▽, type: trans}
-  - '&kpb DE_Z'
-  - '&kpb X'
-  - '&kpb K'
-  - '&kpb W'
-  - '&kpb V'
-  - '&kpb V'
-  - '&kpb W'
-  - '&kpb K'
-  - '&kpb X'
-  - '&kpb DE_Z'
-  - '&kpb LGUI'
-  - '&kpb ENTER'
-  - '&kpb BACKSPACE'
-  - '&kpb SPACE'
-  - '&kpb LSHFT'
-  - '&kpb TAB'
-  - TO\nNUM
+  - Z
+  - X
+  - K
+  - W
+  - V
+  - V
+  - W
+  - K
+  - X
+  - Z
+  - ❖
+  - ⏎
+  - ⌫
+  - ␣
+  - ⇧
+  - ⇥
+  - 'TO
+
+    NUM'
   sys:
   - ''
   - ''
@@ -244,12 +272,14 @@ layers:
   - ''
   - ''
   - ''
-  - RGB COLOR HSB(0,100,50)
-  - RGB COLOR HSB(126,100,50)
-  - RGB COLOR HSB(244,100,50)
-  - RGB COLOR HSB(309,100,50)
-  - RGB COLOR HSB(61,100,50)
-  - TO\nBASE
+  - Red
+  - Green
+  - Blue
+  - Purple
+  - Yellow
+  - 'TO
+
+    BASE'
   - ''
   - {t: BT, h: '0'}
   - {t: BT, h: '1'}
@@ -279,6 +309,8 @@ layers:
   - ''
   - ''
   - ''
-  - TO\nBASE
+  - 'TO
+
+    BASE'
   - ''
   - ''
