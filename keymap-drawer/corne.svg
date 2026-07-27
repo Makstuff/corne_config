@@ -180,6 +180,12 @@ g[class*="layer-mir" i] g.key:nth-of-type(22) text,
 g[class*="layer-mir" i] g.key:nth-of-type(46) text {
   font-size: 17.5px !important;
 }
+
+/* Shift text content up on NAV and SYM thumb keys to prevent bottom border overlap */
+g[class*="layer-base" i] g.key:nth-of-type(41) text,
+g[class*="layer-base" i] g.key:nth-of-type(45) text {
+  transform: translateY(-5px);
+}
 </style>
 <g transform="translate(30, 0)" class="layer-base">
 <text x="0" y="28" class="label" id="base">base:</text>
