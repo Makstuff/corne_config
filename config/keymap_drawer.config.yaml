@@ -1,47 +1,33 @@
 parse_config:
   zmk_preamble: "#define KEYMAP_DRAWER 1"
   raw_binding_map:
-    # Rename layer toggle behaviors so they are parsed as simple keys
-    '&to 0': '&kp MY_TO_BASE'
-    '&to 1': '&kp MY_TO_SYM'
-    '&to 2': '&kp MY_TO_NUM'
-    '&to 3': '&kp MY_TO_NAV'
-    '&to 4': '&kp MY_TO_MIR'
-    '&to 5': '&kp MY_TO_SYS'
+    # Rename layer toggle behaviors so they are parsed directly as the final text
+    '&to 0': 'TO\nBASE'
+    '&to 1': 'TO\nSYM'
+    '&to 2': 'TO\nNUM'
+    '&to 3': 'TO\nNAV'
+    '&to 4': 'TO\nMIR'
+    '&to 5': 'TO\nSYS'
     
-    # Map SYS layer colors and bootloader to simple keys
-    '&rgb_ug RGB_COLOR_HSB(0,100,50)': '&kp MY_RGB_RED'
-    '&rgb_ug RGB_COLOR_HSB(126,100,50)': '&kp MY_RGB_GRN'
-    '&rgb_ug RGB_COLOR_HSB(244,100,50)': '&kp MY_RGB_BLU'
-    '&rgb_ug RGB_COLOR_HSB(309,100,50)': '&kp MY_RGB_PUR'
-    '&rgb_ug RGB_COLOR_HSB(61,100,50)': '&kp MY_RGB_YEL'
-    '&bootloader': '&kp MY_BOOT'
+    # Map SYS layer colors (remembering to escape regex parentheses) and bootloader
+    '&rgb_ug RGB_COLOR_HSB\\(0,100,50\\)': 'Red'
+    '&rgb_ug RGB_COLOR_HSB\\(126,100,50\\)': 'Green'
+    '&rgb_ug RGB_COLOR_HSB\\(244,100,50\\)': 'Blue'
+    '&rgb_ug RGB_COLOR_HSB\\(309,100,50\\)': 'Purple'
+    '&rgb_ug RGB_COLOR_HSB\\(61,100,50\\)': 'Yellow'
+    '&bootloader': 'BOOT'
     
-    # Strip kpb macro on MIR layer so it parses as a normal key
-    '&kpb ': '&kp '
+    # Strip kpb macro on MIR layer so it parses as the pure parameter
+    '&kpb (.*)': '\1'
 
   zmk_keycode_map:
-    # Layer toggles (using \n for linebreaks)
-    MY_TO_BASE: {t: "TO\nBASE"}
-    MY_TO_SYM: {t: "TO\nSYM"}
-    MY_TO_NUM: {t: "TO\nNUM"}
-    MY_TO_NAV: {t: "TO\nNAV"}
-    MY_TO_MIR: {t: "TO\nMIR"}
-    MY_TO_SYS: {t: "TO\nSYS"}
-    
-    # SYS Layer
-    MY_RGB_RED: "Red"
-    MY_RGB_GRN: "Green"
-    MY_RGB_BLU: "Blue"
-    MY_RGB_PUR: "Purple"
-    MY_RGB_YEL: "Yellow"
-    MY_BOOT: "BOOT"
+    # Base Layer Mod-Morphs (these are automatically resolved by keymap-drawer)
+    DE_PERIOD: "."
+    BACKSLASH: "'"
+    DE_COMMA: ","
+    DE_N2: '"'
 
-    # Base Layer Mod-Morphs
-    period: {t: ".", s: "'"}
-    comma: {t: ",", s: '"'}
-
-    # Re-adding SYM homerow keys that were accidentally deleted
+    # SYM homerow keys 
     DE_EQUAL: "="
     DE_SEMI: ";"
     DE_LPAR: "("
@@ -82,7 +68,6 @@ parse_config:
     DE_RBKT: "]"
     DE_GT: ">"
     DE_LT: "<"
-    DE_COMMA: ","
     DE_SQT: "'"
     DE_DOT: "."
     
