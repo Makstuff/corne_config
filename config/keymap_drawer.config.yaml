@@ -1,5 +1,51 @@
 parse_config:
   zmk_keycode_map:
+    # Home row mappings (Base/MIR)
+    A: {t: "A", type: "homerow"}
+    I: {t: "I", type: "homerow"}
+    E: {t: "E", type: "homerow"}
+    N: {t: "N", type: "homerow"}
+    C: {t: "C", type: "homerow"}
+    T: {t: "T", type: "homerow"}
+    R: {t: "R", type: "homerow"}
+    S: {t: "S", type: "homerow"}
+    
+    # Home row mappings (SYM)
+    DE_EQUAL: {t: "=", type: "homerow"}
+    DE_SEMI: {t: ";", type: "homerow"}
+    DE_LPAR: {t: "(", type: "homerow"}
+    DE_RPAR: {t: ")", type: "homerow"}
+    DE_QMARK: {t: "?", type: "homerow"}
+    DE_UNDER: {t: "_", type: "homerow"}
+    DE_COLON: {t: ":", type: "homerow"}
+    DE_AT: {t: "@", type: "homerow"}
+
+    # Home row mappings (NUM)
+    N0: {t: "0", type: "homerow"}
+    N3: {t: "3", type: "homerow"}
+    N2: {t: "2", type: "homerow"}
+    N1: {t: "1", type: "homerow"}
+
+    # Home row mappings (NAV)
+    LEFT: {t: "←", type: "homerow"}
+    DOWN: {t: "↓", type: "homerow"}
+    RIGHT: {t: "→", type: "homerow"}
+    F5: {t: "F5", type: "homerow"}
+    F6: {t: "F6", type: "homerow"}
+    F7: {t: "F7", type: "homerow"}
+    F8: {t: "F8", type: "homerow"}
+
+    # Home row mappings (SYS)
+    BT_SEL 0: {t: "BT 0", type: "homerow"}
+    BT_SEL 1: {t: "BT 1", type: "homerow"}
+    BT_SEL 2: {t: "BT 2", type: "homerow"}
+    BT_SEL 3: {t: "BT 3", type: "homerow"}
+    RGB_SAI: {t: "SAI", type: "homerow"}
+    RGB_BRI: {t: "BRI", type: "homerow"}
+    RGB_SPI: {t: "SPI", type: "homerow"}
+    RGB_EFF: {t: "EFF", type: "homerow"}
+
+    # Standard mappings
     DE_A_UMLAUT: Ä
     DE_U_UMLAUT: Ü
     DE_O_UMLAUT: Ö
@@ -11,10 +57,6 @@ parse_config:
     DE_STAR: "*"
     DE_PLUS: "+"
     DE_DEG: "°"
-    DE_EQUAL: "="
-    DE_SEMI: ";"
-    DE_LPAR: "("
-    DE_RPAR: ")"
     DE_CARET: "^"
     DE_DLLR: "$"
     DE_BSLH: "\\"
@@ -28,10 +70,6 @@ parse_config:
     DE_GRAVE: "`"
     DE_ACUTE: "´"
     DE_EXCL: "!"
-    DE_QMARK: "?"
-    DE_UNDER: "_"
-    DE_COLON: ":"
-    DE_AT: "@"
     DE_TILDE: "~"
     DE_PIPE: "|"
     DE_LBKT: "["
@@ -52,11 +90,9 @@ parse_config:
     SPACE: "␣"
     TAB: "⇥"
     UP: "↑"
-    DOWN: "↓"
-    LEFT: "←"
-    RIGHT: "→"
     PRINTSCREEN: "⎙"
-    # custom mappings from macros
+
+    # Macros
     LC(S): "⌃S"
     LC(DE_Z): "⌃Z"
     LC(DE_Y): "⌃Y"
@@ -80,22 +116,18 @@ parse_config:
 
 draw_config:
   svg_extra_style: |
-    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@700');
     text {
-      font-family: 'Inter', 'Segoe UI Symbol', 'Apple Symbols', sans-serif !important;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol" !important;
       font-size: 25px !important;
     }
-    /* All normal keys light slate grey */
     g.key rect {
       fill: #e2e8f0 !important;
       stroke: #64748b !important;
     }
-    /* Transparent keys ghosted out with dashed border */
     g.trans rect {
       fill: none !important;
       stroke-dasharray: 4;
     }
-    /* Homerow keys white (overrides transparent fill but keeps dashed border if both) */
     g.homerow rect {
       fill: #ffffff !important;
       stroke: #475569 !important;
