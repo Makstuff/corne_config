@@ -50,21 +50,21 @@
             compatible = "zmk,behavior-tap-dance";
             label = "TD_ALT";
             #binding-cells = <0>;
-            bindings = <&kp LEFT_ALT>, <&mo 4>;
+            bindings = <&sk LEFT_ALT>, <&mo 4>;
         };
 
         td_ctrl: td_ctrl {
             compatible = "zmk,behavior-tap-dance";
             label = "TD_CTRL";
             #binding-cells = <0>;
-            bindings = <&kp LCTRL>, <&mo 4>;
+            bindings = <&sk LCTRL>, <&mo 4>;
         };
 
         td_shift: td_shift {
             compatible = "zmk,behavior-tap-dance";
             label = "TD_SHIFT";
             #binding-cells = <0>;
-            bindings = <&kp LSHFT>, <&mo 4>;
+            bindings = <&sk LSHFT>, <&mo 4>;
         };
     };
 
