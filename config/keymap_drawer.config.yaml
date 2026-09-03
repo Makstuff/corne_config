@@ -17,6 +17,10 @@ parse_config:
     '&rgb_ug RGB_COLOR_HSB(61,100,50)': 'Yellow'
     '&bootloader': 'BOOT'
 
+    '&td_alt': {t: '⌥', h: 'MIR'}
+    '&td_ctrl': {t: '⌃', h: 'MIR'}
+    '&td_shift': {t: '⇧', h: 'MIR'}
+
     # Map all kpb macros on MIR layer directly to their final display text
     '&kpb Q': 'Q'
     '&kpb L': 'L'
@@ -110,6 +114,7 @@ parse_config:
     DE_COMMA: ","
     DE_PERIOD: "."
     DE_N2: '"'
+    DE_DQT: '"'
     BACKSLASH: "'"
     
     # Base Modifiers and Keys (<= 2 chars)
