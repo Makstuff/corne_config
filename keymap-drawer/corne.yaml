@@ -1,7 +1,7 @@
 layout: {zmk_keyboard: corne, layout_name: default_layout}
 layers:
   base:
-  - '&td_alt'
+  - {t: ⌥, h: MIR}
   - Ä
   - U
   - O
@@ -17,7 +17,7 @@ layers:
   - L
   - Q
   - ß
-  - '&td_ctrl'
+  - {t: ⌃, h: MIR}
   - A
   - I
   - E
@@ -33,7 +33,7 @@ layers:
   - R
   - S
   - J
-  - '&td_shift'
+  - {t: ⇧, h: MIR}
   - {t: ., s: ''''}
   - {t: ',', s: '"'}
   - Ü
@@ -54,7 +54,7 @@ layers:
   sym:
   - €
   - '@'
-  - DE DQT
+  - '"'
   - '{'
   - '}'
   - <
