@@ -1,7 +1,7 @@
-layout: {zmk_keyboard: corne, layout_name: default_layout}
+layout: {qmk_keyboard: corne_rotated, qmk_layout: LAYOUT_split_3x6_3}
 layers:
   base:
-  - ⌥
+  - '&td_alt'
   - Ä
   - U
   - O
@@ -17,7 +17,7 @@ layers:
   - L
   - Q
   - ß
-  - ⌃
+  - '&td_ctrl'
   - A
   - I
   - E
@@ -33,7 +33,7 @@ layers:
   - R
   - S
   - J
-  - ⇧
+  - '&td_shift'
   - {t: ., s: ''''}
   - {t: ',', s: '"'}
   - Ü
@@ -52,45 +52,45 @@ layers:
   - {t: ⇥, h: sym}
   - num
   sym:
-  - {t: ▽, type: trans}
   - €
-  - '#'
-  - '*'
-  - +
-  - °
+  - '@'
+  - DE DQT
+  - '{'
+  - '}'
+  - <
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - '&'
-  - '{'
-  - '}'
-  - '%'
-  - '`'
-  - ´
-  - {t: ▽, type: trans}
-  - '='
-  - ;
-  - (
-  - )
-  - ^
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - '!'
-  - '?'
-  - _
-  - ':'
-  - '@'
-  - '~'
-  - {t: ▽, type: trans}
-  - $
-  - \
-  - /
   - '-'
-  - §
-  - '|'
+  - +
+  - /
+  - \
+  - ´
+  - '%'
+  - $
+  - '#'
   - '['
   - ']'
-  - <
+  - ','
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - '='
+  - (
+  - )
+  - '*'
+  - ;
+  - '`'
+  - °
+  - .
+  - ''''
+  - '!'
+  - '?'
   - '>'
+  - '|'
+  - ':'
+  - _
+  - ^
+  - '~'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -101,23 +101,23 @@ layers:
   - {type: held}
   - {t: ▽, type: trans}
   num:
-  - {t: ▽, type: trans}
-  - E
+  - €
+  - '@'
   - '6'
   - '5'
   - '4'
-  - ''
+  - <
   - {t: ▽, type: trans}
   - 'TO
 
     BASE'
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - {t: ▽, type: trans}
+  - '&'
+  - '-'
+  - +
+  - /
+  - \
+  - ´
+  - '%'
   - '0'
   - '3'
   - '2'
@@ -125,23 +125,23 @@ layers:
   - ','
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - ''
-  - {t: ▽, type: trans}
+  - '='
+  - (
+  - )
+  - '*'
+  - ;
+  - '`'
+  - °
   - .
   - '9'
   - '8'
   - '7'
-  - ''
-  - ''
-  - {t: PgUp, type: small}
-  - {t: PgDn, type: small}
-  - ''
-  - ''
+  - '>'
+  - '|'
+  - ':'
+  - _
+  - ^
+  - '~'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -152,9 +152,7 @@ layers:
   - {t: ▽, type: trans}
   - {type: held}
   nav:
-  - 'TO
-
-    MIR'
+  - {t: ▽, type: trans}
   - ⌃S
   - ⌃Z
   - ↑
@@ -170,9 +168,7 @@ layers:
   - 'TO
 
     SYS'
-  - 'TO
-
-    MIR'
+  - {t: ▽, type: trans}
   - ⌃F
   - ←
   - ↓
@@ -188,9 +184,7 @@ layers:
   - F7
   - F8
   - ''
-  - 'TO
-
-    MIR'
+  - {t: ▽, type: trans}
   - ⌃A
   - ⌃X
   - ⌃C
