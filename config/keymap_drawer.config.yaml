@@ -146,7 +146,8 @@ parse_config:
     BT_SEL: "BT"
   
   zmk_combos: {}
-  mark_alternate_layer_activators: true
+  mark_alternate_layer_activators: false
+  trans_legend: {t: 'trans', type: trans}
 
 draw_config:
   n_columns: 3
