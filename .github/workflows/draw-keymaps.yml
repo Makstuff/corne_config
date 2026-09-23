@@ -38,7 +38,7 @@ jobs:
           sed -i 's/n_columns: 3/n_columns: 1/g' config/keymap_drawer.config.yaml
           for yaml_file in keymap-drawer/*.yaml; do
             base_name=$(basename "$yaml_file" .yaml)
-            keymap -c config/keymap_drawer.config.yaml draw "$yaml_file" > "keymap-drawer/${base_name}_vertical.svg"
+            keymap -c config/keymap_drawer.config.yaml draw -j config/info.json "$yaml_file" > "keymap-drawer/${base_name}_vertical.svg"
             rsvg-convert -b white -w 1200 -o "keymap-drawer/${base_name}.png" "keymap-drawer/${base_name}_vertical.svg"
           done
       - name: Commit PNGs
