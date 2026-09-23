@@ -1,7 +1,7 @@
 layout: {zmk_keyboard: corne, layout_name: default_layout}
 layers:
   base:
-  - {t: ⌥, h: MIR}
+  - ⌥
   - Ä
   - U
   - O
@@ -17,7 +17,7 @@ layers:
   - L
   - Q
   - ß
-  - {t: ⌃, h: MIR}
+  - ⌃
   - A
   - I
   - E
@@ -33,7 +33,7 @@ layers:
   - R
   - S
   - J
-  - {t: ⇧, h: MIR}
+  - ⇧
   - {t: ., s: ''''}
   - {t: ',', s: '"'}
   - Ü
@@ -152,7 +152,7 @@ layers:
   - {t: ▽, type: trans}
   - {type: held}
   nav:
-  - {t: ▽, type: trans}
+  - '&mo_alt'
   - ⌃S
   - ⌃Z
   - ↑
@@ -168,7 +168,7 @@ layers:
   - 'TO
 
     SYS'
-  - {t: ▽, type: trans}
+  - '&mo_ctrl'
   - ⌃F
   - ←
   - ↓
@@ -184,7 +184,7 @@ layers:
   - F7
   - F8
   - ''
-  - {t: ▽, type: trans}
+  - '&mo_shift'
   - ⌃A
   - ⌃X
   - ⌃C
