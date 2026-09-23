@@ -1,8 +1,8 @@
 # Origin
 
-The letter distribution is based on [Snug](https://github.com/mndscp/snug-keyboard-layout). I mirrored it since I have a permanent tendon injury on my right pinky, and the right hand sees much more action in the original layout. I also moved `J` to the other side and added dedicated `ÄÖÜß` keys in what seemed like the most suitable spots. In my opinion, the `Ö` is the only problematic one, but given that I wanted the left outer column for control keys that are used with the mouse a lot, I couldn't come up with a better configuration and I believe the current spot is the best compromise overall.
+The letter distribution is based on [Snug](https://github.com/mndscp/snug-keyboard-layout). I mirrored it since I have a permanent tendon injury on my right pinky, and the right hand sees much more action in the original layout. I also moved `J` to the other side and added dedicated `ÄÖÜß` keys in what seemed like the most suitable spots. In my opinion, the `Ö` is the only problematic one, but given that I wanted to reserve the left outer column for control keys that are used with the mouse a lot, I couldn't come up with a better configuration and I believe the current spot is the best compromise overall.
 
-The layers apart from `BASE` I created completely from scratch without any templates at all. `SYM` and `NUM` is intended for general coding in no specific languages, as well as typst/LaTeX markdown format.
+The layers apart from `BASE` I created completely from scratch without any templates at all. `SYM` and `NUM` are intended for general coding in no specific languages, as well as typst/LaTeX markdown format.
 
 # Features
 
