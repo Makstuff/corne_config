@@ -31,15 +31,15 @@ jobs:
           fetch-depth: 0
       - name: Install dependencies
         run: |
-          sudo apt-get update && sudo apt-get install -y librsvg2-bin
-          pip install keymap-drawer
+          sudo apt-get update && sudo apt-get install -y libcairo2
+          pip install keymap-drawer cairosvg
       - name: Generate Vertical SVG and Convert to PNG
         run: |
           sed -i 's/n_columns: 3/n_columns: 1/g' config/keymap_drawer.config.yaml
           for yaml_file in keymap-drawer/*.yaml; do
             base_name=$(basename "$yaml_file" .yaml)
             keymap -c config/keymap_drawer.config.yaml draw -j config/info.json "$yaml_file" > "keymap-drawer/${base_name}_vertical.svg"
-            rsvg-convert -b white -w 1200 -o "keymap-drawer/${base_name}.png" "keymap-drawer/${base_name}_vertical.svg"
+            cairosvg -b white --output-width 1200 -o "keymap-drawer/${base_name}.png" "keymap-drawer/${base_name}_vertical.svg"
           done
       - name: Commit PNGs
         run: |
