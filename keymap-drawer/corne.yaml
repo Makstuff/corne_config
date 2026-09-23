@@ -58,8 +58,8 @@ layers:
   - '{'
   - '}'
   - <
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - {t: trans, type: trans}
+  - {t: trans, type: trans}
   - '&'
   - '-'
   - +
@@ -72,8 +72,8 @@ layers:
   - '['
   - ']'
   - ','
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - {t: trans, type: trans}
+  - {t: trans, type: trans}
   - '='
   - (
   - )
@@ -91,15 +91,15 @@ layers:
   - _
   - ^
   - '~'
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - {t: trans, type: trans}
+  - {t: trans, type: trans}
+  - {t: trans, type: trans}
+  - {t: trans, type: trans}
   - 'TO
 
     BASE'
   - {type: held}
-  - {t: ▽, type: trans}
+  - {t: trans, type: trans}
   num:
   - €
   - '@'
@@ -107,7 +107,7 @@ layers:
   - '5'
   - '4'
   - <
-  - {t: ▽, type: trans}
+  - {t: trans, type: trans}
   - 'TO
 
     BASE'
@@ -123,8 +123,8 @@ layers:
   - '2'
   - '1'
   - ','
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - {t: trans, type: trans}
+  - {t: trans, type: trans}
   - '='
   - (
   - )
@@ -142,14 +142,14 @@ layers:
   - _
   - ^
   - '~'
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - {t: trans, type: trans}
+  - {t: trans, type: trans}
+  - {t: trans, type: trans}
+  - {t: trans, type: trans}
   - 'TO
 
     BASE'
-  - {t: ▽, type: trans}
+  - {t: trans, type: trans}
   - {type: held}
   nav:
   - 'TO
@@ -160,8 +160,8 @@ layers:
   - ↑
   - ⌃Y
   - {t: Crop, type: small}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - {t: trans, type: trans}
+  - {t: trans, type: trans}
   - ''
   - F1
   - F2
@@ -178,7 +178,7 @@ layers:
   - ↓
   - →
   - {t: Emoji, type: small}
-  - {t: ▽, type: trans}
+  - {t: trans, type: trans}
   - 'TO
 
     BASE'
@@ -201,15 +201,15 @@ layers:
   - F10
   - F11
   - F12
-  - {t: ▽, type: trans}
+  - {t: trans, type: trans}
   - {type: held}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - {t: trans, type: trans}
+  - {t: trans, type: trans}
   - 'TO
 
     BASE'
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - {t: trans, type: trans}
+  - {t: trans, type: trans}
   mir: [⌥, Q, L, D, M, B, ⎋, 'TO
 
       NUM', B, M, D, L, Q, ß, ⌃, S, R, T, C, G, J, 'TO
