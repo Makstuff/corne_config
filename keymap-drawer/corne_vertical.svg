@@ -124,9 +124,10 @@ path.combo {
 }
 /* End Tabler Icons Cleanup */
 
-/* Move layer titles down by 0.2 key width (12px) to sit in the split gap */
-g[class*="layer-" i] > text {
+/* Move layer titles down by 0.2 key width (12px) to sit in the split gap and disable the default white contour */
+text.label {
   transform: translateY(12px);
+  stroke: none !important;
 }
 /* Move the bottom row of layers 54px (0.9 key width) closer to the top row without cropping the viewBox */
 g[class*="layer-nav" i],
