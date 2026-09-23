@@ -18,3 +18,29 @@ jobs:
       output_folder: "keymap-drawer"
       parse_args: ""
       draw_args: ""
+
+  convert_to_png:
+    needs: draw
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - name: Install rsvg-convert
+        run: sudo apt-get update && sudo apt-get install -y librsvg2-bin
+      - name: Convert SVG to PNG
+        run: |
+          for svg in keymap-drawer/*.svg; do
+            rsvg-convert -b white -w 1200 -o "${svg%.svg}.png" "$svg"
+          done
+      - name: Commit PNGs
+        run: |
+          git config --global user.name "GitHub Actions"
+          git config --global user.email "actions@github.com"
+          git pull
+          git add keymap-drawer/*.png
+          git commit -m "Convert keymap SVGs to PNGs" || exit 0
+          git push
