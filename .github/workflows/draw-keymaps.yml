@@ -35,10 +35,20 @@ jobs:
           pip install keymap-drawer cairosvg
       - name: Generate Vertical SVG and Convert to PNG
         run: |
-          sed -i 's/n_columns: 3/n_columns: 1/g' config/keymap_drawer.config.yaml
           for yaml_file in keymap-drawer/*.yaml; do
             base_name=$(basename "$yaml_file" .yaml)
+            
+            # Restore triangles to layer activators
+            sed -i 's/- {type: held}/- {t: "▽", type: held}/g' "$yaml_file"
+            
+            # Redraw standard SVG
+            keymap -c config/keymap_drawer.config.yaml draw -j config/info.json "$yaml_file" > "keymap-drawer/${base_name}.svg"
+            
+            # Redraw vertical SVG
+            sed -i 's/n_columns: 3/n_columns: 1/g' config/keymap_drawer.config.yaml
             keymap -c config/keymap_drawer.config.yaml draw -j config/info.json "$yaml_file" > "keymap-drawer/${base_name}_vertical.svg"
+            git restore config/keymap_drawer.config.yaml
+            
             cairosvg -b white --output-width 1200 -o "keymap-drawer/${base_name}.png" "keymap-drawer/${base_name}_vertical.svg"
           done
       - name: Commit PNGs
@@ -48,6 +58,6 @@ jobs:
           git restore config/keymap_drawer.config.yaml
           git pull origin ${{ github.ref_name }} --rebase --autostash
           git add keymap-drawer/*.png
-          git add keymap-drawer/*_vertical.svg
+          git add keymap-drawer/*.svg
           git commit -m "Convert keymap SVGs to PNGs" || exit 0
           git push origin HEAD:${{ github.ref_name }}

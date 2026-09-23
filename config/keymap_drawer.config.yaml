@@ -1,7 +1,6 @@
 parse_config:
   zmk_preamble: "#define KEYMAP_DRAWER 1"
   raw_binding_map:
-    '&trans': {t: '▽', type: 'ttrans'}
     # Rename layer toggle behaviors directly to their literal text
     '&to 0': "TO\nBASE"
     '&to 1': "TO\nSYM"
@@ -176,11 +175,13 @@ draw_config:
       stroke: #64748b !important;
     }
     g.trans rect,
-    g.ttrans rect,
     g.held rect {
       fill: none !important;
       stroke-dasharray: 4;
-      stroke: #000000 !important;
+    }
+    g.trans text,
+    g.held text {
+      fill: black !important;
     }
     
     /* Style homerow keys purely by physical position in the SVG (indices 16-19 and 24-27) */
