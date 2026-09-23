@@ -150,6 +150,7 @@ parse_config:
   trans_legend: {t: 'trans', type: trans}
 
 draw_config:
+  style_layer_activators: false
   n_columns: 3
   outer_pad_w: 15.0
   outer_pad_h: 35.0
