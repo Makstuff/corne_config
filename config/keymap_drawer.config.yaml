@@ -147,7 +147,6 @@ parse_config:
   
   zmk_combos: {}
   mark_alternate_layer_activators: false
-  trans_legend: {t: 'trans', type: trans}
 
 draw_config:
   style_layer_activators: false
@@ -175,7 +174,8 @@ draw_config:
       fill: #e2e8f0 !important;
       stroke: #64748b !important;
     }
-    g.trans rect {
+    g.trans rect,
+    g.held rect {
       fill: none !important;
       stroke-dasharray: 4;
     }
