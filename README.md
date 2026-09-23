@@ -4,6 +4,8 @@ The letter distribution is based on [Snug](https://github.com/mndscp/snug-keyboa
 
 The layers apart from `BASE` I created completely from scratch without any templates at all. `SYM` and `NUM` are intended for general coding in no specific languages, as well as typst/LaTeX markdown format.
 
+I did 99% of the coding in Antigravity IDE, which saved me many hours of skimming through documentations for the more intricate details and especially for the renderings. Nickcoutsos editor works well enough but is still a pain to use given the lack of any kind of drag-and-drop functionality.
+
 # Features
 
  - Hold-taps for `Enter` and `Tab` on thumb keys.
