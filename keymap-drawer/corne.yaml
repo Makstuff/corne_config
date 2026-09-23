@@ -152,7 +152,9 @@ layers:
   - {t: ▽, type: trans}
   - {type: held}
   nav:
-  - '&mo_alt'
+  - 'TO
+
+    MIR'
   - ⌃S
   - ⌃Z
   - ↑
@@ -168,7 +170,9 @@ layers:
   - 'TO
 
     SYS'
-  - '&mo_ctrl'
+  - 'TO
+
+    MIR'
   - ⌃F
   - ←
   - ↓
@@ -184,7 +188,9 @@ layers:
   - F7
   - F8
   - ''
-  - '&mo_shift'
+  - 'TO
+
+    MIR'
   - ⌃A
   - ⌃X
   - ⌃C
@@ -204,59 +210,13 @@ layers:
     BASE'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  mir:
-  - {t: ▽, type: trans}
-  - Q
-  - L
-  - D
-  - M
-  - B
-  - ⎋
-  - 'TO
+  mir: [⌥, Q, L, D, M, B, ⎋, 'TO
 
-    NUM'
-  - B
-  - M
-  - D
-  - L
-  - Q
-  - ß
-  - {t: ▽, type: trans}
-  - S
-  - R
-  - T
-  - C
-  - G
-  - J
-  - 'TO
+      NUM', B, M, D, L, Q, ß, ⌃, S, R, T, C, G, J, 'TO
 
-    NAV'
-  - G
-  - C
-  - T
-  - R
-  - S
-  - J
-  - {t: ▽, type: trans}
-  - Z
-  - X
-  - K
-  - W
-  - V
-  - V
-  - W
-  - K
-  - X
-  - Z
-  - ❖
-  - ⏎
-  - ⌫
-  - ␣
-  - ⇧
-  - ⇥
-  - 'TO
+      NAV', G, C, T, R, S, J, ⇧, Z, X, K, W, V, V, W, K, X, Z, ❖, ⏎, ⌫, ␣, ⇧, ⇥, 'TO
 
-    NUM'
+      NUM']
   sys:
   - ''
   - ''
