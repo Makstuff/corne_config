@@ -154,9 +154,10 @@ draw_config:
   outer_pad_h: 35.0
   split_gap: 20.0
   svg_extra_style: |
-    /* Move layer titles down by 0.2 key width (12px) to sit in the split gap */
-    g[class*="layer-" i] > text {
+    /* Move layer titles down by 0.2 key width (12px) to sit in the split gap and disable the default white contour */
+    text.label {
       transform: translateY(12px);
+      stroke: none !important;
     }
     /* Move the bottom row of layers 54px (0.9 key width) closer to the top row without cropping the viewBox */
     g[class*="layer-nav" i],
