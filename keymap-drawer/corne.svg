@@ -589,7 +589,6 @@ g[class*="layer-base" i] g.key:nth-of-type(45) text {
 </g>
 <g transform="translate(555, 209) rotate(-12.0)" class="key held keypos-44">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key held"/>
-<text x="0" y="0" class="key held tap">▽</text>
 </g>
 <g transform="translate(616, 203)" class="key trans keypos-45">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
@@ -792,7 +791,6 @@ g[class*="layer-base" i] g.key:nth-of-type(45) text {
 </g>
 <g transform="translate(616, 203)" class="key held keypos-45">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key held"/>
-<text x="0" y="0" class="key held tap">▽</text>
 </g>
 </g>
 </g>
@@ -967,7 +965,6 @@ g[class*="layer-base" i] g.key:nth-of-type(45) text {
 </g>
 <g transform="translate(224, 203)" class="key held keypos-40">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key held"/>
-<text x="0" y="0" class="key held tap">▽</text>
 </g>
 <g transform="translate(285, 209) rotate(12.0)" class="key trans keypos-41">
 <rect rx="6" ry="6" x="-26" y="-26" width="52" height="52" class="key trans"/>
