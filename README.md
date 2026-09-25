@@ -16,4 +16,4 @@ I did 99% of the coding in Antigravity IDE, which saved me many hours of skimmin
  - There is no layer-lock for `SYM` since I couldn't think of any realistic use-case.
  - `shift` is a general way out of all layer-locks and returns to the base layer.
 
-![Corne Layout](keymap-drawer/corne.png)
+![Corne Layout](keymap-drawer/corne_vertical.png)
