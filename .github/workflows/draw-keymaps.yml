@@ -33,7 +33,7 @@ jobs:
         run: |
           sudo apt-get update && sudo apt-get install -y libcairo2
           pip install keymap-drawer cairosvg
-      - name: Generate Vertical SVG and Convert to PNG
+      - name: Generate SVGs and Convert to PNGs
         run: |
           for yaml_file in keymap-drawer/*.yaml; do
             base_name=$(basename "$yaml_file" .yaml)
@@ -41,23 +41,29 @@ jobs:
             # Restore triangles to layer activators
             sed -i 's/- {type: held}/- {t: "▽", type: held}/g' "$yaml_file"
             
-            # Redraw standard SVG
-            keymap -c config/keymap_drawer.config.yaml draw -j config/info.json "$yaml_file" > "keymap-drawer/${base_name}.svg"
+            # Clean up the old named files so they get removed from git
+            rm -f "keymap-drawer/${base_name}.svg"
+            rm -f "keymap-drawer/${base_name}.png"
             
-            # Redraw vertical SVG
+            # Redraw horizontal SVG and generate PNG
+            keymap -c config/keymap_drawer.config.yaml draw -j config/info.json "$yaml_file" > "keymap-drawer/${base_name}_horizontal.svg"
+            cairosvg -b white --output-width 1200 -o "keymap-drawer/${base_name}_horizontal.png" "keymap-drawer/${base_name}_horizontal.svg"
+            
+            # Redraw vertical SVG and generate PNG
             sed -i 's/n_columns: 3/n_columns: 1/g' config/keymap_drawer.config.yaml
             keymap -c config/keymap_drawer.config.yaml draw -j config/info.json "$yaml_file" > "keymap-drawer/${base_name}_vertical.svg"
             git restore config/keymap_drawer.config.yaml
-            
-            cairosvg -b white --output-width 1200 -o "keymap-drawer/${base_name}.png" "keymap-drawer/${base_name}_vertical.svg"
+            cairosvg -b white --output-width 1200 -o "keymap-drawer/${base_name}_vertical.png" "keymap-drawer/${base_name}_vertical.svg"
           done
-      - name: Commit PNGs
+      - name: Commit Generated Files
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git restore config/keymap_drawer.config.yaml
           git pull origin ${{ github.ref_name }} --rebase --autostash
-          git add keymap-drawer/*.png
-          git add keymap-drawer/*.svg
-          git commit -m "Convert keymap SVGs to PNGs" || exit 0
+          git rm -q keymap-drawer/*.svg || true
+          git rm -q keymap-drawer/*.png || true
+          git add keymap-drawer/*_horizontal.svg keymap-drawer/*_horizontal.png
+          git add keymap-drawer/*_vertical.svg keymap-drawer/*_vertical.png
+          git commit -m "Update keymap SVGs and PNGs" || exit 0
           git push origin HEAD:${{ github.ref_name }}
