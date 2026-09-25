@@ -1,6 +1,4 @@
 ---
 include:
   - board: corne_left
-    snippet: zmk-usb-logging
-  - board: corne_right
-    snippet: zmk-usb-logging
+  - board: corne_right
