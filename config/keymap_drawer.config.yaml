@@ -17,6 +17,10 @@ parse_config:
     '&rgb_ug RGB_COLOR_HSB(61,100,50)': 'Yellow'
     '&bootloader': 'BOOT'
 
+    '&kps DE_GRAVE': '`'
+    '&kps DE_ACUTE': '´'
+    '&kps DE_CARET': '^'
+
     '&td_alt': {t: '⌥', h: 'MIR'}
     '&td_ctrl': {t: '⌃', h: 'MIR'}
     '&td_shift': {t: '⇧', h: 'MIR'}
