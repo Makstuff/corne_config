@@ -65,7 +65,7 @@ layers:
   - +
   - /
   - \
-  - '&kps DE_ACUTE'
+  - ´
   - '%'
   - $
   - '#'
@@ -79,7 +79,7 @@ layers:
   - )
   - '*'
   - ;
-  - '&kps DE_GRAVE'
+  - '`'
   - °
   - .
   - '"'
@@ -89,7 +89,7 @@ layers:
   - '|'
   - ':'
   - _
-  - '&kps DE_CARET'
+  - ^
   - '~'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -116,7 +116,7 @@ layers:
   - +
   - /
   - \
-  - '&kps DE_ACUTE'
+  - ´
   - '%'
   - '0'
   - '3'
@@ -130,7 +130,7 @@ layers:
   - )
   - '*'
   - ;
-  - '&kps DE_GRAVE'
+  - '`'
   - °
   - .
   - '9'
@@ -140,7 +140,7 @@ layers:
   - '|'
   - ':'
   - _
-  - '&kps DE_CARET'
+  - ^
   - '~'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
