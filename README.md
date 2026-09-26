@@ -17,3 +17,22 @@ I did 99% of the coding in Antigravity IDE, which saved me many hours of skimmin
  - `shift` is a general way out of all layer-locks and returns to the base layer.
 
 ![Corne Layout](keymap-drawer/corne_vertical.png)
+```
+BASE
+■ Ä U O F Y ■   ■ B M D L Q ß
+■ A I E N P ■   ■ G C T R S J
+■ . , Ü H Ö       V W K X Z ■
+    ⏎ ⌫ ␣       ⇧ ⇥ ②
+
+NUM
+€ @ 6 5 4 < ■   ■ & - + / \ ´
+% 0 3 2 1 , ■   ■ = ( ) * ; `
+° . 9 8 7 >       | : _ ^ ~ ■
+    ⏎ ⌫ ␣       ⇧ ⇥ ②
+
+SYM
+€ @ ' { } < ■   ■ & - + / \ ´
+% $ # [ ] , ■   ■ = ( ) * ; `
+° . " ! ? >       | : _ ^ ~ ■
+    ⏎ ⌫ ␣       ⇧ ⇥ ②
+```
