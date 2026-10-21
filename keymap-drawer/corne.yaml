@@ -8,7 +8,7 @@ layers:
   - F
   - Y
   - ⎋
-  - Alt+DE SPACE
+  - ✦
   - B
   - M
   - D
@@ -22,7 +22,7 @@ layers:
   - N
   - P
   - ⌦
-  - ⏯
+  - {t: WIN FG, type: small}
   - G
   - C
   - T
