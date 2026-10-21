@@ -8,9 +8,7 @@ layers:
   - F
   - Y
   - ⎋
-  - 'TO
-
-    NUM'
+  - Alt+DE SPACE
   - B
   - M
   - D
@@ -24,9 +22,7 @@ layers:
   - N
   - P
   - ⌦
-  - 'TO
-
-    NAV'
+  - ''
   - G
   - C
   - T
@@ -59,7 +55,9 @@ layers:
   - '}'
   - <
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - 'TO
+
+    NUM'
   - '&'
   - '-'
   - +
@@ -73,7 +71,9 @@ layers:
   - ']'
   - ','
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - 'TO
+
+    NAV'
   - '='
   - (
   - )
@@ -124,7 +124,9 @@ layers:
   - '1'
   - ','
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - 'TO
+
+    BASE'
   - '='
   - (
   - )
@@ -161,7 +163,9 @@ layers:
   - ⌃Y
   - {t: Crop, type: small}
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - 'TO
+
+    BASE'
   - ''
   - F1
   - F2
